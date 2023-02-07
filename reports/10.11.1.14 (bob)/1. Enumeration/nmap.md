@@ -7,8 +7,6 @@ PORT    STATE SERVICE REASON  VERSION
 21/tcp  open  ftp     syn-ack Microsoft ftpd
 | ftp-anon: Anonymous FTP login allowed (FTP code 230)
 | 01-17-07  06:42PM       <DIR>          AdminScripts
-| 02-01-23  02:39PM                   25 ant.asp
-| 02-01-23  02:40PM                 1221 cmd.asp
 | 01-17-07  06:43PM       <DIR>          ftproot
 | 01-17-07  06:43PM       <DIR>          iissamples
 | 01-17-07  06:43PM       <DIR>          Scripts
