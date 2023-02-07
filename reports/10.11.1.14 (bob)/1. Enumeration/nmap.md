@@ -10,7 +10,6 @@ PORT    STATE SERVICE REASON  VERSION
 | 01-17-07  06:43PM       <DIR>          ftproot
 | 01-17-07  06:43PM       <DIR>          iissamples
 | 01-17-07  06:43PM       <DIR>          Scripts
-| 02-01-23  01:09PM                 5271 shell.aspx
 |_02-01-23  03:20PM       <DIR>          wwwroot
 | ftp-syst: 
 |_  SYST: Windows_NT
