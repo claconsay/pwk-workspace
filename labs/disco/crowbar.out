@@ -1,0 +1,109 @@
+2023-01-31 00:25:41 START
+2023-01-31 00:25:41 Crowbar v0.4.2
+2023-01-31 00:25:41 Trying 10.11.1.13:3389
+2023-01-31 00:28:37 START
+2023-01-31 00:28:37 Crowbar v0.4.2
+2023-01-31 00:28:37 Trying 10.11.1.13:3389
+2023-01-31 00:29:15 START
+2023-01-31 00:29:15 Crowbar v0.4.2
+2023-01-31 00:29:15 Brute Force Type: rdp
+2023-01-31 00:29:15      Output File: /home/chris/trainings/pwk/practice/lab/disco/crowbar.out
+2023-01-31 00:29:15         Log File: /home/chris/trainings/pwk/practice/lab/disco/crowbar.log
+2023-01-31 00:29:15    Discover Mode: False
+2023-01-31 00:29:15     Verbose Mode: 1
+2023-01-31 00:29:15       Debug Mode: False
+2023-01-31 00:29:15 Trying 10.11.1.13:3389
+2023-01-31 00:32:03 START
+2023-01-31 00:32:03 Crowbar v0.4.2
+2023-01-31 00:32:03 Brute Force Type: rdp
+2023-01-31 00:32:03      Output File: /home/chris/trainings/pwk/practice/lab/disco/crowbar.out
+2023-01-31 00:32:03         Log File: /home/chris/trainings/pwk/practice/lab/disco/crowbar.log
+2023-01-31 00:32:03    Discover Mode: False
+2023-01-31 00:32:03     Verbose Mode: 1
+2023-01-31 00:32:03       Debug Mode: True
+2023-01-31 00:32:03 Trying 10.11.1.13:3389
+2023-01-31 00:33:10 START
+2023-01-31 00:33:10 Crowbar v0.4.2
+2023-01-31 00:33:10 Brute Force Type: rdp
+2023-01-31 00:33:10      Output File: /home/chris/trainings/pwk/practice/lab/disco/crowbar.out
+2023-01-31 00:33:10         Log File: /home/chris/trainings/pwk/practice/lab/disco/crowbar.log
+2023-01-31 00:33:10    Discover Mode: False
+2023-01-31 00:33:10     Verbose Mode: 1
+2023-01-31 00:33:10       Debug Mode: True
+2023-01-31 00:33:10 Trying 10.11.1.13:3389
+2023-01-31 00:46:04 START
+2023-01-31 00:46:04 Crowbar v0.4.2
+2023-01-31 00:46:04 Brute Force Type: rdp
+2023-01-31 00:46:04      Output File: /home/chris/trainings/pwk/practice/lab/disco/crowbar.out
+2023-01-31 00:46:04         Log File: /home/chris/trainings/pwk/practice/lab/disco/crowbar.log
+2023-01-31 00:46:04    Discover Mode: False
+2023-01-31 00:46:04     Verbose Mode: 1
+2023-01-31 00:46:04       Debug Mode: True
+2023-01-31 00:46:04 Trying 10.11.1.13:3389
+2023-01-31 00:46:09 [00:46:09:033] [131208:131209] [WARN][com.freerdp.core.nla] - SPNEGO received NTSTATUS: STATUS_LOGON_FAILURE [0xC000006D] from server
+2023-01-31 00:46:09 [00:46:09:033] [131208:131209] [ERROR][com.freerdp.core] - nla_recv_pdu:freerdp_set_last_error_ex ERRCONNECT_LOGON_FAILURE [0x00020014]
+2023-01-31 00:46:09 [00:46:09:033] [131208:131209] [ERROR][com.freerdp.core.rdp] - rdp_recv_callback: CONNECTION_STATE_NLA - nla_recv_pdu() fail
+2023-01-31 00:46:09 [00:46:09:033] [131208:131209] [ERROR][com.freerdp.core.transport] - transport_check_fds: transport->ReceiveCallback() - -1
+2023-01-31 00:46:09 [00:46:09:033] [131208:131209] [ERROR][com.freerdp.core] - Authentication only, exit status 1
+2023-01-31 00:46:09 [00:46:05:423] [131208:131209] [INFO][com.freerdp.client.x11] - Authentication only. Don't connect to X.
+2023-01-31 00:46:11 [00:46:11:067] [131289:131293] [WARN][com.freerdp.core.nla] - SPNEGO received NTSTATUS: STATUS_LOGON_FAILURE [0xC000006D] from server
+2023-01-31 00:46:11 [00:46:11:067] [131289:131293] [ERROR][com.freerdp.core] - nla_recv_pdu:freerdp_set_last_error_ex ERRCONNECT_LOGON_FAILURE [0x00020014]
+2023-01-31 00:46:11 [00:46:11:067] [131289:131293] [ERROR][com.freerdp.core.rdp] - rdp_recv_callback: CONNECTION_STATE_NLA - nla_recv_pdu() fail
+2023-01-31 00:46:11 [00:46:11:067] [131289:131293] [ERROR][com.freerdp.core.transport] - transport_check_fds: transport->ReceiveCallback() - -1
+2023-01-31 00:46:11 [00:46:11:067] [131289:131293] [ERROR][com.freerdp.core] - Authentication only, exit status 1
+2023-01-31 00:46:11 [00:46:09:074] [131289:131293] [INFO][com.freerdp.client.x11] - Authentication only. Don't connect to X.
+2023-01-31 00:46:13 [00:46:13:104] [131347:131348] [WARN][com.freerdp.core.nla] - SPNEGO received NTSTATUS: STATUS_LOGON_FAILURE [0xC000006D] from server
+2023-01-31 00:46:13 [00:46:13:104] [131347:131348] [ERROR][com.freerdp.core] - nla_recv_pdu:freerdp_set_last_error_ex ERRCONNECT_LOGON_FAILURE [0x00020014]
+2023-01-31 00:46:13 [00:46:13:104] [131347:131348] [ERROR][com.freerdp.core.rdp] - rdp_recv_callback: CONNECTION_STATE_NLA - nla_recv_pdu() fail
+2023-01-31 00:46:13 [00:46:13:104] [131347:131348] [ERROR][com.freerdp.core.transport] - transport_check_fds: transport->ReceiveCallback() - -1
+2023-01-31 00:46:13 [00:46:13:104] [131347:131348] [ERROR][com.freerdp.core] - Authentication only, exit status 1
+2023-01-31 00:46:13 [00:46:11:103] [131347:131348] [INFO][com.freerdp.client.x11] - Authentication only. Don't connect to X.
+2023-01-31 00:46:15 [00:46:15:104] [131402:131403] [WARN][com.freerdp.core.nla] - SPNEGO received NTSTATUS: STATUS_LOGON_FAILURE [0xC000006D] from server
+2023-01-31 00:46:15 [00:46:15:104] [131402:131403] [ERROR][com.freerdp.core] - nla_recv_pdu:freerdp_set_last_error_ex ERRCONNECT_LOGON_FAILURE [0x00020014]
+2023-01-31 00:46:15 [00:46:15:104] [131402:131403] [ERROR][com.freerdp.core.rdp] - rdp_recv_callback: CONNECTION_STATE_NLA - nla_recv_pdu() fail
+2023-01-31 00:46:15 [00:46:15:104] [131402:131403] [ERROR][com.freerdp.core.transport] - transport_check_fds: transport->ReceiveCallback() - -1
+2023-01-31 00:46:15 [00:46:15:104] [131402:131403] [ERROR][com.freerdp.core] - Authentication only, exit status 1
+2023-01-31 00:46:15 [00:46:13:140] [131402:131403] [INFO][com.freerdp.client.x11] - Authentication only. Don't connect to X.
+2023-01-31 00:46:17 [00:46:17:096] [131457:131458] [WARN][com.freerdp.core.nla] - SPNEGO received NTSTATUS: STATUS_LOGON_FAILURE [0xC000006D] from server
+2023-01-31 00:46:17 [00:46:17:096] [131457:131458] [ERROR][com.freerdp.core] - nla_recv_pdu:freerdp_set_last_error_ex ERRCONNECT_LOGON_FAILURE [0x00020014]
+2023-01-31 00:46:17 [00:46:17:096] [131457:131458] [ERROR][com.freerdp.core.rdp] - rdp_recv_callback: CONNECTION_STATE_NLA - nla_recv_pdu() fail
+2023-01-31 00:46:17 [00:46:17:096] [131457:131458] [ERROR][com.freerdp.core.transport] - transport_check_fds: transport->ReceiveCallback() - -1
+2023-01-31 00:46:17 [00:46:17:096] [131457:131458] [ERROR][com.freerdp.core] - Authentication only, exit status 1
+2023-01-31 00:46:17 [00:46:15:139] [131457:131458] [INFO][com.freerdp.client.x11] - Authentication only. Don't connect to X.
+2023-01-31 00:46:19 [00:46:19:104] [131512:131513] [WARN][com.freerdp.core.nla] - SPNEGO received NTSTATUS: STATUS_LOGON_FAILURE [0xC000006D] from server
+2023-01-31 00:46:19 [00:46:19:104] [131512:131513] [ERROR][com.freerdp.core] - nla_recv_pdu:freerdp_set_last_error_ex ERRCONNECT_LOGON_FAILURE [0x00020014]
+2023-01-31 00:46:19 [00:46:19:104] [131512:131513] [ERROR][com.freerdp.core.rdp] - rdp_recv_callback: CONNECTION_STATE_NLA - nla_recv_pdu() fail
+2023-01-31 00:46:19 [00:46:19:104] [131512:131513] [ERROR][com.freerdp.core.transport] - transport_check_fds: transport->ReceiveCallback() - -1
+2023-01-31 00:46:19 [00:46:19:104] [131512:131513] [ERROR][com.freerdp.core] - Authentication only, exit status 1
+2023-01-31 00:46:19 [00:46:17:132] [131512:131513] [INFO][com.freerdp.client.x11] - Authentication only. Don't connect to X.
+2023-01-31 00:46:21 [00:46:21:104] [131567:131568] [WARN][com.freerdp.core.nla] - SPNEGO received NTSTATUS: STATUS_LOGON_FAILURE [0xC000006D] from server
+2023-01-31 00:46:21 [00:46:21:104] [131567:131568] [ERROR][com.freerdp.core] - nla_recv_pdu:freerdp_set_last_error_ex ERRCONNECT_LOGON_FAILURE [0x00020014]
+2023-01-31 00:46:21 [00:46:21:104] [131567:131568] [ERROR][com.freerdp.core.rdp] - rdp_recv_callback: CONNECTION_STATE_NLA - nla_recv_pdu() fail
+2023-01-31 00:46:21 [00:46:21:104] [131567:131568] [ERROR][com.freerdp.core.transport] - transport_check_fds: transport->ReceiveCallback() - -1
+2023-01-31 00:46:21 [00:46:21:104] [131567:131568] [ERROR][com.freerdp.core] - Authentication only, exit status 1
+2023-01-31 00:46:21 [00:46:19:140] [131567:131568] [INFO][com.freerdp.client.x11] - Authentication only. Don't connect to X.
+2023-01-31 00:46:24 [00:46:24:211] [131622:131623] [WARN][com.freerdp.core.nla] - SPNEGO received NTSTATUS: STATUS_LOGON_FAILURE [0xC000006D] from server
+2023-01-31 00:46:24 [00:46:24:211] [131622:131623] [ERROR][com.freerdp.core] - nla_recv_pdu:freerdp_set_last_error_ex ERRCONNECT_LOGON_FAILURE [0x00020014]
+2023-01-31 00:46:24 [00:46:24:211] [131622:131623] [ERROR][com.freerdp.core.rdp] - rdp_recv_callback: CONNECTION_STATE_NLA - nla_recv_pdu() fail
+2023-01-31 00:46:24 [00:46:24:211] [131622:131623] [ERROR][com.freerdp.core.transport] - transport_check_fds: transport->ReceiveCallback() - -1
+2023-01-31 00:46:24 [00:46:24:211] [131622:131623] [ERROR][com.freerdp.core] - Authentication only, exit status 1
+2023-01-31 00:46:24 [00:46:21:140] [131622:131623] [INFO][com.freerdp.client.x11] - Authentication only. Don't connect to X.
+2023-01-31 00:46:26 [00:46:26:277] [131677:131678] [WARN][com.freerdp.core.nla] - SPNEGO received NTSTATUS: STATUS_LOGON_FAILURE [0xC000006D] from server
+2023-01-31 00:46:26 [00:46:26:277] [131677:131678] [ERROR][com.freerdp.core] - nla_recv_pdu:freerdp_set_last_error_ex ERRCONNECT_LOGON_FAILURE [0x00020014]
+2023-01-31 00:46:26 [00:46:26:277] [131677:131678] [ERROR][com.freerdp.core.rdp] - rdp_recv_callback: CONNECTION_STATE_NLA - nla_recv_pdu() fail
+2023-01-31 00:46:26 [00:46:26:277] [131677:131678] [ERROR][com.freerdp.core.transport] - transport_check_fds: transport->ReceiveCallback() - -1
+2023-01-31 00:46:26 [00:46:26:277] [131677:131678] [ERROR][com.freerdp.core] - Authentication only, exit status 1
+2023-01-31 00:46:26 [00:46:24:245] [131677:131678] [INFO][com.freerdp.client.x11] - Authentication only. Don't connect to X.
+2023-01-31 00:46:28 [00:46:28:297] [131732:131732] [ERROR][com.freerdp.utils] - Caught signal 'Interrupt' [2]
+2023-01-31 00:46:34 START
+2023-01-31 00:46:34 Crowbar v0.4.2
+2023-01-31 00:46:34 Trying 10.11.1.13:3389
+2023-01-31 00:47:00 START
+2023-01-31 00:47:00 Crowbar v0.4.2
+2023-01-31 00:47:00 Brute Force Type: rdp
+2023-01-31 00:47:00      Output File: /home/chris/trainings/pwk/practice/lab/disco/crowbar.out
+2023-01-31 00:47:00         Log File: /home/chris/trainings/pwk/practice/lab/disco/crowbar.log
+2023-01-31 00:47:00    Discover Mode: False
+2023-01-31 00:47:00     Verbose Mode: 1
+2023-01-31 00:47:00       Debug Mode: False
+2023-01-31 00:47:00 Trying 10.11.1.13:3389

@@ -1,0 +1,147 @@
+Windows:
+
+whoami
+
+net user $whoami
+net user
+
+hostname
+
+systeminfo | findstr /B /C:"OS Name" /C:"OS Version" /C:"System Type"
+
+
+# The/SVC flag will return processes that are mapped to a specificWindows service.
+
+tasklist /SVC
+
+or:
+
+Get-WmiObject win32_service | Select-Object Name, State, PathName | Where-Object {$_.State -like 'Running'}
+
+Get-WmiObject win32_service | Select-Object Name, State, PathName, InstallDate,  ProcessId| Where-Object {$_.State -like 'Running'}
+
+ipconfig /all
+
+route print
+
+Generally speaking, a firewall's state, profile, and rules are onlyof interest during the remote exploitation phase of an assessment.
+However, this information can be useful during privilege escalation.
+For example, if a network service is not remotely accessible becauseit is blocked by the firewall, 
+it is generally accessible locally via the loopback interface
+
+In addition, we can gather information about inbound and outboundport filtering during this phase
+to facilitate port forwarding andtunneling when it's time to pivot to an internal network.
+
+netsh advfirewall show currentprofile
+netsh advfirewall firewall show rule name=all
+
+
+We can create and view scheduled tasks on Windows with theschtasks26 command. 
+
+The /query argument displays tasks and /FO LIST setsthe output format to a simple list. 
+We can also use /V torequest verbose output.
+
+schtasks /query /fo LIST /v
+
+One important thing to keep in mind is that the product WMIclass only lists applications that are installed by the WindowsInstaller.31 
+It will not list applications thatdo not use the Windows Installer.
+
+wmic product get name, version, vendor
+
+Similarly, and more importantly, wmic can also be used to listsystem-wide updates by querying the Win32_QuickFixEngineering(qfe)32 WMI class.
+
+wmic qfe get Caption, Description, HotFixID, InstalledOn
+
+We will use -u to suppress errors, -w to searchfor write access permissions, and -s to perform a recursivesearch. 
+The additional options are also worth exploring as this toolis quite useful.
+
+accesschk.exe -uws "Everyone" "C:\Program Files"
+
+or, if we cant use accesschk.exe
+
+Get-ChildItem "C:\Program Files" -Recurse | Get-ACL | ?{$_.AccessToString -match "Everyone\sAllow\s\sModify"}
+
+On Windows-based systems, we can usemountvol38 to list all drives that are currently mounted as well as those that are physically connected but unmounted.
+
+mountvol
+mountvol G: \\?\Volume{93131ba8-0000-0000-0000-100000000000}\
+
+
+driverquery.exe /v /fo csv | ConvertFrom-CSV | Select-Object ‘Display Name’, ‘Start Mode’, Path
+
+Get-WmiObject Win32_PnPSignedDriver | Select-Object DeviceName, DriverVersion, Manufacturer | Where-Object {$_.DeviceName -like "*VMware*"}
+
+
+
+
+Enumerating Binaries That AutoElevate:
+
+reg query HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\Installer
+
+reg query HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Installer
+
+If this setting is enabled, we could craft an MSI file and run it toelevate our privileges
+
+Linux:
+
+cat /etc/issue
+cat /etc/*-release
+uname -a
+
+On Linux, we can list system processes (including those run by privileged users) with the ps11 command. 
+We'll use the a and x flags to list all processes with or without a tty12 and the u flag to list the processes in a user-readable format.
+
+ps axu
+
+Finally, we can use netstat15 toview the active network connections. 
+Specifying the a flagwill display all active TCP connections, 
+the n flag allowsus to display the address and port number in a numerical form, and theo flag will display the owner PID of each connection.
+
+netstat -ano
+
+ip a
+
+/sbin/route
+
+grep -Hs iptables /etc/*
+
+The Linux-based job scheduler is known as Cron.27Scheduled tasks are listed under the /etc/cron.*directories, 
+where * represents the frequency the task willrun on. 
+For example, tasks that will be run daily can be foundunder /etc/cron.daily. Each script is listed in its ownsubdirectory.
+
+ls -lah /etc/cron*
+
+
+It is worth noting that system administrators often add their ownscheduled tasks in the /etc/crontab file. 
+These tasks shouldbe inspected carefully for insecure file permissions as most jobs inthis particular file will run as root.
+
+cat /etc/crontab
+
+dpkg -l
+
+find / -writable -type d 2>/dev/null
+
+mount
+
+cat /etc/fstab  
+
+grep ^[^#] /etc/fstab 
+
+lsblk
+lsblk -f
+fdisk -l
+
+
+load kernel Modules:
+
+lsmod
+
+find / -perm -u=s -type f 2>/dev/null
+https://gtfobins.github.io/ 
+
+In this case, the command found several SUID binaries. 
+Exploitationof SUID binaries will vary based on several factors. 
+For example, if /bin/cp (the copy command) were SUID, we could copy and overwrite sensitive files such as /etc/passwd.
+
+
+

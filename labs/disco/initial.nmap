@@ -1,0 +1,70 @@
+# Nmap 7.93 scan initiated Mon Jan 30 21:49:01 2023 as: nmap -sV -sC -Pn -oA initial 10.11.1.13
+Nmap scan report for 10.11.1.13
+Host is up (0.22s latency).
+Not shown: 946 closed tcp ports (conn-refused), 40 filtered tcp ports (no-response)
+PORT      STATE SERVICE            VERSION
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-01-30 21:49 PST
+Nmap scan report for 10.11.1.13
+Host is up (0.22s latency).
+Not shown: 946 closed tcp ports (conn-refused), 40 filtered tcp ports (no-response)
+PORT      STATE SERVICE            VERSION
+21/tcp open  ftp     Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 04-07-19  10:25PM       <DIR>          aspnet_client
+| 04-07-19  07:14PM                99710 iis-85.png
+|_04-07-19  07:14PM                  701 iisstart.htm
+| ftp-syst: 
+|_  SYST: Windows_NT
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+135/tcp   open  msrpc              Microsoft Windows RPC
+139/tcp   open  netbios-ssn        Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+3389/tcp  open  ssl/ms-wbt-server?
+| ssl-cert: Subject: commonName=disco
+| Not valid before: 2023-01-27T09:22:17
+|_Not valid after:  2023-07-29T09:22:17
+| rdp-ntlm-info: 
+|   Target_Name: DISCO
+|   NetBIOS_Domain_Name: DISCO
+|   NetBIOS_Computer_Name: DISCO
+|   DNS_Domain_Name: disco
+|   DNS_Computer_Name: disco
+|   Product_Version: 6.3.9600
+|_  System_Time: 2023-01-30T13:52:33+00:00
+|_ssl-date: 2023-01-30T13:52:46+00:00; -2s from scanner time.
+5800/tcp  open  vnc-http           TightVNC (user: disco; VNC TCP port: 5900)
+|_http-title: TightVNC desktop [disco]
+5900/tcp  open  vnc                VNC (protocol 3.8)
+| vnc-info: 
+|   Protocol version: 3.8
+|   Security types: 
+|     None (1)
+|     Tight (16)
+|   Tight auth subtypes: 
+|     None
+|_  WARNING: Server does not require authentication
+49152/tcp open  msrpc              Microsoft Windows RPC
+49153/tcp open  msrpc              Microsoft Windows RPC
+49154/tcp open  msrpc              Microsoft Windows RPC
+49155/tcp open  msrpc              Microsoft Windows RPC
+49156/tcp open  msrpc              Microsoft Windows RPC
+49157/tcp open  msrpc              Microsoft Windows RPC
+49158/tcp open  msrpc              Microsoft Windows RPC
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-time: 
+|   date: 2023-01-30T13:52:37
+|_  start_date: 2022-03-16T23:28:44
+| smb2-security-mode: 
+|   302: 
+|_    Message signing enabled but not required
+|_clock-skew: mean: -1s, deviation: 0s, median: -2s
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Jan 30 21:52:52 2023 -- 1 IP address (1 host up) scanned in 231.33 seconds

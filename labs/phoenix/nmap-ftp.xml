@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Fri Jan 27 20:37:05 2023 as: nmap -&#45;script ftp-* -p 21 -oA nmap-ftp 10.11.1.8 -->
+<nmaprun scanner="nmap" args="nmap -&#45;script ftp-* -p 21 -oA nmap-ftp 10.11.1.8" start="1674823025" startstr="Fri Jan 27 20:37:05 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="21"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.11.1.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1674823026" endtime="1674823629"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.11.1.8" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" method="table" conf="3"/><script id="ftp-anon" output="Anonymous FTP login allowed (FTP code 230)&#xa;Can&apos;t get directory listing: ERROR"/><script id="ftp-brute" output="&#xa;  Accounts: No valid accounts found&#xa;  Statistics: Performed 3086 guesses in 603 seconds, average tps: 4.9"><elem key="Accounts">No valid accounts found</elem>
+<elem key="Statistics">Performed 3086 guesses in 603 seconds, average tps: 4.9</elem>
+</script><script id="ftp-syst" output="&#xa;  STAT: &#xa;FTP server status:&#xa;     Connected to 192.168.119.173&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 2.0.1 - secure, fast, stable&#xa;End of status"><elem key="STAT">&#xa;FTP server status:&#xa;     Connected to 192.168.119.173&#xa;     Logged in as ftp&#xa;     TYPE: ASCII&#xa;     No session bandwidth limit&#xa;     Session timeout in seconds is 300&#xa;     Control connection is plain text&#xa;     Data connections will be plain text&#xa;     At session startup, client count was 1&#xa;     vsFTPd 2.0.1 - secure, fast, stable&#xa;End of status</elem>
+</script></port>
+</ports>
+<times srtt="470155" rttvar="408459" to="2103991"/>
+</host>
+<runstats><finished time="1674823629" timestr="Fri Jan 27 20:47:09 2023" summary="Nmap done at Fri Jan 27 20:47:09 2023; 1 IP address (1 host up) scanned in 603.43 seconds" elapsed="603.43" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

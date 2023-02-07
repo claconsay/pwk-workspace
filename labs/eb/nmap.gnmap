@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Mon Jan 23 11:20:22 2023 as: nmap -sV -sC -T4 -oA nmap 10.11.1.5
+Host: 10.11.1.5 ()	Status: Up
+Host: 10.11.1.5 ()	Ports: 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 445/open/tcp//microsoft-ds//Microsoft Windows XP microsoft-ds/, 705/filtered/tcp//agentx///, 1025/open/tcp//msrpc//Microsoft Windows RPC/, 1063/filtered/tcp//kyoceranetdev///, 9415/filtered/tcp//unknown///, 9900/filtered/tcp//iua///	Ignored State: closed (992)
+# Nmap done at Mon Jan 23 11:22:12 2023 -- 1 IP address (1 host up) scanned in 110.38 seconds

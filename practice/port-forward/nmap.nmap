@@ -1,0 +1,7 @@
+# Nmap 7.93 scan initiated Tue Jan 17 14:47:14 2023 as: nmap -p30000-35000 -Pn -sT -oA nmap 192.168.124.52
+Nmap scan report for 192.168.124.52
+Host is up (0.31s latency).
+All 5001 scanned ports on 192.168.124.52 are in ignored states.
+Not shown: 5001 closed tcp ports (conn-refused)
+
+# Nmap done at Tue Jan 17 15:17:03 2023 -- 1 IP address (1 host up) scanned in 1789.20 seconds

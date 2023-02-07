@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Fri Jan 27 01:53:40 2023 as: nmap -sV -sC -T4 -Pn -oA initial 10.11.1.123
+Host: 10.11.1.123 ()	Status: Up
+Host: 10.11.1.123 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.39 ((Win64) OpenSSL|1.1.1b PHP|7.3.5)/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 139/open/tcp//netbios-ssn//Microsoft Windows netbios-ssn/, 443/open/tcp//ssl|http//Apache httpd 2.4.39 ((Win64) OpenSSL|1.1.1b PHP|7.3.5)/, 445/open/tcp//microsoft-ds?///, 3306/open/tcp//mysql//MariaDB (unauthorized)/, 3389/open/tcp//ms-wbt-server//Microsoft Terminal Services/
+# Nmap done at Fri Jan 27 02:02:06 2023 -- 1 IP address (1 host up) scanned in 506.16 seconds

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Tue Jan 17 14:47:14 2023 as: nmap -p30000-35000 -Pn -sT -oA nmap 192.168.124.52 -->
+<nmaprun scanner="nmap" args="nmap -p30000-35000 -Pn -sT -oA nmap 192.168.124.52" start="1673938034" startstr="Tue Jan 17 14:47:14 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="5001" services="30000-35000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1673938035" endtime="1673939823"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="192.168.124.52" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="5001">
+<extrareasons reason="conn-refused" count="5001" proto="tcp" ports="30000-35000"/>
+</extraports>
+</ports>
+<times srtt="311646" rttvar="12320" to="360926"/>
+</host>
+<runstats><finished time="1673939823" timestr="Tue Jan 17 15:17:03 2023" summary="Nmap done at Tue Jan 17 15:17:03 2023; 1 IP address (1 host up) scanned in 1789.20 seconds" elapsed="1789.20" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

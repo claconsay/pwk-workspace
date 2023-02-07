@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Tue Jan 17 14:47:14 2023 as: nmap -p30000-35000 -Pn -sT -oA nmap 192.168.124.52
+Host: 192.168.124.52 ()	Status: Up
+Host: 192.168.124.52 ()	Ports: 	Ignored State: closed (5001)
+# Nmap done at Tue Jan 17 15:17:03 2023 -- 1 IP address (1 host up) scanned in 1789.20 seconds

@@ -1,0 +1,1 @@
+flag.zip/flag.txt:$pkzip$1*2*2*0*30*24*679a63a8*0*42*0*30*6914*d38b3c6c366f0180bcdb2140ccdf6c9a595d357afc933d8b8bfdc86628965cfe11323c35e33c6461cc1079f29e8b6ab9*$/pkzip$:flag.txt:flag.zip::flag.zip

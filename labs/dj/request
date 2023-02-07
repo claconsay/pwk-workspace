@@ -1,0 +1,10 @@
+GET /loginform.asp?uname=a&psw=a HTTP/1.1
+Host: 10.11.1.128:4167
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Connection: close
+Referer: http://10.11.1.128:4167/login.asp
+Cookie: ASPSESSIONIDAQADCAAR=AEODONOBKKJNINODAAOLEKIO; ASPSESSIONIDSQARATBD=KDKHLPOBINFFGBODDFJLKCMG
+Upgrade-Insecure-Requests: 1

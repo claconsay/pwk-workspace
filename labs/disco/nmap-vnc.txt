@@ -1,0 +1,23 @@
+# Nmap 7.93 scan initiated Tue Jan 31 00:06:18 2023 as: nmap -sV --script vnc* -p 5900,5800 -oN nmap-vnc.txt 10.11.1.13
+Nmap scan report for 10.11.1.13
+Host is up (0.50s latency).
+
+PORT     STATE SERVICE  VERSION
+5800/tcp open  vnc-http TightVNC (user: disco; VNC TCP port: 5900)
+5900/tcp open  vnc      VNC (protocol 3.8)
+| vnc-title: 
+|   name: disco\x00
+|   geometry: 1792 x 870
+|_  color_depth: 24
+|_vnc-brute: No authentication required
+| vnc-info: 
+|   Protocol version: 3.8
+|   Security types: 
+|     None (1)
+|     Tight (16)
+|   Tight auth subtypes: 
+|     None
+|_  WARNING: Server does not require authentication
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jan 31 00:06:36 2023 -- 1 IP address (1 host up) scanned in 18.26 seconds

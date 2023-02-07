@@ -1,0 +1,95 @@
+
+Initial
+==
+```shell
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-01-27 10:37 PST
+Nmap scan report for 10.11.1.8
+Host is up (0.24s latency).
+Not shown: 952 filtered tcp ports (no-response), 38 filtered tcp ports (host-unreach)
+PORT     STATE  SERVICE     VERSION
+21/tcp   open   ftp         vsftpd 2.0.1
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: ERROR
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.119.173
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 2.0.1 - secure, fast, stable
+|_End of status
+22/tcp   open   ssh         OpenSSH 3.9p1 (protocol 1.99)
+|_sshv1: Server supports SSHv1
+| ssh-hostkey: 
+|   1024 8994af2e5dc1da8425112c1245c670ac (RSA1)
+|   1024 c1c5d1830f4dd89e8f824cbe534b6e14 (DSA)
+|_  1024 bce1e6ddab5efdd1212e117cd5b20352 (RSA)
+25/tcp   closed smtp
+80/tcp   open   http        Apache httpd 2.0.52 ((CentOS))
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Apache/2.0.52 (CentOS)
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8)
+| http-robots.txt: 2 disallowed entries 
+|_/internal/  /tmp/ 
+111/tcp  open   rpcbind     2 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2            111/tcp   rpcbind
+|   100000  2            111/udp   rpcbind
+|   100024  1            785/udp   status
+|_  100024  1            788/tcp   status
+139/tcp  open   netbios-ssn Samba smbd 3.X - 4.X (workgroup: MYGROUP)
+443/tcp  open   ssl/http    Apache httpd 2.0.52 ((CentOS))
+| ssl-cert: Subject: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=--
+| Not valid before: 2009-09-16T14:03:22
+|_Not valid after:  2010-09-16T14:03:22
+|_http-server-header: Apache/2.0.52 (CentOS)
+| http-robots.txt: 2 disallowed entries 
+|_/internal/  /tmp/ 
+| sslv2: 
+|   SSLv2 supported
+|   ciphers: 
+|     SSL2_RC4_128_WITH_MD5
+|     SSL2_RC4_128_EXPORT40_WITH_MD5
+|     SSL2_DES_64_CBC_WITH_MD5
+|     SSL2_RC2_128_CBC_EXPORT40_WITH_MD5
+|     SSL2_RC2_128_CBC_WITH_MD5
+|     SSL2_RC4_64_WITH_MD5
+|_    SSL2_DES_192_EDE3_CBC_WITH_MD5
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+|_ssl-date: 2023-01-27T07:41:52+00:00; +5h00m22s from scanner time.
+445/tcp  open   netbios-ssn Samba smbd 3.0.33-0.17.el4 (workgroup: MYGROUP)
+631/tcp  open   ipp         CUPS 1.1
+|_http-server-header: CUPS/1.1
+|_http-title: 403 Forbidden
+3306/tcp open   mysql?
+Service Info: OS: Unix
+
+Host script results:
+|_clock-skew: mean: 6h40m22s, deviation: 2h53m12s, median: 5h00m21s
+|_smb2-time: Protocol negotiation failed (SMB2)
+| smb-security-mode: 
+|   account_used: <blank>
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb-os-discovery: 
+|   OS: Unix (Samba 3.0.33-0.17.el4)
+|   Computer name: phoenix
+|   NetBIOS computer name: 
+|   Domain name: 
+|   FQDN: phoenix
+|_  System time: 2023-01-27T02:41:21-05:00
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 255.40 seconds
+
+```

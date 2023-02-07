@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Fri Jan 27 20:37:05 2023 as: nmap --script ftp-* -p 21 -oA nmap-ftp 10.11.1.8
+Host: 10.11.1.8 ()	Status: Up
+Host: 10.11.1.8 ()	Ports: 21/open/tcp//ftp///
+# Nmap done at Fri Jan 27 20:47:09 2023 -- 1 IP address (1 host up) scanned in 603.43 seconds

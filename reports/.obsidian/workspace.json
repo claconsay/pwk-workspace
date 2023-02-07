@@ -1,0 +1,161 @@
+{
+  "main": {
+    "id": "25376408f98563c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "fa689d11fad24674",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "35cbc7e56a2c6286",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8e34da44807b72e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "fb03e519a5e457f6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "010d2cc927f31f2c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e57308820ec6d624",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5ff1c56d06d14512",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a79dec8190df0cd0",
+    "type": "split",
+    "children": [
+      {
+        "id": "b90ce29943d63356",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4e8e2fa23b75b057",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "3277fe7df16105c0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "98264ddf15625fd1",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": false
+              }
+            }
+          },
+          {
+            "id": "779bb5334b50e482",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          },
+          {
+            "id": "98374d5081652085",
+            "type": "leaf",
+            "state": {
+              "type": "side-panel-control-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
+    }
+  },
+  "active": "35cbc7e56a2c6286",
+  "lastOpenFiles": [
+    "10.11.1.10 - mike (done)/4. Report/walkthrough.md",
+    "10.11.1.128 - dj (done)/Report/walkthrough.md",
+    "10.11.1.128 - dj (done)/Enumeration/steps.md",
+    "10.11.1.128 - dj (done)/Exploitation/SQL Injection + Stack Queries = RCE.md",
+    "10.11.1.128 - dj (done)/Enumeration/nmap.md",
+    "10.11.1.128 - dj (done)/Enumeration/sqli.md",
+    "10.11.1.13 - disco (privesc)/1. Enumeration/info.md",
+    "10.11.1.14 (bob)/1. Enumeration/nmap.md",
+    "10.11.1.21/1. Enumeration/nmap.md",
+    "10.11.1.13 - disco (privesc)/4. Report/walkthrough.md"
+  ]
+}

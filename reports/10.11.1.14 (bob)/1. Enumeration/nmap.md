@@ -1,0 +1,32 @@
+```
+Nmap scan report for 10.11.1.14
+Host is up, received syn-ack (0.31s latency).
+Scanned at 2023-02-01 16:03:07 UTC for 117s
+
+PORT    STATE SERVICE REASON  VERSION
+21/tcp  open  ftp     syn-ack Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 01-17-07  06:42PM       <DIR>          AdminScripts
+| 02-01-23  02:39PM                   25 ant.asp
+| 02-01-23  02:40PM                 1221 cmd.asp
+| 01-17-07  06:43PM       <DIR>          ftproot
+| 01-17-07  06:43PM       <DIR>          iissamples
+| 01-17-07  06:43PM       <DIR>          Scripts
+| 02-01-23  01:09PM                 5271 shell.aspx
+|_02-01-23  03:20PM       <DIR>          wwwroot
+| ftp-syst: 
+|_  SYST: Windows_NT
+80/tcp  open  http    syn-ack Microsoft IIS httpd 5.1
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+|_http-server-header: Microsoft-IIS/5.1
+|_http-title: Site doesn't have a title (text/html).
+| http-webdav-scan: 
+|   WebDAV type: Unknown
+|   Server Date: Wed, 01 Feb 2023 16:03:34 GMT
+|   Server Type: Microsoft-IIS/5.1
+|   Public Options: OPTIONS, TRACE, GET, HEAD, DELETE, PUT, POST, COPY, MOVE, MKCOL, PROPFIND, PROPPATCH, LOCK, UNLOCK, SEARCH
+|_  Allowed Methods: OPTIONS, TRACE, GET, HEAD, DELETE, COPY, MOVE, PROPFIND, PROPPATCH, SEARCH, MKCOL, LOCK, UNLOCK
+443/tcp open  https?  syn-ack
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+```

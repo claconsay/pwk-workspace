@@ -1,0 +1,26 @@
+# Nmap 7.93 scan initiated Fri Jan 27 20:37:05 2023 as: nmap --script ftp-* -p 21 -oA nmap-ftp 10.11.1.8
+Nmap scan report for 10.11.1.8
+Host is up (0.47s latency).
+
+PORT   STATE SERVICE
+21/tcp open  ftp
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+|_Can't get directory listing: ERROR
+| ftp-brute: 
+|   Accounts: No valid accounts found
+|_  Statistics: Performed 3086 guesses in 603 seconds, average tps: 4.9
+| ftp-syst: 
+|   STAT: 
+| FTP server status:
+|      Connected to 192.168.119.173
+|      Logged in as ftp
+|      TYPE: ASCII
+|      No session bandwidth limit
+|      Session timeout in seconds is 300
+|      Control connection is plain text
+|      Data connections will be plain text
+|      At session startup, client count was 1
+|      vsFTPd 2.0.1 - secure, fast, stable
+|_End of status
+
+# Nmap done at Fri Jan 27 20:47:09 2023 -- 1 IP address (1 host up) scanned in 603.43 seconds

@@ -1,0 +1,6 @@
+/Login.asp           [32m (Status: 200)[0m [Size: 393]
+/Search.asp          [36m (Status: 302)[0m [Size: 130][34m [--> login.asp][0m
+/aspnet_client       [36m (Status: 301)[0m [Size: 161][34m [--> http://10.11.1.128:4167/aspnet_client/][0m
+/login.asp           [32m (Status: 200)[0m [Size: 393]
+/render/https://www.google.com.aspx[33m (Status: 400)[0m [Size: 48]
+/search.asp          [36m (Status: 302)[0m [Size: 130][34m [--> login.asp][0m
