@@ -1,0 +1,228 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.22
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[+] URL: http://sandbox.local/ [10.11.1.250]
+[+] Started: Tue Feb  7 18:56:20 2023
+
+Interesting Finding(s):
+
+[+] Headers
+ | Interesting Entries:
+ |  - Server: Apache/2.4.18 (Ubuntu)
+ |  - X-UA-Compatible: IE=edge
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[+] XML-RPC seems to be enabled: http://sandbox.local/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[+] WordPress readme found: http://sandbox.local/readme.html
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] Upload directory has listing enabled: http://sandbox.local/wp-content/uploads/
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+
+[+] The external WP-Cron seems to be enabled: http://sandbox.local/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[+] WordPress version 5.3 identified (Insecure, released on 2019-11-12).
+ | Found By: Rss Generator (Passive Detection)
+ |  - http://sandbox.local/index.php/feed/, <generator>https://wordpress.org/?v=5.3</generator>
+ |  - http://sandbox.local/index.php/comments/feed/, <generator>https://wordpress.org/?v=5.3</generator>
+
+[+] WordPress theme in use: oceanwp
+ | Location: http://sandbox.local/wp-content/themes/oceanwp/
+ | Last Updated: 2023-01-11T00:00:00.000Z
+ | Readme: http://sandbox.local/wp-content/themes/oceanwp/readme.txt
+ | [!] The version is out of date, the latest version is 3.4.1
+ | Style URL: http://sandbox.local/wp-content/themes/oceanwp/style.css
+ | Style Name: OceanWP
+ | Style URI: https://oceanwp.org/
+ | Description: OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you...
+ | Author: Nick
+ | Author URI: https://oceanwp.org/about-me/
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 1.7.1 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://sandbox.local/wp-content/themes/oceanwp/style.css, Match: 'Version: 		1.7.1'
+
+
+[i] Plugin(s) Identified:
+
+[+] elementor
+ | Location: http://sandbox.local/wp-content/plugins/elementor/
+ | Last Updated: 2023-01-29T12:25:00.000Z
+ | [!] The version is out of date, the latest version is 3.10.2
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 2.7.4 (100% confidence)
+ | Found By: Query Parameter (Passive Detection)
+ |  - http://sandbox.local/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=2.7.4
+ |  - http://sandbox.local/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=2.7.4
+ | Confirmed By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://sandbox.local/wp-content/plugins/elementor/readme.txt
+
+[+] ocean-extra
+ | Location: http://sandbox.local/wp-content/plugins/ocean-extra/
+ | Last Updated: 2023-02-01T07:17:00.000Z
+ | [!] The version is out of date, the latest version is 2.1.2
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | Version: 1.5.16 (100% confidence)
+ | Found By: Readme - Stable Tag (Aggressive Detection)
+ |  - http://sandbox.local/wp-content/plugins/ocean-extra/readme.txt
+ | Confirmed By: Readme - ChangeLog Section (Aggressive Detection)
+ |  - http://sandbox.local/wp-content/plugins/ocean-extra/readme.txt
+
+[+] wp-survey-and-poll
+ | Location: http://sandbox.local/wp-content/plugins/wp-survey-and-poll/
+ | Latest Version: 1.7.3
+ | Last Updated: 2022-12-17T12:07:00.000Z
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ |
+ | The version could not be determined.
+
+
+[i] Theme(s) Identified:
+
+[+] oceanwp
+ | Location: http://sandbox.local/wp-content/themes/oceanwp/
+ | Last Updated: 2023-01-11T00:00:00.000Z
+ | Readme: http://sandbox.local/wp-content/themes/oceanwp/readme.txt
+ | [!] The version is out of date, the latest version is 3.4.1
+ | Style URL: http://sandbox.local/wp-content/themes/oceanwp/style.css
+ | Style Name: OceanWP
+ | Style URI: https://oceanwp.org/
+ | Description: OceanWP is the perfect theme for your project. Lightweight and highly extendable, it will enable you...
+ | Author: Nick
+ | Author URI: https://oceanwp.org/about-me/
+ |
+ | Found By: Urls In Homepage (Passive Detection)
+ | Confirmed By: Known Locations (Aggressive Detection)
+ |  - http://sandbox.local/wp-content/themes/oceanwp/, status: 500
+ |
+ | Version: 1.7.1 (80% confidence)
+ | Found By: Style (Aggressive Detection)
+ |  - http://sandbox.local/wp-content/themes/oceanwp/style.css, Match: 'Version: 		1.7.1'
+
+[+] twentynineteen
+ | Location: http://sandbox.local/wp-content/themes/twentynineteen/
+ | Last Updated: 2022-11-02T00:00:00.000Z
+ | Readme: http://sandbox.local/wp-content/themes/twentynineteen/readme.txt
+ | [!] The version is out of date, the latest version is 2.4
+ | Style URL: http://sandbox.local/wp-content/themes/twentynineteen/style.css
+ | Style Name: Twenty Nineteen
+ | Style URI: https://wordpress.org/themes/twentynineteen/
+ | Description: Our 2019 default theme is designed to show off the power of the block editor. It features custom sty...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://sandbox.local/wp-content/themes/twentynineteen/, status: 500
+ |
+ | Version: 1.4 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://sandbox.local/wp-content/themes/twentynineteen/style.css, Match: 'Version: 1.4'
+
+[+] twentyseventeen
+ | Location: http://sandbox.local/wp-content/themes/twentyseventeen/
+ | Last Updated: 2022-11-02T00:00:00.000Z
+ | Readme: http://sandbox.local/wp-content/themes/twentyseventeen/readme.txt
+ | [!] The version is out of date, the latest version is 3.1
+ | Style URL: http://sandbox.local/wp-content/themes/twentyseventeen/style.css
+ | Style Name: Twenty Seventeen
+ | Style URI: https://wordpress.org/themes/twentyseventeen/
+ | Description: Twenty Seventeen brings your site to life with header video and immersive featured images. With a fo...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://sandbox.local/wp-content/themes/twentyseventeen/, status: 500
+ |
+ | Version: 2.2 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://sandbox.local/wp-content/themes/twentyseventeen/style.css, Match: 'Version: 2.2'
+
+[+] twentysixteen
+ | Location: http://sandbox.local/wp-content/themes/twentysixteen/
+ | Last Updated: 2022-11-02T00:00:00.000Z
+ | Readme: http://sandbox.local/wp-content/themes/twentysixteen/readme.txt
+ | [!] The version is out of date, the latest version is 2.8
+ | Style URL: http://sandbox.local/wp-content/themes/twentysixteen/style.css
+ | Style Name: Twenty Sixteen
+ | Style URI: https://wordpress.org/themes/twentysixteen/
+ | Description: Twenty Sixteen is a modernized take on an ever-popular WordPress layout — the horizontal masthead ...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://sandbox.local/wp-content/themes/twentysixteen/, status: 500
+ |
+ | Version: 2.0 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://sandbox.local/wp-content/themes/twentysixteen/style.css, Match: 'Version: 2.0'
+
+[+] twentytwenty
+ | Location: http://sandbox.local/wp-content/themes/twentytwenty/
+ | Last Updated: 2022-11-02T00:00:00.000Z
+ | Readme: http://sandbox.local/wp-content/themes/twentytwenty/readme.txt
+ | [!] The version is out of date, the latest version is 2.1
+ | Style URL: http://sandbox.local/wp-content/themes/twentytwenty/style.css
+ | Style Name: Twenty Twenty
+ | Style URI: https://wordpress.org/themes/twentytwenty/
+ | Description: Our default theme for 2020 is designed to take full advantage of the flexibility of the block editor...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Known Locations (Aggressive Detection)
+ |  - http://sandbox.local/wp-content/themes/twentytwenty/, status: 500
+ |
+ | Version: 1.0 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://sandbox.local/wp-content/themes/twentytwenty/style.css, Match: 'Version: 1.0'
+
+
+[i] No Config Backups Found.
+
+
+[i] No DB Exports Found.
+
+[!] No WPScan API Token given, as a result vulnerability data has not been output.
+[!] You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[+] Finished: Tue Feb  7 19:25:04 2023
+[+] Requests Done: 25493
+[+] Cached Requests: 52
+[+] Data Sent: 6.535 MB
+[+] Data Received: 3.965 MB
+[+] Memory used: 313.938 MB
+[+] Elapsed time: 00:28:43
