@@ -16,7 +16,7 @@ Password: !love29jan2006!
 
 ## Server
 | Header                            | Value                                                      |
-|-----------------------------------|------------------------------------------------------------|
+| --------------------------------- | ---------------------------------------------------------- |
 | IP                                | 10.4.4.10                                                  |
 | Hostname                          | ajla                                                       |
 | Server architecture               | Linux 4.4.0-21-generic x86_64                              |
@@ -36,17 +36,17 @@ Password: !love29jan2006!
 
 
 ## Database
-| Extension          | mysqli                                                                          |
-|--------------------|---------------------------------------------------------------------------------|
-| Server version     | 10.3.20-MariaDB                                                                 |
+| Extension          | Value                                                                           |
+| ------------------ | ------------------------------------------------------------------------------- |
 | Client version     | mysqlnd 5.0.12-dev - 20150407 - $Id: b5c5906d452ec590732a93b051f3827e02749b83 $ |
-| Database user      | wp                                                                              |
-| Database password  | Lv9EVQq86cfi8ioWsqFUQyU                                                         |
-| Database host      | 10.5.5.11                                                                       |
-| Database name      | wordpress                                                                       |
-| Database prefix    | wp_                                                                             |
 | Database charset   | utf8mb4                                                                         |
 | Database collation | utf8mb4_unicode_ci                                                              |
+| Database host      | 10.5.5.11                                                                       |
+| Database name      | wordpress                                                                       |
+| Database password  | Lv9EVQq86cfi8ioWsqFUQyU                                                         |
+| Database prefix    | wp_                                                                             |
+| Database user      | wp                                                                              |
+| Server version     | 10.3.20-MariaDB                                                                 |
 
 > [!note] 
 > Refer to zora [[database]] for other info 
