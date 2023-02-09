@@ -7,7 +7,7 @@
 | Database user      | wp                                                                              |
 | Database password  | Lv9EVQq86cfi8ioWsqFUQyU 
 
-**Privileges**
+**Privileges (User: wp)**
 ```
 MariaDB [(none)]> show grants;
 +---------------------------------------------------------------------------------------------------+
@@ -19,3 +19,19 @@ MariaDB [(none)]> show grants;
 2 rows in set (0.396 sec)
 
 ```
+
+> [!note] 
+> We don't have **"*"** permissions (as wp user), but **SELECT, INSERT, UPDATE, and DELETE** are a good starting point. 
+
+**Variables**
+
+| Variable name             | Value             |
+|---------------------------|-------------------|
+| @@hostname                | zora              |
+| @@tmpdir                  | /var/tmp          |
+| @@version                 | 10.3.20-MariaDB   |
+| @@version_compile_machine | x86_64            |
+| @@plugin_dir              | /home/dev/plugin/ |
+
+> [!note] 
+> The most interesting piece of information we can gather is that the **plugin_dir** is set to **/home/dev/plugin/**. <u>This directory is not standard for MariaDB<u></u></u> 

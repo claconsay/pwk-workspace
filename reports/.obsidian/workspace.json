@@ -4,203 +4,131 @@
     "type": "split",
     "children": [
       {
-        "id": "fa689d11fad24674",
+        "id": "fe81cee4f6b11892",
         "type": "tabs",
         "children": [
           {
-            "id": "35cbc7e56a2c6286",
+            "id": "0523ede562129be1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.11.1.14 (bob)/1. Enumeration/nmap.md",
+                "file": "10.5.5.11 - zora/1. Enumeration/info.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "bfc41ba671fc3e31",
+            "id": "f0784c7f1963e4e5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.4.4.10 - ajla/1. Enumeration/nmap.md",
+                "file": "10.4.4.10 - ajla/3. Post-explotation/enumeration.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "fd6429d33e26186b",
+            "id": "eecc211c08599c64",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.4.4.10 - ajla/1. Enumeration/info.md",
+                "file": "10.4.4.10 - ajla/1. Enumeration/exploits.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "407bc4a61c8acfd0",
+            "id": "c0c4af36e4cb52e6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.4.4.10 - ajla/1. Enumeration/info.md",
+                "file": "10.5.5.11 - zora/1. Enumeration/info.md",
                 "mode": "preview",
                 "source": true
               }
             }
           },
           {
-            "id": "ff243d2a8e1d1f0b",
+            "id": "9302540d83c99935",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.4.4.10 - ajla/2. Exploitation/1. sqli.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "c2bb9633fd6ac207",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.4.4.10 - ajla/2. Exploitation/1. sqli.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "9356f836d9b7c32f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.4.4.10 - ajla/1. Enumeration/info.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "63dbaac176b7b439",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.4.4.10 - ajla/1. Enumeration/etc-passwd.md",
+                "file": "10.5.5.11 - zora/4. Report/walkthrough.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "15f02410011bbfee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.4.4.10 - ajla/1. Enumeration/nmap.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "67d55d124d7f7400",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.11 - zora/1. Enumeration/ports.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "2c1cf6b1c24dac0f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.11 - zora/1. Enumeration/database.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "d39ffd816f789ce7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.11 - zora/1. Enumeration/keys.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "cf13fa7957e2de66",
+            "id": "14b97d03d700bef4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "10.4.4.10 - ajla/commands/remote-forward.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "c4a3fd62c3a622bb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.5.5.11 - zora/commands/dynamic-forward.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "1b1d4e824ddb896e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.5.5.20 - poultry/1. Enumeration/info.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "d6f68cd1dbc28355",
+            "id": "cbb80fe37dde6fde",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.5.5.11 - zora/1. Enumeration/database.md",
-                "mode": "preview",
+                "file": "10.5.5.20 - poultry/1. Enumeration/netstat.md",
+                "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "ae4ef17c56e1381e",
+            "id": "eb07178371001bf0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.5.5.11 - zora/commands/mysql-client.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "c711e122d55f32ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.11 - zora/1. Enumeration/database.md",
-                "mode": "preview",
+                "file": "10.5.5.11 - zora/4. Report/walkthrough.md",
+                "mode": "source",
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 15
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -266,7 +194,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10.5.5.11 - zora/1. Enumeration/database.md",
+                "file": "10.5.5.20 - poultry/1. Enumeration/netstat.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -283,7 +211,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10.5.5.11 - zora/1. Enumeration/database.md",
+                "file": "10.5.5.20 - poultry/1. Enumeration/netstat.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -306,12 +234,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10.5.5.11 - zora/1. Enumeration/database.md"
+                "file": "10.5.5.20 - poultry/1. Enumeration/netstat.md"
               }
             }
           },
           {
-            "id": "98374d5081652085",
+            "id": "294b80eb065caad3",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          },
+          {
+            "id": "ea26ad3b5aedf747",
             "type": "leaf",
             "state": {
               "type": "side-panel-control-view",
@@ -319,11 +255,11 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 331.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -331,20 +267,21 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "c711e122d55f32ae",
+  "active": "cbb80fe37dde6fde",
   "lastOpenFiles": [
-    "10.5.5.11 - zora/1. Enumeration/privileges.md",
-    "10.5.5.11 - zora/commands/mysql-client.md",
-    "10.5.5.11 - zora/1. Enumeration/database.md",
-    "10.5.5.11 - zora/1. Enumeration/keys.md",
+    "10.5.5.20 - poultry/1. Enumeration/info.md",
+    "10.5.5.20 - poultry/1. Enumeration/netstat.md",
+    "10.5.5.20 - poultry/1. Enumeration/ports.md",
+    "10.5.5.20 - poultry/1. Enumeration/systeminfo.md",
+    "10.5.5.11 - zora/commands/dynamic-forward.md",
     "10.4.4.10 - ajla/commands/remote-forward.md",
-    "10.4.4.10 - ajla/commands/portscan.md",
-    "10.4.4.10 - ajla/screenshots/sqli-extract.png",
-    "10.4.4.10 - ajla/1. Enumeration/info.md",
-    "10.5.5.11 - zora/1. Enumeration/ports.md",
-    "10.4.4.10 - ajla/1. Enumeration/nmap.md"
+    "10.5.5.11 - zora/2. Exploitation/udf.md",
+    "10.5.5.11 - zora/1. Enumeration/info.md",
+    "10.5.5.11 - zora/commands/mysql-client.md",
+    "10.5.5.11 - zora/1. Enumeration/ports.md"
   ]
 }

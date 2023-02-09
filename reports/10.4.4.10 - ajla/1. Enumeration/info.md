@@ -48,7 +48,8 @@ Password: !love29jan2006!
 | Database charset   | utf8mb4                                                                         |
 | Database collation | utf8mb4_unicode_ci                                                              |
 
-
+> [!note] 
+> Refer to zora [[database]] for other info 
 
 
 ## WP Keys and Salt
