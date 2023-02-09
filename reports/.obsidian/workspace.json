@@ -109,7 +109,31 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/netstat.md",
+                "file": "10.5.5.20 - poultry/1. Enumeration/netuser.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "a59dd001ac8213c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.5.5.20 - poultry/1. Enumeration/info.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "44312fb14e3361e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.5.5.20 - poultry/1. Enumeration/info.md",
                 "mode": "source",
                 "source": true
               }
@@ -128,7 +152,7 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -178,7 +202,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 298.5
   },
   "right": {
     "id": "a79dec8190df0cd0",
@@ -194,7 +218,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/netstat.md",
+                "file": "10.5.5.20 - poultry/1. Enumeration/info.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -211,7 +235,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/netstat.md",
+                "file": "10.5.5.20 - poultry/1. Enumeration/info.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +258,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/netstat.md"
+                "file": "10.5.5.20 - poultry/1. Enumeration/info.md"
               }
             }
           },
@@ -271,17 +295,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "cbb80fe37dde6fde",
+  "active": "a59dd001ac8213c6",
   "lastOpenFiles": [
+    "10.5.5.20 - poultry/1. Enumeration/services.md",
+    "10.5.5.20 - poultry/1. Enumeration/netuser.md",
     "10.5.5.20 - poultry/1. Enumeration/info.md",
-    "10.5.5.20 - poultry/1. Enumeration/netstat.md",
-    "10.5.5.20 - poultry/1. Enumeration/ports.md",
     "10.5.5.20 - poultry/1. Enumeration/systeminfo.md",
+    "10.5.5.20 - poultry/1. Enumeration/ports.md",
+    "10.5.5.20 - poultry/1. Enumeration/netstat.md",
     "10.5.5.11 - zora/commands/dynamic-forward.md",
     "10.4.4.10 - ajla/commands/remote-forward.md",
     "10.5.5.11 - zora/2. Exploitation/udf.md",
-    "10.5.5.11 - zora/1. Enumeration/info.md",
-    "10.5.5.11 - zora/commands/mysql-client.md",
-    "10.5.5.11 - zora/1. Enumeration/ports.md"
+    "10.5.5.11 - zora/1. Enumeration/info.md"
   ]
 }
