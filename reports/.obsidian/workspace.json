@@ -4,59 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "fe81cee4f6b11892",
+        "id": "131e2b136843bc54",
         "type": "tabs",
         "children": [
           {
-            "id": "0523ede562129be1",
+            "id": "ed4361d3d07b98e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.5.5.11 - zora/1. Enumeration/info.md",
+                "file": "10.5.5.20 - poultry/2. Exploitation/credential-leak.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "f0784c7f1963e4e5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.4.4.10 - ajla/3. Post-explotation/enumeration.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "eecc211c08599c64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.4.4.10 - ajla/1. Enumeration/exploits.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "c0c4af36e4cb52e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.11 - zora/1. Enumeration/info.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "9302540d83c99935",
+            "id": "3696db9a9e75aa80",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -68,127 +32,31 @@
             }
           },
           {
-            "id": "14b97d03d700bef4",
+            "id": "c9cb755ce4d84c05",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.4.4.10 - ajla/commands/remote-forward.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "c4a3fd62c3a622bb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.11 - zora/commands/dynamic-forward.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "1b1d4e824ddb896e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/info.md",
+                "file": "10.5.5.20 - poultry/2. Exploitation/credential-leak.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "cbb80fe37dde6fde",
+            "id": "e82f331ae5e7cf2e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/netuser.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "a59dd001ac8213c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/ports.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "e03464f89c9ae4d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/network.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "1d7f5db06bc8fb92",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/services.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "ed0d6beaf178c14b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.4.4.10 - ajla/1. Enumeration/info.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "44312fb14e3361e6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/info.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "eb07178371001bf0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.11 - zora/4. Report/walkthrough.md",
+                "file": "10.5.5.20 - poultry/1. Enumeration/inetrnal-network.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 12
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -254,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10.4.4.10 - ajla/1. Enumeration/info.md",
+                "file": "10.5.5.20 - poultry/1. Enumeration/inetrnal-network.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -271,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10.4.4.10 - ajla/1. Enumeration/info.md",
+                "file": "10.5.5.20 - poultry/1. Enumeration/inetrnal-network.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -294,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10.4.4.10 - ajla/1. Enumeration/info.md"
+                "file": "10.5.5.20 - poultry/1. Enumeration/inetrnal-network.md"
               }
             }
           },
@@ -319,7 +187,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 331.5
+    "width": 336.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -331,17 +199,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "210558c86d5673ef",
+  "active": "e82f331ae5e7cf2e",
   "lastOpenFiles": [
-    "10.4.4.10 - ajla/1. Enumeration/keys.md",
-    "10.5.5.20 - poultry/commands/enumeration.md",
-    "10.5.5.20 - poultry/1. Enumeration/info.md",
-    "10.5.5.20 - poultry/1. Enumeration/systeminfo.md",
-    "10.5.5.20 - poultry/1. Enumeration/services.md",
     "10.5.5.20 - poultry/1. Enumeration/ports.md",
-    "10.5.5.20 - poultry/1. Enumeration/netuser.md",
-    "10.5.5.20 - poultry/1. Enumeration/network.md",
+    "10.5.5.20 - poultry/1. Enumeration/inetrnal-network.md",
     "10.5.5.20 - poultry/1. Enumeration/netstat.md",
-    "10.5.5.20 - poultry/commands/network-scan.md"
+    "10.5.5.20 - poultry/1. Enumeration/info.md",
+    "10.5.5.20 - poultry/2. Exploitation/credential-leak.md",
+    "10.5.5.20 - poultry/Post-exploitation/persistence.md",
+    "10.5.5.11 - zora/4. Report/walkthrough.md",
+    "10.5.5.11 - zora/1. Enumeration/post-exploit/mounted-shares.md",
+    "10.5.5.11 - zora/loots/system_report.ps1.md",
+    "10.5.5.11 - zora/1. Enumeration/ports.md"
   ]
 }

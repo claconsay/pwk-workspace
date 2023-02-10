@@ -13,8 +13,7 @@ net user /domain alex
 wmic service get name,displayname,pathname,startmode |findstr /i "auto" |findstr /i /v "c:\windows"
 ```
 
-**Connect using RDP**
+**One-liner ping sweep to scan network**
 ```
-proxychains xfreerdp /d:sandbox /u:alex /v:10.5.5.20 +clipboard /tls-seclevel:0 /timeout:80000
+for /L %i in (1,1,255) do @ping -n 1 -w 200 10.5.5.%i > nul && echo 10.5.5.%i is up.
 ```
-
