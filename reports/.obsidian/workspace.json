@@ -20,19 +20,31 @@
             }
           },
           {
-            "id": "3a78e861212605b7",
+            "id": "87802039ef3de8df",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.11.1.8 - phoenix (done)/4. Report/walkthrough.md",
-                "mode": "preview",
+                "file": "sanbox/10.5.5.25 - cevapi/commands/file-transfer.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "ae8ace2e2d25e73d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sanbox/10.5.5.11 - zora/4. Report/walkthrough.md",
+                "mode": "source",
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10.11.1.8 - phoenix (done)/4. Report/walkthrough.md",
+                "file": "sanbox/10.5.5.11 - zora/4. Report/walkthrough.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10.11.1.8 - phoenix (done)/4. Report/walkthrough.md",
+                "file": "sanbox/10.5.5.11 - zora/4. Report/walkthrough.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10.11.1.8 - phoenix (done)/4. Report/walkthrough.md"
+                "file": "sanbox/10.5.5.11 - zora/4. Report/walkthrough.md"
               }
             }
           },
@@ -175,17 +187,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "3a78e861212605b7",
+  "active": "ae8ace2e2d25e73d",
   "lastOpenFiles": [
-    "10.11.1.8 - phoenix (done)/3. Post-Exploitation/mysql.md",
-    "10.11.1.8 - phoenix (done)/3. Post-Exploitation/Linux 2.6.9 - Ring0 Privilege Escalation.md",
-    "10.11.1.8 - phoenix (done)/2. Exploitation/Advanced Comment System - File Inclusion.md",
-    "10.11.1.8 - phoenix (done)/1. Enumeration/info.md",
-    "10.11.1.8 - phoenix (done)/4. Report/walkthrough.md",
-    "10.11.1.10 - mike (done)/loots/flag.md",
-    "10.11.1.10 - mike (done)/1. Enumeration/info.md",
-    "10.11.1.10 - mike (done)/4. Report/walkthrough.md",
-    "10.11.1.31 - (ralph)/4. Report/walkthrough.md",
-    "10.11.1.31 - (ralph)/screenshots/ralph-dbeaver.png"
+    "sanbox/10.5.5.11 - zora/4. Report/personal.md",
+    "sanbox/10.5.5.11 - zora/2. Exploitation/udf.md",
+    "sanbox/10.5.5.11 - zora/4. Report/walkthrough.md",
+    "sanbox/10.4.4.10 - ajla/3. Report/walkthrough.md",
+    "sanbox/10.4.4.10 - ajla/screenshots/ajla-root-proof.png",
+    "sanbox/10.4.4.10 - ajla/3. Post-explotation/enumeration.md",
+    "sanbox/10.4.4.10 - ajla/2. Exploitation/2. password.md",
+    "sanbox/10.4.4.10 - ajla/2. Exploitation/3. reverse-shell.md",
+    "sanbox/10.4.4.10 - ajla/2. Exploitation/4. privesc.md",
+    "sanbox/10.4.4.10 - ajla/screenshots/ajla-uname.png"
   ]
 }
