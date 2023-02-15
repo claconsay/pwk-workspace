@@ -1,0 +1,1 @@
+/opt/privesc/windows/winPEAS.bat

@@ -1,4 +1,4 @@
-# aijla (10.4.4.10)
+# Ajla (10.4.4.10)
 ***
 > [!info] 
 > The initial target is a wordpress site `http://sandbox.local` which points to an external IP `10.11.1.250`.   
@@ -57,6 +57,9 @@ curl -i -s -k -X $'GET' $'http://sandbox.local/wp-content/plugins/xshell/xshell.
 
 6. Using our meterpreter shell, we are able to execute OS commands on the server.   
    ![[ajla-meterpreter.png]]
+
+> [!info] 
+> We are able to know that the hostname of the server is `ajla` and it has an internal IP `10.4.4.10` 
 
 7. We are able to read `wp-config.php` and retrieved the information of database used by Wordpress. The database has the IP `10.5.5.11`
 
