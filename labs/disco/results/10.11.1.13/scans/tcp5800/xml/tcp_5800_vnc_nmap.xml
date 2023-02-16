@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu Feb 16 17:19:44 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 5800 &quot;-&#45;script=banner,(vnc* or realvnc* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp5800/tcp_5800_vnc_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp5800/xml/tcp_5800_vnc_nmap.xml 10.11.1.13 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 5800 &quot;-&#45;script=banner,(vnc* or realvnc* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp5800/tcp_5800_vnc_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp5800/xml/tcp_5800_vnc_nmap.xml 10.11.1.13" start="1676539184" startstr="Thu Feb 16 17:19:44 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="5800"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676539185"/>
+<taskend task="NSE" time="1676539185"/>
+<taskbegin task="NSE" time="1676539185"/>
+<taskend task="NSE" time="1676539185"/>
+<taskbegin task="NSE" time="1676539185"/>
+<taskend task="NSE" time="1676539185"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676539185"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676539185"/>
+<taskbegin task="SYN Stealth Scan" time="1676539185"/>
+<taskend task="SYN Stealth Scan" time="1676539186" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1676539186"/>
+<taskend task="Service scan" time="1676539192" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1676539192"/>
+<taskend task="NSE" time="1676539208"/>
+<taskbegin task="NSE" time="1676539208"/>
+<taskend task="NSE" time="1676539208"/>
+<taskbegin task="NSE" time="1676539208"/>
+<taskend task="NSE" time="1676539208"/>
+<host starttime="1676539185" endtime="1676539208"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.13" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="5800"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http-proxy" product="sslstrip" method="probed" conf="10"/></port>
+</ports>
+<times srtt="224464" rttvar="224464" to="1122320"/>
+</host>
+<taskbegin task="NSE" time="1676539208"/>
+<taskend task="NSE" time="1676539208"/>
+<taskbegin task="NSE" time="1676539208"/>
+<taskend task="NSE" time="1676539208"/>
+<taskbegin task="NSE" time="1676539208"/>
+<taskend task="NSE" time="1676539208"/>
+<runstats><finished time="1676539208" timestr="Thu Feb 16 17:20:08 2023" summary="Nmap done at Thu Feb 16 17:20:08 2023; 1 IP address (1 host up) scanned in 24.12 seconds" elapsed="24.12" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

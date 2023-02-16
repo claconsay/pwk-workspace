@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu Feb 16 16:41:56 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 445 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/tcp445/tcp_445_smb_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/tcp445/xml/tcp_445_smb_nmap.xml 10.11.1.5 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 445 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/tcp445/tcp_445_smb_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/tcp445/xml/tcp_445_smb_nmap.xml 10.11.1.5" start="1676536916" startstr="Thu Feb 16 16:41:56 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="445"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676536917"/>
+<taskend task="NSE" time="1676536917"/>
+<taskbegin task="NSE" time="1676536917"/>
+<taskend task="NSE" time="1676536917"/>
+<taskbegin task="NSE" time="1676536917"/>
+<taskend task="NSE" time="1676536917"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676536917"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676536917"/>
+<taskbegin task="SYN Stealth Scan" time="1676536917"/>
+<taskend task="SYN Stealth Scan" time="1676536917" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1676536917"/>
+<taskend task="Service scan" time="1676536924" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1676536924"/>
+<taskprogress task="NSE" time="1676536955" percent="97.14" remaining="1" etc="1676536956"/>
+<taskend task="NSE" time="1676536972"/>
+<taskbegin task="NSE" time="1676536972"/>
+<taskend task="NSE" time="1676536984"/>
+<taskbegin task="NSE" time="1676536984"/>
+<taskend task="NSE" time="1676536984"/>
+<host starttime="1676536917" endtime="1676536984"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Windows XP microsoft-ds" ostype="Windows XP" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows_xp</cpe></service><script id="smb-enum-services" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<hostscript><script id="smb-protocols" output="&#xa;  dialects: &#xa;    NT LM 0.12 (SMBv1) [dangerous, but default]"><table key="dialects">
+<elem>NT LM 0.12 (SMBv1) [dangerous, but default]</elem>
+</table>
+</script><script id="smb-vuln-ms17-010" output="&#xa;  VULNERABLE:&#xa;  Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)&#xa;    State: VULNERABLE&#xa;    IDs:  CVE:CVE-2017-0143&#xa;    Risk factor: HIGH&#xa;      A critical remote code execution vulnerability exists in Microsoft SMBv1&#xa;       servers (ms17-010).&#xa;          &#xa;    Disclosure date: 2017-03-14&#xa;    References:&#xa;      https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/&#xa;      https://technet.microsoft.com/en-us/library/security/ms17-010.aspx&#xa;      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143&#xa;"><table key="CVE-2017-0143">
+<elem key="title">Remote Code Execution vulnerability in Microsoft SMBv1 servers (ms17-010)</elem>
+<elem key="state">VULNERABLE</elem>
+<table key="ids">
+<elem>CVE:CVE-2017-0143</elem>
+</table>
+<table key="description">
+<elem>A critical remote code execution vulnerability exists in Microsoft SMBv1&#xa; servers (ms17-010).&#xa;    </elem>
+</table>
+<table key="dates">
+<table key="disclosure">
+<elem key="month">03</elem>
+<elem key="day">14</elem>
+<elem key="year">2017</elem>
+</table>
+</table>
+<elem key="disclosure">2017-03-14</elem>
+<table key="refs">
+<elem>https://blogs.technet.microsoft.com/msrc/2017/05/12/customer-guidance-for-wannacrypt-attacks/</elem>
+<elem>https://technet.microsoft.com/en-us/library/security/ms17-010.aspx</elem>
+<elem>https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2017-0143</elem>
+</table>
+</table>
+</script><script id="smb-mbenum" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb-os-discovery" output="&#xa;  OS: Windows XP (Windows 2000 LAN Manager)&#xa;  OS CPE: cpe:/o:microsoft:windows_xp::-&#xa;  Computer name: alice&#xa;  NetBIOS computer name: ALICE\x00&#xa;  Domain name: thinc.local&#xa;  Forest name: thinc.local&#xa;  FQDN: alice.thinc.local&#xa;  System time: 2023-02-16T08:42:01+00:00&#xa;"><elem key="os">Windows 5.1</elem>
+<elem key="lanmanager">Windows 2000 LAN Manager</elem>
+<elem key="server">ALICE\x00</elem>
+<elem key="date">2023-02-16T08:42:01+00:00</elem>
+<elem key="fqdn">alice.thinc.local</elem>
+<elem key="domain_dns">thinc.local</elem>
+<elem key="forest_dns">thinc.local</elem>
+<elem key="workgroup">THINC\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_xp::-</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: &lt;blank&gt;&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">&lt;blank&gt;</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/><script id="smb2-security-mode" output="Couldn&apos;t establish a SMBv2 connection."/><script id="smb-vuln-ms10-061" output="NT_STATUS_OBJECT_NAME_NOT_FOUND">false</script><script id="smb-enum-sessions" output="&#xa;  Active SMB sessions&#xa;     is connected from 192.168.119.151 for 2s, idle for 1s&#xa;     is connected from NMAP for 2s, idle for [not idle]&#xa;     is connected from 192.168.119.151 for 1s, idle for [not idle]&#xa;     is connected from NMAP for 1s, idle for [not idle]&#xa;     is connected from 192.168.119.151 for [just logged in, it&apos;s probably you], idle for [not idle]&#xa;     is connected from NMAP for [just logged in, it&apos;s probably you], idle for [not idle]&#xa;"/><script id="smb-print-text" output="false">false</script><script id="smb2-capabilities" output="SMB 2+ not supported">false</script><script id="nbstat" output="NetBIOS name: ALICE, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 005056861b45 (VMware)&#xa;Names:&#xa;  ALICE&lt;00&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  ALICE&lt;20&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  THINC&lt;00&gt;            Flags: &lt;group&gt;&lt;active&gt;&#xa;  ALICE&lt;03&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  THINC&lt;1e&gt;            Flags: &lt;group&gt;&lt;active&gt;&#xa;  THINC&lt;1d&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;Statistics:&#xa;  005056861b450000000000000000000000&#xa;  0000000000000000000000000000000000&#xa;  0000000000000000000000000000"/><script id="smb-enum-shares" output="&#xa;  account_used: &lt;blank&gt;&#xa;  \\10.11.1.5\ADMIN$: &#xa;    Type: STYPE_DISKTREE_HIDDEN&#xa;    Comment: Remote Admin&#xa;    Anonymous access: &lt;none&gt;&#xa;  \\10.11.1.5\C$: &#xa;    Type: STYPE_DISKTREE_HIDDEN&#xa;    Comment: Default share&#xa;    Anonymous access: &lt;none&gt;&#xa;  \\10.11.1.5\IPC$: &#xa;    Type: STYPE_IPC_HIDDEN&#xa;    Comment: Remote IPC&#xa;    Anonymous access: READ"><elem key="account_used">&lt;blank&gt;</elem>
+<table key="\\10.11.1.5\ADMIN$">
+<elem key="Type">STYPE_DISKTREE_HIDDEN</elem>
+<elem key="Comment">Remote Admin</elem>
+<elem key="Anonymous access">&lt;none&gt;</elem>
+</table>
+<table key="\\10.11.1.5\C$">
+<elem key="Type">STYPE_DISKTREE_HIDDEN</elem>
+<elem key="Comment">Default share</elem>
+<elem key="Anonymous access">&lt;none&gt;</elem>
+</table>
+<table key="\\10.11.1.5\IPC$">
+<elem key="Type">STYPE_IPC_HIDDEN</elem>
+<elem key="Comment">Remote IPC</elem>
+<elem key="Anonymous access">READ</elem>
+</table>
+</script></hostscript><times srtt="224411" rttvar="224411" to="1122055"/>
+</host>
+<taskbegin task="NSE" time="1676536984"/>
+<taskend task="NSE" time="1676536984"/>
+<taskbegin task="NSE" time="1676536984"/>
+<taskend task="NSE" time="1676536984"/>
+<taskbegin task="NSE" time="1676536984"/>
+<taskend task="NSE" time="1676536984"/>
+<runstats><finished time="1676536984" timestr="Thu Feb 16 16:43:04 2023" summary="Nmap done at Thu Feb 16 16:43:04 2023; 1 IP address (1 host up) scanned in 67.49 seconds" elapsed="67.49" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

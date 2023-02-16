@@ -1,0 +1,92 @@
+[*] ftp found on tcp/21.
+
+
+
+[*] msrpc found on tcp/135.
+
+
+
+[*] netbios-ssn found on tcp/139.
+
+
+
+[*] microsoft-ds found on tcp/445.
+
+
+
+[*] ms-sql-s found on tcp/1433.
+
+
+
+[*] ms-wbt-server found on tcp/3389.
+
+
+
+[*] vnc-http found on tcp/5800.
+
+
+
+[*] vnc found on tcp/5900.
+
+
+
+[*] msrpc found on tcp/49152.
+
+
+
+[*] msrpc found on tcp/49153.
+
+
+
+[*] msrpc found on tcp/49154.
+
+
+
+[*] msrpc found on tcp/49155.
+
+
+
+[*] msrpc found on tcp/49156.
+
+
+
+[*] msrpc found on tcp/49157.
+
+
+
+[*] msrpc found on tcp/49158.
+
+
+
+[*] http found on tcp/4167.
+
+
+
+[*] wsman found on tcp/5985.
+
+
+
+[*] http found on tcp/47001.
+
+
+
+[*] unknown found on tcp/49154.
+
+
+
+[*] unknown found on tcp/49155.
+
+
+
+[*] unknown found on tcp/49156.
+
+
+
+[*] unknown found on tcp/49157.
+
+
+
+[*] unknown found on tcp/49158.
+
+
+

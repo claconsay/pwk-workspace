@@ -1,0 +1,18 @@
+Identified Architecture: 64-bit
+
+Nmap script found a potential vulnerability. (State: VULNERABLE)
+
+CVE Identified: CVE-2014-3566
+
+CVE Identified: CVE-2014-3566
+
+CVE Identified: CVE-2014-3566
+
+Nmap script found a potential vulnerability. (State: VULNERABLE)
+
+Matched Pattern: Powered-By: ASP.NET
+
+Identified HTTP Server: Microsoft-IIS/8.5
+
+Identified HTTP Server: Microsoft-HTTPAPI/2.0
+

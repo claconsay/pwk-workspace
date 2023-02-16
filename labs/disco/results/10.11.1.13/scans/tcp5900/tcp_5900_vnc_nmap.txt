@@ -1,0 +1,24 @@
+# Nmap 7.93 scan initiated Thu Feb 16 17:19:44 2023 as: nmap -vv --reason -Pn -T4 -sV -p 5900 "--script=banner,(vnc* or realvnc* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" --script-args=unsafe=1 -oN /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp5900/tcp_5900_vnc_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp5900/xml/tcp_5900_vnc_nmap.xml 10.11.1.13
+Nmap scan report for 10.11.1.13
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-02-16 17:19:45 PST for 4s
+
+PORT     STATE SERVICE REASON          VERSION
+5900/tcp open  vnc     syn-ack ttl 127 VNC (protocol 3.8)
+| vnc-info: 
+|   Protocol version: 3.8
+|   Security types: 
+|     None (1)
+|     Tight (16)
+|   Tight auth subtypes: 
+|     None
+|_  WARNING: Server does not require authentication
+| vnc-title: 
+|   name: disco\x00
+|   geometry: 1792 x 870
+|_  color_depth: 24
+|_banner: RFB 003.008
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb 16 17:19:49 2023 -- 1 IP address (1 host up) scanned in 4.51 seconds

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu Feb 16 17:19:44 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 5900 &quot;-&#45;script=banner,(vnc* or realvnc* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp5900/tcp_5900_vnc_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp5900/xml/tcp_5900_vnc_nmap.xml 10.11.1.13 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 5900 &quot;-&#45;script=banner,(vnc* or realvnc* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -&#45;script-args=unsafe=1 -oN /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp5900/tcp_5900_vnc_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp5900/xml/tcp_5900_vnc_nmap.xml 10.11.1.13" start="1676539184" startstr="Thu Feb 16 17:19:44 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="5900"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676539185"/>
+<taskend task="NSE" time="1676539185"/>
+<taskbegin task="NSE" time="1676539185"/>
+<taskend task="NSE" time="1676539185"/>
+<taskbegin task="NSE" time="1676539185"/>
+<taskend task="NSE" time="1676539185"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676539185"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676539185"/>
+<taskbegin task="SYN Stealth Scan" time="1676539185"/>
+<taskend task="SYN Stealth Scan" time="1676539186" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1676539186"/>
+<taskend task="Service scan" time="1676539186" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1676539186"/>
+<taskend task="NSE" time="1676539187"/>
+<taskbegin task="NSE" time="1676539187"/>
+<taskend task="NSE" time="1676539189"/>
+<taskbegin task="NSE" time="1676539189"/>
+<taskend task="NSE" time="1676539189"/>
+<host starttime="1676539185" endtime="1676539189"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.13" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="5900"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="vnc" product="VNC" extrainfo="protocol 3.8" method="probed" conf="10"/><script id="vnc-info" output="&#xa;  Protocol version: 3.8&#xa;  Security types: &#xa;    None (1)&#xa;    Tight (16)&#xa;  Tight auth subtypes: &#xa;    None&#xa;  WARNING: Server does not require authentication"><elem key="Protocol version">3.8</elem>
+<table key="Security types">
+<table>
+<elem key="name">None</elem>
+<elem key="type">1</elem>
+</table>
+<table>
+<elem key="name">Tight</elem>
+<elem key="type">16</elem>
+</table>
+</table>
+<table key="Tight auth subtypes">
+<elem>None</elem>
+</table>
+<elem key="WARNING">Server does not require authentication</elem>
+</script><script id="vnc-title" output="&#xa;  name: disco\x00&#xa;  geometry: 1792 x 870&#xa;  color_depth: 24"><elem key="name">disco\x00</elem>
+<elem key="geometry">1792 x 870</elem>
+<elem key="color_depth">24</elem>
+</script><script id="banner" output="RFB 003.008"/></port>
+</ports>
+<times srtt="224730" rttvar="224730" to="1123650"/>
+</host>
+<taskbegin task="NSE" time="1676539189"/>
+<taskend task="NSE" time="1676539189"/>
+<taskbegin task="NSE" time="1676539189"/>
+<taskend task="NSE" time="1676539189"/>
+<taskbegin task="NSE" time="1676539189"/>
+<taskend task="NSE" time="1676539189"/>
+<runstats><finished time="1676539189" timestr="Thu Feb 16 17:19:49 2023" summary="Nmap done at Thu Feb 16 17:19:49 2023; 1 IP address (1 host up) scanned in 4.51 seconds" elapsed="4.51" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,27 @@
+```bash
+nbtscan -rvh 10.11.1.5 2>&1
+```
+
+[/home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/tcp139/nbtscan.txt](file:///home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/tcp139/nbtscan.txt):
+
+```
+Doing NBT name scan for addresses from 10.11.1.5
+
+
+NetBIOS Name Table for Host 10.11.1.5:
+
+Name             Service          Type
+----------------------------------------
+ALICE            Workstation Service
+ALICE            File Server Service
+THINC            Domain Name
+ALICE            Messenger Service
+THINC            Browser Service Elections
+THINC            Master Browser
+__MSBROWSE__  Master Browser
+
+Adapter address: 00:50:56:86:1b:45
+----------------------------------------
+
+
+```

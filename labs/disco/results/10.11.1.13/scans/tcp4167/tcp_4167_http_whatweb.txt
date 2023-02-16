@@ -1,0 +1,44 @@
+WhatWeb report for http://10.11.1.13:4167
+Status    : 200 OK
+Title     : IIS Windows Server
+IP        : 10.11.1.13
+Country   : RESERVED, ZZ
+
+Summary   : HTTPServer[Microsoft-IIS/8.5], Microsoft-IIS[8.5][Under Construction], X-Powered-By[ASP.NET]
+
+Detected Plugins:
+[ HTTPServer ]
+	HTTP server header string. This plugin also attempts to
+	identify the operating system from the server header.
+
+	String       : Microsoft-IIS/8.5 (from server string)
+
+[ Microsoft-IIS ]
+	Microsoft Internet Information Services (IIS) for Windows
+	Server is a flexible, secure and easy-to-manage Web server
+	for hosting anything on the Web. From media streaming to
+	web application hosting, IIS's scalable and open
+	architecture is ready to handle the most demanding tasks.
+
+	Module       : Under Construction
+	Version      : 8.5
+	Website     : http://www.iis.net/
+
+[ X-Powered-By ]
+	X-Powered-By HTTP header
+
+	String       : ASP.NET (from x-powered-by string)
+
+HTTP Headers:
+	HTTP/1.1 200 OK
+	Content-Type: text/html
+	Last-Modified: Sun, 07 Apr 2019 19:14:49 GMT
+	Accept-Ranges: bytes
+	ETag: "e7cc02b76edd41:0"
+	Server: Microsoft-IIS/8.5
+	X-Powered-By: ASP.NET
+	Date: Thu, 16 Feb 2023 09:39:46 GMT
+	Connection: close
+	Content-Length: 701
+
+

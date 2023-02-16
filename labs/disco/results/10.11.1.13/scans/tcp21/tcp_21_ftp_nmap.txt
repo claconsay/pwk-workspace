@@ -1,0 +1,19 @@
+# Nmap 7.93 scan initiated Thu Feb 16 17:19:44 2023 as: nmap -vv --reason -Pn -T4 -sV -p 21 "--script=banner,(ftp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp21/tcp_21_ftp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp21/xml/tcp_21_ftp_nmap.xml 10.11.1.13
+Nmap scan report for 10.11.1.13
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-02-16 17:19:45 PST for 4s
+
+PORT   STATE SERVICE REASON          VERSION
+21/tcp open  ftp     syn-ack ttl 127 Microsoft ftpd
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 04-07-19  10:25PM       <DIR>          aspnet_client
+| 04-07-19  07:14PM                99710 iis-85.png
+|_04-07-19  07:14PM                  701 iisstart.htm
+| ftp-syst: 
+|_  SYST: Windows_NT
+|_banner: 220 Microsoft FTP Service
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb 16 17:19:49 2023 -- 1 IP address (1 host up) scanned in 5.18 seconds

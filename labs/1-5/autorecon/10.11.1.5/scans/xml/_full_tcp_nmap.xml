@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Thu Feb 16 16:40:59 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/_full_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/xml/_full_tcp_nmap.xml 10.11.1.5 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/_full_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/xml/_full_tcp_nmap.xml 10.11.1.5" start="1676536859" startstr="Thu Feb 16 16:40:59 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676536859"/>
+<taskend task="NSE" time="1676536859"/>
+<taskbegin task="NSE" time="1676536859"/>
+<taskend task="NSE" time="1676536859"/>
+<taskbegin task="NSE" time="1676536859"/>
+<taskend task="NSE" time="1676536859"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676536859"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676536859"/>
+<taskbegin task="SYN Stealth Scan" time="1676536859"/>
+<taskprogress task="SYN Stealth Scan" time="1676536890" percent="5.04" remaining="585" etc="1676537474"/>
+<taskprogress task="SYN Stealth Scan" time="1676536920" percent="7.50" remaining="753" etc="1676537673"/>
+<taskprogress task="SYN Stealth Scan" time="1676536950" percent="9.35" remaining="883" etc="1676537833"/>
+<taskprogress task="SYN Stealth Scan" time="1676536980" percent="11.47" remaining="934" etc="1676537914"/>
+<taskprogress task="SYN Stealth Scan" time="1676537010" percent="14.84" remaining="867" etc="1676537876"/>
+<taskprogress task="SYN Stealth Scan" time="1676537070" percent="20.58" remaining="815" etc="1676537884"/>
+<taskprogress task="SYN Stealth Scan" time="1676537103" percent="24.30" remaining="761" etc="1676537863"/>
+<taskprogress task="SYN Stealth Scan" time="1676537133" percent="28.00" remaining="705" etc="1676537838"/>
+<taskprogress task="SYN Stealth Scan" time="1676537187" percent="33.41" remaining="654" etc="1676537841"/>
+<taskprogress task="SYN Stealth Scan" time="1676537235" percent="38.38" remaining="604" etc="1676537839"/>
+<taskprogress task="SYN Stealth Scan" time="1676537283" percent="43.45" remaining="552" etc="1676537835"/>
+<taskprogress task="SYN Stealth Scan" time="1676537325" percent="48.12" remaining="503" etc="1676537827"/>
+<taskprogress task="SYN Stealth Scan" time="1676537382" percent="53.64" remaining="452" etc="1676537834"/>
+<taskprogress task="SYN Stealth Scan" time="1676537445" percent="59.25" remaining="404" etc="1676537848"/>
+<taskprogress task="SYN Stealth Scan" time="1676537496" percent="64.42" remaining="352" etc="1676537848"/>
+<taskprogress task="SYN Stealth Scan" time="1676537553" percent="69.66" remaining="303" etc="1676537855"/>
+<taskprogress task="SYN Stealth Scan" time="1676537604" percent="74.89" remaining="250" etc="1676537854"/>
+<taskprogress task="SYN Stealth Scan" time="1676537658" percent="80.19" remaining="198" etc="1676537855"/>
+<taskprogress task="SYN Stealth Scan" time="1676537715" percent="85.55" remaining="145" etc="1676537860"/>
+<taskprogress task="SYN Stealth Scan" time="1676537763" percent="90.50" remaining="95" etc="1676537858"/>
+<taskprogress task="SYN Stealth Scan" time="1676537832" percent="95.74" remaining="44" etc="1676537875"/>
+<taskend task="SYN Stealth Scan" time="1676537908" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1676537908"/>
+<taskend task="Service scan" time="1676537915" extrainfo="4 services on 1 host"/>
+<taskbegin task="Traceroute" time="1676537931"/>
+<taskend task="Traceroute" time="1676537931"/>
+<taskbegin task="Parallel DNS resolution of 2 hosts." time="1676537931"/>
+<taskend task="Parallel DNS resolution of 2 hosts." time="1676537931"/>
+<taskbegin task="NSE" time="1676537931"/>
+<taskend task="NSE" time="1676537939"/>
+<taskbegin task="NSE" time="1676537939"/>
+<taskend task="NSE" time="1676537939"/>
+<taskbegin task="NSE" time="1676537939"/>
+<taskend task="NSE" time="1676537939"/>
+<host starttime="1676536859" endtime="1676537939"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65385">
+<extrareasons reason="reset" count="65385" proto="tcp" ports="1-134,136-138,140-396,398-444,446-969,971-1024,1026-1149,1151-1449,1451-2362,2364-2505,2507-2628,2630-2789,2791-2949,2951-3081,3083-3534,3536-3593,3595-5107,5109-5265,5267-5817,5819-5842,5844-5879,5881-6155,6157-6405,6407-6925,6927-7416,7418-8367,8369-8406,8408-9467,9469-9776,9778-9876,9878-10060,10062-10674,10676-10998,11000-11111,11113-11200,11202-11479,11481-11849,11851-12284,12286-12557,12559-12879,12881-13918,13920-15472,15474-15600,15602-15980,15982-17573,17575-18411,18413-18810,18812-19446,19448-19578,19580-20024,20026-20110,20112-21469,21471-21790,21792-21988,21990-22049,22051-22453,22455-23016,23018-23083,23085-23197,23199-23207,23209-24351,24353-24545,24547-24755,24757-25237,25239-26050,26052-26224,26226-26264,26266-26367,26369-26444,26446-26484,26486-26702,26704-26959,26961-27063,27065-27477,27479-27649,27651-27688,27690-28391,28393-28511,28513-28598,28600-28670,28672-28730,28732-28757,28759-29285,29287-29489,29491-29662,29664-29668,29670-30109,30111-30733,30735-31650,31652-31790,31792-32925,32927-33725,33727-33891,33893-34119,34121-35715,35717-35839,35841-36984,36986-38126,38128-38443,38445-38521,38523-38983,38985-39542,39544-39742,39744-39783,39785-39816,39818-40005,40007-40149,40151-41534,41536-42066,42068-42383,42385-43512,43514-43745,43747-44016,44018-44816,44818-44865,44867-46201,46203-46691,46693-46699,46701-47318,47320-47760,47762-47976,47978-48096,48098-48643,48645-48870,48872-50100,50102-51915,51917-53629,53631-53634,53636-53692,53694-54079,54081-54455,54457-54673,54675-55263,55265-55754,55756-55856,55858-57071,57073-57400,57402-58156,58158-58977,58979-59833,59835-61047,61049-61627,61629-61725,61727-61849,61851-62137,62139-62414,62416-64315,64317-64568,64570-64644,64646-65062,65064-65535"/>
+</extraports>
+<extraports state="filtered" count="146">
+<extrareasons reason="no-response" count="146" proto="tcp" ports="397,970,1150,1450,2363,2506,2629,2790,2950,3082,3535,3594,5108,5266,5818,5843,5880,6156,6406,6926,7417,8368,8407,9468,9777,9877,10061,10675,10999,11112,11201,11480,11850,12285,12558,12880,13919,15473,15601,15981,17574,18412,18811,19447,19579,20025,20111,21470,21791,21989,22050,22454,23017,23084,23198,23208,24352,24546,24756,25238,26051,26225,26265,26368,26445,26485,26703,26960,27064,27478,27650,27689,28392,28512,28599,28671,28731,28758,29286,29490,29663,29669,30110,30734,31651,31791,32926,33726,33892,34120,35716,35840,36985,38127,38444,38522,38984,39543,39743,39784,39817,40006,40150,41535,42067,42384,43513,43746,44017,44817,44866,46202,46692,46700,47319,47761,47977,48097,48644,48871,50101,51916,53630,53635,53693,54080,54456,54674,55264,55755,55857,57072,57401,58157,58978,59834,61048,61628,61726,61850,62138,62415,64316,64569,64645,65063"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Windows XP microsoft-ds" ostype="Windows XP" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows_xp</cpe></service></port>
+<port protocol="tcp" portid="1025"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="135"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="38700"/>
+<osmatch name="Microsoft Windows XP" accuracy="95" line="80514">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="95"><cpe>cpe:/o:microsoft:windows_xp</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 7" accuracy="91" line="76567">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="7" accuracy="91"><cpe>cpe:/o:microsoft:windows_7</cpe></osclass>
+</osmatch>
+<osmatch name="Belkin OmniView KVM switch or SMA Sunny WebBox solar panel monitor" accuracy="90" line="9632">
+<osclass type="specialized" vendor="Belkin" osfamily="embedded" accuracy="90"/>
+<osclass type="power-device" vendor="SMA" osfamily="embedded" accuracy="90"/>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP2" accuracy="90" line="82482">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="90"><cpe>cpe:/o:microsoft:windows_xp::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows XP SP3" accuracy="90" line="83348">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="90"><cpe>cpe:/o:microsoft:windows_xp::sp3</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 2000 Server SP4 or Windows XP Professional SP3" accuracy="89" line="70288">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2000" accuracy="89"><cpe>cpe:/o:microsoft:windows_2000::sp4:server</cpe></osclass>
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="XP" accuracy="89"><cpe>cpe:/o:microsoft:windows_xp::sp3:professional</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows 2000 SP4" accuracy="89" line="71093">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2000" accuracy="89"><cpe>cpe:/o:microsoft:windows_2000::sp4</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows Server 2003 SP2" accuracy="88" line="73389">
+<osclass type="general purpose" vendor="Microsoft" osfamily="Windows" osgen="2003" accuracy="88"><cpe>cpe:/o:microsoft:windows_server_2003::sp2</cpe></osclass>
+</osmatch>
+<osmatch name="Microsoft Windows CE 6.0" accuracy="87" line="79692">
+<osclass type="specialized" vendor="Microsoft" osfamily="Windows" osgen="PocketPC/CE" accuracy="87"><cpe>cpe:/o:microsoft:windows_ce:6.0</cpe></osclass>
+</osmatch>
+<osmatch name="Motorola VIP1216 digital set top box (Windows CE 5.0)" accuracy="86" line="79536">
+<osclass type="media device" vendor="Microsoft" osfamily="Windows" osgen="PocketPC/CE" accuracy="86"><cpe>cpe:/o:microsoft:windows_ce:5.0</cpe></osclass>
+<osclass type="media device" vendor="Motorola" osfamily="embedded" accuracy="86"><cpe>cpe:/h:motorola:vip1216</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.93%E=4%D=2/16%OT=135%CT=1%CU=38700%PV=Y%DS=2%DC=T%G=Y%TM=63EDF0&#xa;OS:53%P=x86_64-pc-linux-gnu)SEQ(SP=84%GCD=1%ISR=9C%TI=I%II=I%TS=0)SEQ(SP=89&#xa;OS:%GCD=1%ISR=9B%TI=I%II=I%SS=S%TS=0)SEQ(SP=95%GCD=1%ISR=9E%II=I%TS=0)OPS(O&#xa;OS:1=M551NW0NNT00NNS%O2=M551NW0NNT00NNS%O3=M551NW0NNT00%O4=M551NW0NNT00NNS%&#xa;OS:O5=M551NW0NNT00NNS%O6=M551NNT00NNS)WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4=FAF0%W&#xa;OS:5=FAF0%W6=FAF0)ECN(R=Y%DF=Y%T=80%W=FAF0%O=M551NW0NNS%CC=N%Q=)T1(R=Y%DF=Y&#xa;OS:%T=80%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=N)T5(R=Y%DF=N%T=80%W=0%S=&#xa;OS:Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=N)T7(R=N)U1(R=Y%DF=N%T=80%IPL=38%UN=0%RIPL=G&#xa;OS:%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=S%T=80%CD=Z)&#xa;"/>
+</os>
+<distance value="2"/>
+<tcpsequence index="138" difficulty="Good luck!" values="568D8B40,568E531B,568FB048,5690CC2C,569224A5,569322BB"/>
+<ipidsequence class="Incremental" values="744A,744D,7456,7459,7460,7466"/>
+<tcptssequence class="zero timestamp" values="0,0,0,0,0,0"/>
+<hostscript><script id="clock-skew" output="mean: -4s, deviation: 0s, median: -4s"><elem key="stddev">0</elem>
+<elem key="count">2</elem>
+<elem key="median">-4</elem>
+<elem key="mean">-4</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 36286/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 24745/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 37234/udp): CLEAN (Failed to receive data)&#xa;  Check 4 (port 55739/udp): CLEAN (Failed to receive data)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="nbstat" output="NetBIOS name: ALICE, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 005056861b45 (VMware)&#xa;Names:&#xa;  ALICE&lt;00&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  ALICE&lt;20&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  THINC&lt;00&gt;            Flags: &lt;group&gt;&lt;active&gt;&#xa;  ALICE&lt;03&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  THINC&lt;1e&gt;            Flags: &lt;group&gt;&lt;active&gt;&#xa;  THINC&lt;1d&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;Statistics:&#xa;  005056861b450000000000000000000000&#xa;  0000000000000000000000000000000000&#xa;  0000000000000000000000000000"/><script id="smb2-security-mode" output="Couldn&apos;t establish a SMBv2 connection."/><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/><script id="smb-os-discovery" output="&#xa;  OS: Windows XP (Windows 2000 LAN Manager)&#xa;  OS CPE: cpe:/o:microsoft:windows_xp::-&#xa;  Computer name: alice&#xa;  NetBIOS computer name: ALICE\x00&#xa;  Domain name: thinc.local&#xa;  Forest name: thinc.local&#xa;  FQDN: alice.thinc.local&#xa;  System time: 2023-02-16T08:58:48+00:00&#xa;"><elem key="os">Windows 5.1</elem>
+<elem key="lanmanager">Windows 2000 LAN Manager</elem>
+<elem key="server">ALICE\x00</elem>
+<elem key="date">2023-02-16T08:58:48+00:00</elem>
+<elem key="fqdn">alice.thinc.local</elem>
+<elem key="domain_dns">thinc.local</elem>
+<elem key="forest_dns">thinc.local</elem>
+<elem key="workgroup">THINC\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_xp::-</elem>
+</script></hostscript><trace port="3389" proto="tcp">
+<hop ttl="1" ipaddr="192.168.119.1" rtt="367.60"/>
+<hop ttl="2" ipaddr="10.11.1.5" rtt="367.71"/>
+</trace>
+<times srtt="246334" rttvar="39821" to="405618"/>
+</host>
+<taskbegin task="NSE" time="1676537939"/>
+<taskend task="NSE" time="1676537939"/>
+<taskbegin task="NSE" time="1676537939"/>
+<taskend task="NSE" time="1676537939"/>
+<taskbegin task="NSE" time="1676537939"/>
+<taskend task="NSE" time="1676537939"/>
+<runstats><finished time="1676537939" timestr="Thu Feb 16 16:58:59 2023" summary="Nmap done at Thu Feb 16 16:58:59 2023; 1 IP address (1 host up) scanned in 1080.26 seconds" elapsed="1080.26" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

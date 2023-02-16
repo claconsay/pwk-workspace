@@ -1,0 +1,51 @@
+# Nmap 7.93 scan initiated Thu Feb 16 17:19:44 2023 as: nmap -vv --reason -Pn -T4 -sV -p 445 "--script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp445/tcp_445_smb_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp445/xml/tcp_445_smb_nmap.xml 10.11.1.13
+Nmap scan report for 10.11.1.13
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-02-16 17:19:45 PST for 49s
+
+PORT    STATE SERVICE      REASON          VERSION
+445/tcp open  microsoft-ds syn-ack ttl 127 Microsoft Windows Server 2008 R2 - 2012 microsoft-ds
+|_smb-enum-services: ERROR: Script execution failed (use -d to debug)
+Service Info: OS: Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-capabilities: 
+|   202: 
+|     Distributed File System
+|   210: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   300: 
+|     Distributed File System
+|     Leasing
+|     Multi-credit operations
+|   302: 
+|     Distributed File System
+|     Leasing
+|_    Multi-credit operations
+|_smb-print-text: false
+| smb-security-mode: 
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-time: 
+|   date: 2023-02-16T09:19:54
+|_  start_date: 2022-03-16T23:28:44
+| smb2-security-mode: 
+|   302: 
+|_    Message signing enabled but not required
+| smb-mbenum: 
+|_  ERROR: Failed to connect to browser service: No accounts left to try
+|_smb-vuln-ms10-061: No accounts left to try
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     202
+|     210
+|     300
+|_    302
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb 16 17:20:34 2023 -- 1 IP address (1 host up) scanned in 50.25 seconds

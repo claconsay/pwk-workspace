@@ -1,0 +1,96 @@
+# Nmap 7.93 scan initiated Thu Feb 16 17:19:44 2023 as: nmap -vv --reason -Pn -T4 -sV -p 1433 "--script=banner,(ms-sql* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" --script-args=mssql.instance-port=1433,mssql.username=sa,mssql.password=sa -oN /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp1433/tcp_1433_mssql_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp1433/xml/tcp_1433_mssql_nmap.xml 10.11.1.13
+Nmap scan report for 10.11.1.13
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-02-16 17:19:45 PST for 37s
+
+PORT     STATE SERVICE  REASON          VERSION
+1433/tcp open  ms-sql-s syn-ack ttl 127 Microsoft SQL Server 2012 11.00.2100.00; RTM
+|_ms-sql-query: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-tables: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-xp-cmdshell: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-hasdbaccess: ERROR: Script execution failed (use -d to debug)
+| ssl-poodle: 
+|   VULNERABLE:
+|   SSL POODLE information leak
+|     State: VULNERABLE
+|     IDs:  BID:70574  CVE:CVE-2014-3566
+|           The SSL protocol 3.0, as used in OpenSSL through 1.0.1i and other
+|           products, uses nondeterministic CBC padding, which makes it easier
+|           for man-in-the-middle attackers to obtain cleartext data via a
+|           padding-oracle attack, aka the "POODLE" issue.
+|     Disclosure date: 2014-10-14
+|     Check results:
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA
+|     References:
+|       https://www.imperialviolet.org/2014/10/14/poodle.html
+|       https://www.securityfocus.com/bid/70574
+|       https://www.openssl.org/~bodo/ssl-poodle.pdf
+|_      https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2014-3566
+|_ms-sql-dump-hashes: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-config: ERROR: Script execution failed (use -d to debug)
+| ssl-enum-ciphers: 
+|   SSLv3: 
+|     ciphers: 
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 1024) - F
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - F
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - F
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       CBC-mode cipher in SSLv3 (CVE-2014-3566)
+|       Ciphersuite uses MD5 for message integrity
+|       Forward Secrecy not supported by any cipher
+|       Insecure certificate signature (SHA1), score capped at F
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - F
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - F
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 1024) - F
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 1024) - F
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 1024) - F
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 1024) - F
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 1024) - F
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|       Insecure certificate signature (SHA1), score capped at F
+|_  least strength: F
+|_ms-sql-dac: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-ntlm-info: ERROR: Script execution failed (use -d to debug)
+|_ms-sql-empty-password: ERROR: Script execution failed (use -d to debug)
+| ssl-cert: Subject: commonName=SSL_Self_Signed_Fallback
+| Issuer: commonName=SSL_Self_Signed_Fallback
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2022-03-16T23:28:47
+| Not valid after:  2052-03-16T23:28:47
+| MD5:   772d0f6f1be594627336f1dc91e154ff
+| SHA-1: 23133eec3709cd26f6fd669c6f4c42acadceb7b9
+| -----BEGIN CERTIFICATE-----
+| MIIB+zCCAWSgAwIBAgIQPOgY2jnheopNi3+Q+nGdAjANBgkqhkiG9w0BAQUFADA7
+| MTkwNwYDVQQDHjAAUwBTAEwAXwBTAGUAbABmAF8AUwBpAGcAbgBlAGQAXwBGAGEA
+| bABsAGIAYQBjAGswIBcNMjIwMzE2MjMyODQ3WhgPMjA1MjAzMTYyMzI4NDdaMDsx
+| OTA3BgNVBAMeMABTAFMATABfAFMAZQBsAGYAXwBTAGkAZwBuAGUAZABfAEYAYQBs
+| AGwAYgBhAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAtghYafnAEd9L
+| 3D8OjDU2wI8k2bRCAgvT67hKCmG48gxTBTT5e7cO+ZML0EtTBLUEYDksAVbYtawq
+| 8G4zpTWJLG06OceNBaDLVoOvPC+/maQSjJx88oQ3PPbvakTLjMiNMCrw8CIPPGXh
+| AwaVQurITFywO8z7Dd9KmGB3ZqlNp1sCAwEAATANBgkqhkiG9w0BAQUFAAOBgQAY
+| JlO8ssoZXxJ68/PJljXCpOZoO4E7B5CCA83zTUu8Sr+PabbZ856EOd0alyNPIuq3
+| AgTRxAGU86LP4GHouTmjn/xLkPEzbCxP7RnSSCOBLkbTfBIsOE115bWRFRyNku6q
+| iAKhiNX5WfUOidHp64eADjRD1hujC0oihDJBFbeakA==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2023-02-16T09:20:00+00:00; -4s from scanner time.
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb 16 17:20:22 2023 -- 1 IP address (1 host up) scanned in 37.97 seconds

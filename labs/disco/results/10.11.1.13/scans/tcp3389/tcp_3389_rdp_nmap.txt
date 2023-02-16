@@ -1,0 +1,136 @@
+# Nmap 7.93 scan initiated Thu Feb 16 17:19:44 2023 as: nmap -vv --reason -Pn -T4 -sV -p 3389 "--script=banner,(rdp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp3389/tcp_3389_rdp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp3389/xml/tcp_3389_rdp_nmap.xml 10.11.1.13
+Nmap scan report for 10.11.1.13
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-02-16 17:19:45 PST for 139s
+
+PORT     STATE SERVICE            REASON          VERSION
+3389/tcp open  ssl/ms-wbt-server? syn-ack ttl 127
+| ssl-cert: Subject: commonName=disco
+| Issuer: commonName=disco
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-02-15T00:34:52
+| Not valid after:  2023-08-17T00:34:52
+| MD5:   08f798068d6c4d8f0d115ecc87ded283
+| SHA-1: fc72729e00c525ed96546f94c887cdf02b154511
+| -----BEGIN CERTIFICATE-----
+| MIICzjCCAbagAwIBAgIQVDMfCERH8I5Czgh+lBhdZzANBgkqhkiG9w0BAQsFADAQ
+| MQ4wDAYDVQQDEwVkaXNjbzAeFw0yMzAyMTUwMDM0NTJaFw0yMzA4MTcwMDM0NTJa
+| MBAxDjAMBgNVBAMTBWRpc2NvMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+| AQEA4oAjCzsRp9aGX3Y9pwjqJY6+pXxF3R7RZDAl7vvAN2Iz7Lk276k5/tasKzVJ
+| AhVbXBlydAFUQqtQjHqd4VMDHp8mlUz91DqxHMVZPO55W69IGaQtfkp5FIZc1mvc
+| K9ZSD0fOvW7dB1k4oy7KQNlmN8kOojJEACIHcnp95o/W8evXWoSFilPc+I9BR5L1
+| 88NDS2yiDoR5+jhQ/013lng+AFQwYnB9t52AucQvplCmWekHXJ1mN4Vh6viGTkAQ
+| tncb8PhqFjXeED8J+tQtA/f7zaFf5ecLiQ4MnBbr+LrhImRSzpXIm0+Ed3lToD+N
+| VX2kCf1hU0AhVeF8KTRX6Vc+swIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcD
+| ATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAMtPTeIwjMaZdDcTlFcB
+| uf0B0x4k79i0U4aLz/FBDTorzQHXs5w1M4umOtN/pkoZW26OL98JfiG4AXnkfdLP
+| KW2QvyJ3S0YRAW83UyW2CTVNnZgGVbMEGUMiUm5OyxcUovaBTeoiuBE7vL8n9TSn
+| P/3nK4WeEwr7ptn+JAkCjey1MRfKxk4KBCHnBQ0bbaJ3WyJ7Q9EPxHZRWf/mAVy3
+| W4nCZt9BEaaLMRDz95Mhxu7MTKap7ko4p/BUTGBZCQmFKg90aFdHelbJ7Qf0GTLm
+| 6fk48kxMbr8uyCUFt1BUHSft6/9FMSuxxMiaP5Kl7p1PrhIRZ/byl+bK164PJJK4
+| An8=
+|_-----END CERTIFICATE-----
+| ssl-enum-ciphers: 
+|   TLSv1.0: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 2048) - C
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|   TLSv1.1: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 2048) - C
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|   TLSv1.2: 
+|     ciphers: 
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256 (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (secp256r1) - A
+|       TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (secp256r1) - A
+|       TLS_DHE_RSA_WITH_AES_256_GCM_SHA384 (dh 1024) - A
+|       TLS_DHE_RSA_WITH_AES_128_GCM_SHA256 (dh 1024) - A
+|       TLS_RSA_WITH_AES_256_GCM_SHA384 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_GCM_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA256 (rsa 2048) - A
+|       TLS_RSA_WITH_AES_256_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_AES_128_CBC_SHA (rsa 2048) - A
+|       TLS_RSA_WITH_3DES_EDE_CBC_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_SHA (rsa 2048) - C
+|       TLS_RSA_WITH_RC4_128_MD5 (rsa 2048) - C
+|     compressors: 
+|       NULL
+|     cipher preference: server
+|     warnings: 
+|       64-bit block cipher 3DES vulnerable to SWEET32 attack
+|       Broken cipher RC4 is deprecated by RFC 7465
+|       Ciphersuite uses MD5 for message integrity
+|       Key exchange (dh 1024) of lower strength than certificate key
+|_  least strength: C
+|_ssl-date: 2023-02-16T09:21:36+00:00; -4s from scanner time.
+| ssl-dh-params: 
+|   VULNERABLE:
+|   Diffie-Hellman Key Exchange Insufficient Group Strength
+|     State: VULNERABLE
+|       Transport Layer Security (TLS) services that use Diffie-Hellman groups
+|       of insufficient strength, especially those using one of a few commonly
+|       shared groups, may be susceptible to passive eavesdropping attacks.
+|     Check results:
+|       WEAK DH GROUP 1
+|             Cipher Suite: TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+|             Modulus Type: Safe prime
+|             Modulus Source: RFC2409/Oakley Group 2
+|             Modulus Length: 1024
+|             Generator Length: 1024
+|             Public Key Length: 1024
+|     References:
+|_      https://weakdh.org
+| rdp-enum-encryption: 
+|   Security layer
+|     CredSSP (NLA): SUCCESS
+|     CredSSP with Early User Auth: SUCCESS
+|     Native RDP: SUCCESS
+|     RDSTLS: SUCCESS
+|     SSL: SUCCESS
+|   RDP Encryption level: Client Compatible
+|     40-bit RC4: SUCCESS
+|     56-bit RC4: SUCCESS
+|     128-bit RC4: SUCCESS
+|     FIPS 140-1: SUCCESS
+|_  RDP Protocol Version:  RDP 5.x, 6.x, 7.x, or 8.x server
+| rdp-ntlm-info: 
+|   Target_Name: DISCO
+|   NetBIOS_Domain_Name: DISCO
+|   NetBIOS_Computer_Name: DISCO
+|   DNS_Domain_Name: disco
+|   DNS_Computer_Name: disco
+|   Product_Version: 6.3.9600
+|_  System_Time: 2023-02-16T09:21:11+00:00
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb 16 17:22:04 2023 -- 1 IP address (1 host up) scanned in 139.71 seconds

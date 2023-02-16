@@ -8,103 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6637937c50b22311",
+            "id": "b974458eb05a22ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.11.1.10 - mike (done)/1. Enumeration/info.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "87802039ef3de8df",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sanbox/10.5.5.25 - cevapi/commands/file-transfer.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "ae8ace2e2d25e73d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sanbox/10.5.5.20 - poultry/3. Report/walkthrough.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "c88dff8d9a04bbe3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sanbox/10.5.5.25 - cevapi/3. Report/walkthrough.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "729550bf457c134a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.11.1.14 (bob)/1. Enumeration/nmap.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "b35e92c500bae16e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.11.1.14 (bob)/commands/shell.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "65d3f06b7b148497",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.11.1.14 (bob)/commands/shell.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "4ec356a1887ef0c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.11.1.14 (bob)/1. Enumeration/info.md",
+                "file": "10.11.1.13 - disco (done)/1. Enumeration/nmap.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ],
-        "currentTab": 7
+        ]
       }
     ],
     "direction": "vertical"
@@ -170,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10.11.1.14 (bob)/1. Enumeration/info.md",
+                "file": "10.11.1.13 - disco (done)/1. Enumeration/nmap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -187,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10.11.1.14 (bob)/1. Enumeration/info.md",
+                "file": "10.11.1.13 - disco (done)/1. Enumeration/nmap.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -210,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10.11.1.14 (bob)/1. Enumeration/info.md"
+                "file": "10.11.1.13 - disco (done)/1. Enumeration/nmap.md"
               }
             }
           },
@@ -247,17 +162,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "4ec356a1887ef0c2",
+  "active": "b974458eb05a22ee",
   "lastOpenFiles": [
-    "10.11.1.14 (bob)/commands/shell.md",
-    "10.11.1.14 (bob)/references/privilege-escalation.md",
-    "10.11.1.14 (bob)/1. Enumeration/nmap.md",
+    "10.11.1.13 - disco (done)/1. Enumeration/info.md",
     "10.11.1.13 - disco (done)/4. Report/walkthrough.md",
-    "sanbox/10.5.5.30 - sandboxdc/3. Report/walkthrough.md",
-    "sanbox/10.5.5.25 - cevapi/3. Report/walkthrough.md",
-    "sanbox/10.5.5.20 - poultry/3. Report/walkthrough.md",
+    "10.11.1.31 - ralph (done)/4. Report/walkthrough.md",
+    "10.11.1.14 (bob)/2. Exploitation/FTP.md",
     "sanbox/10.5.5.11 - zora/4. Report/walkthrough.md",
-    "sanbox/10.4.4.10 - ajla/3. Report/walkthrough.md",
-    "10.11.1.31 - ralph (done)/4. Report/walkthrough.md"
+    "sanbox/10.5.5.25 - cevapi/3. Report/walkthrough.md",
+    "10.11.1.14 (bob)/1. Enumeration/info.md",
+    "10.11.1.14 (bob)/commands/shell.md",
+    "10.11.1.14 (bob)/1. Enumeration/nmap.md",
+    "sanbox/10.5.5.20 - poultry/3. Report/walkthrough.md"
   ]
 }

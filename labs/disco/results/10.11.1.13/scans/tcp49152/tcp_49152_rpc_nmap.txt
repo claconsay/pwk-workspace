@@ -1,0 +1,12 @@
+# Nmap 7.93 scan initiated Thu Feb 16 17:19:45 2023 as: nmap -vv --reason -Pn -T4 -sV -p 49152 --script=banner,msrpc-enum,rpc-grind,rpcinfo -oN /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp49152/tcp_49152_rpc_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/disco/results/10.11.1.13/scans/tcp49152/xml/tcp_49152_rpc_nmap.xml 10.11.1.13
+Nmap scan report for 10.11.1.13
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-16 17:19:45 PST for 79s
+
+PORT      STATE SERVICE REASON          VERSION
+49152/tcp open  msrpc   syn-ack ttl 127 Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb 16 17:21:04 2023 -- 1 IP address (1 host up) scanned in 79.55 seconds

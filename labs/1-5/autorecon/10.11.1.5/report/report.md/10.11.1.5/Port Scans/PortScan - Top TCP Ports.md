@@ -1,0 +1,87 @@
+```bash
+nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN "/home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/_quick_tcp_nmap.txt" -oX "/home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/xml/_quick_tcp_nmap.xml" 10.11.1.5
+```
+
+[/home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/_quick_tcp_nmap.txt](file:///home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/_quick_tcp_nmap.txt):
+
+```
+# Nmap 7.93 scan initiated Thu Feb 16 16:40:59 2023 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN /home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/_quick_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/1-21/results/10.11.1.5/scans/xml/_quick_tcp_nmap.xml 10.11.1.5
+Increasing send delay for 10.11.1.5 from 0 to 5 due to 91 out of 227 dropped probes since last increase.
+Increasing send delay for 10.11.1.5 from 5 to 10 due to 11 out of 18 dropped probes since last increase.
+Nmap scan report for 10.11.1.5
+Host is up, received user-set (0.21s latency).
+Scanned at 2023-02-16 16:40:59 PST for 57s
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE      REASON          VERSION
+135/tcp  open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+139/tcp  open  netbios-ssn  syn-ack ttl 127 Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds syn-ack ttl 127 Microsoft Windows XP microsoft-ds
+1025/tcp open  msrpc        syn-ack ttl 127 Microsoft Windows RPC
+Device type: general purpose|specialized|power-device
+Running (JUST GUESSING): Microsoft Windows XP|7|2000|2003|98|PocketPC/CE (94%), Belkin embedded (91%), SMA embedded (91%)
+OS CPE: cpe:/o:microsoft:windows_xp cpe:/o:microsoft:windows_7 cpe:/o:microsoft:windows_2000::sp4:server cpe:/o:microsoft:windows_server_2003::sp2 cpe:/o:microsoft:windows_98 cpe:/o:microsoft:windows_ce:6.0
+OS fingerprint not ideal because: maxTimingRatio (1.894000e+00) is greater than 1.4
+Aggressive OS guesses: Microsoft Windows XP (94%), Belkin OmniView KVM switch or SMA Sunny WebBox solar panel monitor (91%), Microsoft Windows 7 (91%), Microsoft Windows XP SP2 (90%), Microsoft Windows XP SP3 (89%), Microsoft Windows 2000 Server SP4 or Windows XP Professional SP3 (89%), Microsoft Windows 2000 SP4 (89%), Microsoft Windows Server 2003 SP2 (87%), Microsoft Windows Server 2003 (87%), Microsoft Windows 98 SE (86%)
+No exact OS matches for host (test conditions non-ideal).
+TCP/IP fingerprint:
+SCAN(V=7.93%E=4%D=2/16%OT=135%CT=1%CU=35448%PV=Y%DS=2%DC=T%G=N%TM=63EDEC54%P=x86_64-pc-linux-gnu)
+SEQ(SP=80%GCD=1%ISR=9D%II=I%TS=0)
+SEQ(SP=8C%GCD=1%ISR=99%TS=0)
+OPS(O1=M551NW0NNT00NNS%O2=M551NW0NNT00NNS%O3=M551NW0NNT00%O4=M551NW0NNT00NNS%O5=M551NW0NNT00NNS%O6=M551NNT00NNS)
+WIN(W1=FAF0%W2=FAF0%W3=FAF0%W4=FAF0%W5=FAF0%W6=FAF0)
+ECN(R=Y%DF=Y%T=80%W=FAF0%O=M551NW0NNS%CC=N%Q=)
+T1(R=Y%DF=Y%T=80%S=O%A=S+%F=AS%RD=0%Q=)
+T2(R=N)
+T3(R=N)
+T4(R=N)
+T5(R=Y%DF=N%T=80%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+T6(R=N)
+T7(R=N)
+U1(R=Y%DF=N%T=80%IPL=38%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=S%T=80%CD=Z)
+
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=140 (Good luck!)
+IP ID Sequence Generation: Busy server or unknown class
+Service Info: OSs: Windows, Windows XP; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_xp
+
+Host script results:
+| nbstat: NetBIOS name: ALICE, NetBIOS user: <unknown>, NetBIOS MAC: 005056861b45 (VMware)
+| Names:
+|   ALICE<00>            Flags: <unique><active>
+|   ALICE<20>            Flags: <unique><active>
+|   THINC<00>            Flags: <group><active>
+|   ALICE<03>            Flags: <unique><active>
+|   THINC<1e>            Flags: <group><active>
+|   THINC<1d>            Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+| Statistics:
+|   005056861b450000000000000000000000
+|   0000000000000000000000000000000000
+|_  0000000000000000000000000000
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 36286/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 24745/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 37234/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 55739/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+|_smb2-time: Protocol negotiation failed (SMB2)
+|_smb2-security-mode: Couldn't establish a SMBv2 connection.
+|_clock-skew: -4s
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT       ADDRESS
+1   230.65 ms 192.168.119.1
+2   230.75 ms 10.11.1.5
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Feb 16 16:41:56 2023 -- 1 IP address (1 host up) scanned in 57.19 seconds
+
+```
