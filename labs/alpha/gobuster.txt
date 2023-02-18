@@ -1,0 +1,4 @@
+/.hta                [33m (Status: 403)[0m [Size: 289]
+/.htaccess           [33m (Status: 403)[0m [Size: 294]
+/.htpasswd           [33m (Status: 403)[0m [Size: 294]
+/admin.cgi           [32m (Status: 200)[0m [Size: 821]

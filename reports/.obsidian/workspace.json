@@ -13,13 +13,86 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.11.1.13 - disco (done)/1. Enumeration/nmap.md",
+                "file": "10.11.1.14 - bob (walkthrough)/commands/shell.md",
                 "mode": "source",
                 "source": true
               }
             }
+          },
+          {
+            "id": "9581e4876cfc5fc8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.11.1.14 - bob (walkthrough)/2. Exploitation/FTP.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "af580bc2ab37ad14",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.11.1.123 - xor-app59 (done)/4. Report/walkthrough.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "e76562b49079e5a3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.11.1.71 - alpha/Enumeration/info.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "1fb4759097b29024",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.11.1.71 - alpha/Exploitation/shellshock.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "6c172fa6da812aae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "xxLearning Path/offsec-spoiler.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "8228b49c5284f12d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "xxLearning Path/offsec-spoiler.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -85,7 +158,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "10.11.1.13 - disco (done)/1. Enumeration/nmap.md",
+                "file": "xxLearning Path/offsec-spoiler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +175,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "10.11.1.13 - disco (done)/1. Enumeration/nmap.md",
+                "file": "xxLearning Path/offsec-spoiler.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "10.11.1.13 - disco (done)/1. Enumeration/nmap.md"
+                "file": "xxLearning Path/offsec-spoiler.md"
               }
             }
           },
@@ -138,7 +211,7 @@
             }
           },
           {
-            "id": "63a41c2c5ff089b2",
+            "id": "7b9648b4b480d913",
             "type": "leaf",
             "state": {
               "type": "side-panel-control-view",
@@ -150,7 +223,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 336.5
+    "width": 327.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -162,17 +236,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "b974458eb05a22ee",
+  "active": "8228b49c5284f12d",
   "lastOpenFiles": [
-    "10.11.1.13 - disco (done)/1. Enumeration/info.md",
+    "xxLearning Path/0xpath.md",
+    "xxLearning Path/offsec-spoiler.md",
+    "10.11.1.71 - alpha/Exploitation/shellshock.md",
+    "10.11.1.71 - alpha/Enumeration/info.md",
+    "10.11.1.123 - xor-app59 (done)/4. Report/walkthrough.md",
     "10.11.1.13 - disco (done)/4. Report/walkthrough.md",
     "10.11.1.31 - ralph (done)/4. Report/walkthrough.md",
-    "10.11.1.14 (bob)/2. Exploitation/FTP.md",
-    "sanbox/10.5.5.11 - zora/4. Report/walkthrough.md",
-    "sanbox/10.5.5.25 - cevapi/3. Report/walkthrough.md",
-    "10.11.1.14 (bob)/1. Enumeration/info.md",
-    "10.11.1.14 (bob)/commands/shell.md",
-    "10.11.1.14 (bob)/1. Enumeration/nmap.md",
-    "sanbox/10.5.5.20 - poultry/3. Report/walkthrough.md"
+    "10.11.1.31 - ralph (done)/screenshots/ralph-whoami.png",
+    "10.11.1.31 - ralph (done)/screenshots/ralph-proof-network.png",
+    "10.11.1.31 - ralph (done)/screenshots/ralph-dbeaver.png"
   ]
 }

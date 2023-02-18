@@ -1,0 +1,1 @@
+# Nmap 7.93 scan initiated Sun Feb 19 00:06:22 2023 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -p- -oN /home/chris/trainings/pwk/workspace/labs/alpha/10.11.1.71/scans/_full_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/alpha/10.11.1.71/scans/xml/_full_tcp_nmap.xml 10.11.1.71

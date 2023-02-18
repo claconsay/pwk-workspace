@@ -1,0 +1,79 @@
+# Nmap 7.93 scan initiated Sat Feb 18 20:31:54 2023 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN /home/chris/trainings/pwk/workspace/labs/1-20/recon/scans/_quick_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/1-20/recon/scans/xml/_quick_tcp_nmap.xml 10.11.1.20
+Increasing send delay for 10.11.1.20 from 0 to 5 due to 57 out of 141 dropped probes since last increase.
+Increasing send delay for 10.11.1.20 from 5 to 10 due to 11 out of 26 dropped probes since last increase.
+Nmap scan report for 10.11.1.20
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-02-18 20:31:54 PST for 120s
+Not shown: 987 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE       REASON      VERSION
+53/tcp   open     domain        syn-ack     Simple DNS Plus
+88/tcp   open     kerberos-sec  syn-ack     Microsoft Windows Kerberos (server time: 2023-02-18 12:32:19Z)
+135/tcp  open     msrpc         syn-ack     Microsoft Windows RPC
+139/tcp  open     netbios-ssn   syn-ack     Microsoft Windows netbios-ssn
+389/tcp  open     ldap          syn-ack     Microsoft Windows Active Directory LDAP (Domain: svcorp.com0., Site: Default-First-Site-Name)
+445/tcp  open     microsoft-ds? syn-ack
+464/tcp  open     kpasswd5?     syn-ack
+593/tcp  open     ncacn_http    syn-ack     Microsoft Windows RPC over HTTP 1.0
+636/tcp  open     tcpwrapped    syn-ack
+3268/tcp open     ldap          syn-ack     Microsoft Windows Active Directory LDAP (Domain: svcorp.com0., Site: Default-First-Site-Name)
+3269/tcp open     tcpwrapped    syn-ack
+3389/tcp open     ms-wbt-server syn-ack     Microsoft Terminal Services
+| ssl-cert: Subject: commonName=sv-dc01.svcorp.com
+| Issuer: commonName=sv-dc01.svcorp.com
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2023-02-17T10:31:43
+| Not valid after:  2023-08-19T10:31:43
+| MD5:   4a7631616303cb739702889d5eae527e
+| SHA-1: d01ddc132f916480d01def7d87db520d29b2359b
+| -----BEGIN CERTIFICATE-----
+| MIIC6DCCAdCgAwIBAgIQJ1LUYMaPZoFBMz6hDIdq9DANBgkqhkiG9w0BAQsFADAd
+| MRswGQYDVQQDExJzdi1kYzAxLnN2Y29ycC5jb20wHhcNMjMwMjE3MTAzMTQzWhcN
+| MjMwODE5MTAzMTQzWjAdMRswGQYDVQQDExJzdi1kYzAxLnN2Y29ycC5jb20wggEi
+| MA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDbLrhAaAWiusNafRctV46jBMZ2
+| QBQgKGyaMvH7nz8030KmsKeiHEl/lDVlk+Mg5D9Xkd1Sxkp7s7zQ09q/3CmyIIkj
+| Lt/WAcxVLn2RAuDOWwBSuhRAaq7I+EGnOd2c/j/J1T4daHLCACYlVkRo4KbLMo1C
+| xmz0j1UCIOBvSR+LRzF3GCVLsiqDYZhoQqzqO/nEWpfpfK+5o5ecuNmvfSAt31ty
+| dFt4XSZsNW5jzqRRQkLtNfHf2/VERWWrUi24fF7uWwB7GHlFqe0vYgfOYYDW++sG
+| AIEtkcExdzVUIjQLWDUxXYPutu1ksd7NGI7HFpqAhjpfmAfFmp2PaWE2wIsNAgMB
+| AAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUFBwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG
+| 9w0BAQsFAAOCAQEAhSORpkgoK5UYsvdYHir5ZGUDEvMKc3C8pBSCYsyIbNTCHJly
+| uLVFpiyTee6aOUzOnKpU2/PqoIgrd0JjJ8lxD0JEesGbqF6aOIViVq8oI0sfVAdd
+| SuChVjq3Yu0JLzBUBBnVLQyOocYMmjjSDv2M4bivu2vAUfvNvQmG5Uo1/hhOcQn7
+| SfK+YSD8qMmF1FSY2n/K1T6ligr0aRQ6e94C8fceKmTjX8dt3v34Qrq1z1YwiHT3
+| nfDORUxMgeAIttmNMnpkNmK7tN8oBOuWaDCdxdETJXuVvc1C0huDjPuLDN6mcN6t
+| CRNaMO7lM4dgLz3hvUDZnzNJ9PGuQVDLDK2SyQ==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2023-02-18T12:33:46+00:00; -1s from scanner time.
+| rdp-ntlm-info: 
+|   Target_Name: svcorp
+|   NetBIOS_Domain_Name: svcorp
+|   NetBIOS_Computer_Name: SV-DC01
+|   DNS_Domain_Name: svcorp.com
+|   DNS_Computer_Name: sv-dc01.svcorp.com
+|   DNS_Tree_Name: svcorp.com
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-02-18T12:33:37+00:00
+3880/tcp filtered igrs          no-response
+Service Info: Host: SV-DC01; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-time: 
+|   date: 2023-02-18T12:33:41
+|_  start_date: N/A
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled and required
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 58038/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 59597/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 26603/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 60237/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Feb 18 20:33:54 2023 -- 1 IP address (1 host up) scanned in 120.69 seconds

@@ -1,0 +1,11 @@
+# Nmap 7.93 scan initiated Sun Feb 19 00:08:31 2023 as: nmap -vv --reason -Pn -T4 -sV -p 22 --script=banner,ssh2-enum-algos,ssh-hostkey,ssh-auth-methods -oN /home/chris/trainings/pwk/workspace/labs/alpha/10.11.1.71/scans/tcp22/tcp_22_ssh_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/alpha/10.11.1.71/scans/tcp22/xml/tcp_22_ssh_nmap.xml 10.11.1.71
+Nmap scan report for 10.11.1.71
+Host is up, received user-set.
+Scanned at 2023-02-19 00:08:31 PST for 1s
+
+PORT   STATE    SERVICE REASON      VERSION
+22/tcp filtered ssh     no-response
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 19 00:08:33 2023 -- 1 IP address (1 host up) scanned in 1.44 seconds
