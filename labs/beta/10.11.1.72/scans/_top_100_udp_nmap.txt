@@ -1,0 +1,64 @@
+# Nmap 7.93 scan initiated Sun Feb 19 15:56:23 2023 as: nmap -vv --reason -Pn -T4 -sU -A --top-ports 100 -oN /home/chris/trainings/pwk/workspace/labs/beta/10.11.1.72/scans/_top_100_udp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/beta/10.11.1.72/scans/xml/_top_100_udp_nmap.xml 10.11.1.72
+Increasing send delay for 10.11.1.72 from 0 to 50 due to 11 out of 15 dropped probes since last increase.
+Warning: 10.11.1.72 giving up on port because retransmission cap hit (6).
+Increasing send delay for 10.11.1.72 from 200 to 400 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for 10.11.1.72 from 400 to 800 due to 11 out of 16 dropped probes since last increase.
+Nmap scan report for 10.11.1.72
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-19 15:56:23 PST for 143s
+Not shown: 95 closed udp ports (port-unreach)
+PORT     STATE         SERVICE REASON               VERSION
+67/udp   open|filtered dhcps   no-response
+111/udp  open          rpcbind udp-response ttl 63  2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100003  2,3,4       2049/tcp   nfs
+|   100003  2,3,4       2049/tcp6  nfs
+|   100003  2,3,4       2049/udp   nfs
+|   100003  2,3,4       2049/udp6  nfs
+|   100005  1,2,3      41251/udp6  mountd
+|   100005  1,2,3      42081/tcp6  mountd
+|   100005  1,2,3      53887/udp   mountd
+|   100005  1,2,3      59807/tcp   mountd
+|   100021  1,3,4      37274/tcp6  nlockmgr
+|   100021  1,3,4      38686/tcp   nlockmgr
+|   100021  1,3,4      43832/udp6  nlockmgr
+|   100021  1,3,4      56742/udp   nlockmgr
+|   100024  1          34281/tcp   status
+|   100024  1          36248/udp   status
+|   100024  1          50684/tcp6  status
+|   100024  1          57848/udp6  status
+|   100227  2,3         2049/tcp   nfs_acl
+|   100227  2,3         2049/tcp6  nfs_acl
+|   100227  2,3         2049/udp   nfs_acl
+|_  100227  2,3         2049/udp6  nfs_acl
+2049/udp open          nfs_acl udp-response ttl 63  2-3 (RPC #100227)
+5353/udp open          mdns    udp-response ttl 254 DNS-based service discovery
+| dns-service-discovery: 
+|   9/tcp workstation
+|     Address=10.11.1.72 fe80::250:56ff:fe86:4f53
+|   22/tcp udisks-ssh
+|_    Address=10.11.1.72 fe80::250:56ff:fe86:4f53
+9200/udp open|filtered wap-wsp no-response
+Too many fingerprints match this host to give specific OS details
+TCP/IP fingerprint:
+SCAN(V=7.93%E=4%D=2/19%OT=%CT=%CU=7%PV=Y%DS=2%DC=T%G=N%TM=63F1D6B6%P=x86_64-pc-linux-gnu)
+SEQ(II=I)
+T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)
+U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)
+IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 2 hops
+
+TRACEROUTE (using port 1812/udp)
+HOP RTT       ADDRESS
+1   227.10 ms 192.168.119.1
+2   227.23 ms 10.11.1.72
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 19 15:58:46 2023 -- 1 IP address (1 host up) scanned in 143.27 seconds

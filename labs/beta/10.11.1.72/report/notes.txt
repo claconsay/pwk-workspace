@@ -1,0 +1,64 @@
+[*] ssh found on tcp/22.
+
+
+
+[*] smtp found on tcp/25.
+
+
+
+[*] http found on tcp/80.
+
+
+
+[*] pop3 found on tcp/110.
+
+
+
+[*] rpcbind found on tcp/111.
+
+
+
+[*] nntp found on tcp/119.
+
+
+
+[*] nfs_acl found on tcp/2049.
+
+
+
+[*] rpcbind found on udp/111.
+
+
+
+[*] nfs_acl found on udp/2049.
+
+
+
+[*] mdns found on udp/5353.
+
+
+
+[*] james-admin found on tcp/4555.
+
+
+
+[*] status found on tcp/34281.
+
+
+
+[*] nlockmgr found on tcp/38686.
+
+
+
+[*] mountd found on tcp/49021.
+
+
+
+[*] mountd found on tcp/56242.
+
+
+
+[*] mountd found on tcp/59807.
+
+
+

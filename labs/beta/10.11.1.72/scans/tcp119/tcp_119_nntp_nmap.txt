@@ -1,0 +1,13 @@
+# Nmap 7.93 scan initiated Sun Feb 19 15:58:21 2023 as: nmap -vv --reason -Pn -T4 -sV -p 119 --script=banner,nntp-ntlm-info -oN /home/chris/trainings/pwk/workspace/labs/beta/10.11.1.72/scans/tcp119/tcp_119_nntp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/beta/10.11.1.72/scans/tcp119/xml/tcp_119_nntp_nmap.xml 10.11.1.72
+Nmap scan report for 10.11.1.72
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-19 15:58:22 PST for 12s
+
+PORT    STATE SERVICE REASON         VERSION
+119/tcp open  nntp    syn-ack ttl 63 JAMES nntpd (posting ok)
+|_banner: 200 beta NNTP Service Ready, posting permitted
+Service Info: Host: beta
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 19 15:58:34 2023 -- 1 IP address (1 host up) scanned in 12.35 seconds

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Feb 19 22:36:35 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/chris/trainings/pwk/workspace/labs/alice/10.11.1.5/scans/_full_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/alice/10.11.1.5/scans/xml/_full_tcp_nmap.xml 10.11.1.5 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/chris/trainings/pwk/workspace/labs/alice/10.11.1.5/scans/_full_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/alice/10.11.1.5/scans/xml/_full_tcp_nmap.xml 10.11.1.5" start="1676817395" startstr="Sun Feb 19 22:36:35 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676817395"/>
+<taskend task="NSE" time="1676817395"/>
+<taskbegin task="NSE" time="1676817395"/>
+<taskend task="NSE" time="1676817395"/>
+<taskbegin task="NSE" time="1676817395"/>
+<taskend task="NSE" time="1676817395"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676817395"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676817395"/>
+<taskbegin task="Connect Scan" time="1676817395"/>
+<taskprogress task="Connect Scan" time="1676817426" percent="1.49" remaining="2052" etc="1676819477"/>
+<taskprogress task="Connect Scan" time="1676817456" percent="5.02" remaining="1155" etc="1676818610"/>
+<taskprogress task="Connect Scan" time="1676817486" percent="6.91" remaining="1227" etc="1676818713"/>
+<taskprogress task="Connect Scan" time="1676817516" percent="9.50" remaining="1153" etc="1676818669"/>
+<taskprogress task="Connect Scan" time="1676817546" percent="12.49" remaining="1058" etc="1676818604"/>
+<taskprogress task="Connect Scan" time="1676817609" percent="17.72" remaining="994" etc="1676818603"/>
+<taskprogress task="Connect Scan" time="1676817693" percent="24.33" remaining="927" etc="1676818620"/>
+<taskprogress task="Connect Scan" time="1676817723" percent="27.80" remaining="852" etc="1676818575"/>
+<taskprogress task="Connect Scan" time="1676817762" percent="31.77" remaining="789" etc="1676818550"/>
+<taskprogress task="Connect Scan" time="1676817810" percent="36.36" remaining="727" etc="1676818536"/>
+<taskprogress task="Connect Scan" time="1676817852" percent="40.63" remaining="668" etc="1676818520"/>
+<taskprogress task="Connect Scan" time="1676817933" percent="47.03" remaining="606" etc="1676818539"/>
+<taskprogress task="Connect Scan" time="1676817978" percent="51.53" remaining="549" etc="1676818526"/>
+<taskprogress task="Connect Scan" time="1676818020" percent="56.10" remaining="490" etc="1676818509"/>
+<taskprogress task="Connect Scan" time="1676818071" percent="61.03" remaining="432" etc="1676818503"/>
+<taskprogress task="Connect Scan" time="1676818110" percent="65.78" remaining="372" etc="1676818482"/>
+<taskprogress task="Connect Scan" time="1676818158" percent="70.62" remaining="318" etc="1676818475"/>
+<taskprogress task="Connect Scan" time="1676818218" percent="75.84" remaining="263" etc="1676818480"/>
+<taskprogress task="Connect Scan" time="1676818263" percent="80.96" remaining="205" etc="1676818467"/>
+<taskprogress task="Connect Scan" time="1676818311" percent="86.26" remaining="146" etc="1676818457"/>
+<taskprogress task="Connect Scan" time="1676818371" percent="91.74" remaining="88" etc="1676818459"/>
+<taskprogress task="Connect Scan" time="1676818422" percent="97.09" remaining="31" etc="1676818453"/>
+<taskend task="Connect Scan" time="1676818457" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1676818457"/>
+<taskend task="Service scan" time="1676818464" extrainfo="4 services on 1 host"/>
+<taskbegin task="NSE" time="1676818464"/>
+<taskend task="NSE" time="1676818485"/>
+<taskbegin task="NSE" time="1676818485"/>
+<taskend task="NSE" time="1676818485"/>
+<taskbegin task="NSE" time="1676818485"/>
+<taskend task="NSE" time="1676818485"/>
+<host starttime="1676817395" endtime="1676818485"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.5" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65316">
+<extrareasons reason="conn-refused" count="65316" proto="tcp" ports="1-134,136-138,140-444,446-502,504-1024,1026-1074,1076-1364,1366-1856,1858-2231,2233-2268,2270-3148,3150-3622,3624-3642,3644-3805,3807-4388,4390-4433,4435-4574,4576-4584,4586-4666,4668-5185,5187-5211,5213-5406,5408-5423,5425-5482,5484-5500,5502-6044,6046-6266,6268-6292,6294-6653,6655-7511,7513-8557,8559-8592,8594-8730,8732-9035,9037-9104,9106-9495,9497-9910,9912-10067,10069-10327,10329-10355,10357-10605,10607-10799,10801-11609,11611-12063,12065-12232,12234-12753,12755-12933,12935-13158,13160-13543,13545-13553,13555-15093,15095-15158,15160-15161,15163-15204,15206-15228,15230-15656,15658-15743,15745-16501,16503-16551,16553-17173,17175-17278,17280-17390,17392-17679,17681-17997,17999-18316,18318-19080,19082-19521,19523-19527,19529-19674,19676-19767,19769-19922,19924-20138,20140-20819,20821-21264,21266-21567,21569-22667,22669-22757,22759-23144,23146-23626,23628-24245,24247-24264,24266-24301,24303-24465,24467-24632,24634-24984,24986-25710,25712-25832,25834-25888,25890-26074,26076-26765,26767-27021,27023-27090,27092-27093,27095-27230,27232-27577,27579-27722,27724-28588,28590-28719,28721-28866,28868-29161,29163-29515,29517-29664,29666-29896,29898-29899,29901-30842,30844-30931,30933-30949,30951-31032,31034-31209,31211-32189,32191-32431,32433-32491,32493-32894,32896-32910,32912-33297,33299-33859,33861-33935,33937-34013,34015-34057,34059-34837,34839-35330,35332-35494,35496-35644,35646-35684,35686-35803,35805-35861,35863-36357,36359-36492,36494-36612,36614-36933,36935-36974,36976-37290,37292-37327,37329-38226,38228-38297,38299-38961,38963-38994,38996-39137,39139-39398,39400-39990,39992-40691,40694-40778,40780-41115,41117-41143,41145-41291,41293-42105,42107-42245,42247-42372,42374-42426,42428-42829,42831-42872,42874-43783,43785-43790,43792-44020,44022-44238,44240-44785,44787-45070,45072-45107,45109-45201,45203-45628,45630-46638,46640-46678,46680-46849,46851-46857,46859-47705,47707-48271,48273-48496,48498-48653,48655-48837,48839-49114,49116-50035,50037-50067,50069-50327,50329-50867,50869-51472,51474-51941,51943-52606,52608-52858,52860-53248,53250-53436,53438-53681,53683-53856,53858-54333,54335-55299,55301-55408,55410-55420,55422-55923,55925-56013,56015-57108,57110-58048,58050-58648,58650-58708,58710-59203,59205-59360,59362-59392,59394-59613,59615-59687,59689-60292,60294-60695,60697-60712,60714-60961,60963-61733,61735-62163,62165-62324,62326-62728,62730-63141,63143-63487,63489-63508,63510-63632,63634-63719,63721-63852,63854-64557,64559-64658,64660-64708,64710-64895,64897-65012,65014-65355,65357-65463,65465-65535"/>
+</extraports>
+<extraports state="filtered" count="215">
+<extrareasons reason="no-response" count="215" proto="tcp" ports="503,1075,1365,1857,2232,2269,3149,3623,3643,3806,4389,4434,4575,4585,4667,5186,5212,5407,5424,5483,5501,6045,6267,6293,6654,7512,8558,8593,8731,9036,9105,9496,9911,10068,10328,10356,10606,10800,11610,12064,12233,12754,12934,13159,13544,13554,15094,15159,15162,15205,15229,15657,15744,16502,16552,17174,17279,17391,17680,17998,18317,19081,19522,19528,19675,19768,19923,20139,20820,21265,21568,22668,22758,23145,23627,24246,24265,24302,24466,24633,24985,25711,25833,25889,26075,26766,27022,27091,27094,27231,27578,27723,28589,28720,28867,29162,29516,29665,29897,29900,30843,30932,30950,31033,31210,32190,32432,32492,32895,32911,33298,33860,33936,34014,34058,34838,35331,35495,35645,35685,35804,35862,36358,36493,36613,36934,36975,37291,37328,38227,38298,38962,38995,39138,39399,39991,40692-40693,40779,41116,41144,41292,42106,42246,42373,42427,42830,42873,43784,43791,44021,44239,44786,45071,45108,45202,45629,46639,46679,46850,46858,47706,48272,48497,48654,48838,49115,50036,50068,50328,50868,51473,51942,52607,52859,53249,53437,53682,53857,54334,55300,55409,55421,55924,56014,57109,58049,58649,58709,59204,59361,59393,59614,59688,60293,60696,60713,60962,61734,62164,62325,62729,63142,63488,63509,63633,63720,63853,64558,64659,64709,64896,65013,65356,65464"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" product="Microsoft Windows XP microsoft-ds" ostype="Windows XP" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows_xp</cpe></service></port>
+<port protocol="tcp" portid="1025"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+</ports>
+<hostscript><script id="clock-skew" output="-1s"><elem key="median">-1</elem>
+<elem key="stddev">0</elem>
+<elem key="count">1</elem>
+<elem key="mean">-1</elem>
+</script><script id="smb2-security-mode" output="Couldn&apos;t establish a SMBv2 connection."/><script id="smb2-time" output="Protocol negotiation failed (SMB2)"/><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 36286/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 24745/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 37234/udp): CLEAN (Failed to receive data)&#xa;  Check 4 (port 55739/udp): CLEAN (Failed to receive data)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="nbstat" output="NetBIOS name: ALICE, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: 00505686ae65 (VMware)&#xa;Names:&#xa;  ALICE&lt;00&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  ALICE&lt;20&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  THINC&lt;00&gt;            Flags: &lt;group&gt;&lt;active&gt;&#xa;  ALICE&lt;03&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  THINC&lt;1e&gt;            Flags: &lt;group&gt;&lt;active&gt;&#xa;  THINC&lt;1d&gt;            Flags: &lt;unique&gt;&lt;active&gt;&#xa;  \x01\x02__MSBROWSE__\x02&lt;01&gt;  Flags: &lt;group&gt;&lt;active&gt;&#xa;Statistics:&#xa;  00505686ae650000000000000000000000&#xa;  0000000000000000000000000000000000&#xa;  0000000000000000000000000000"/><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script></hostscript><times srtt="224551" rttvar="341" to="225915"/>
+</host>
+<taskbegin task="NSE" time="1676818485"/>
+<taskend task="NSE" time="1676818485"/>
+<taskbegin task="NSE" time="1676818485"/>
+<taskend task="NSE" time="1676818485"/>
+<taskbegin task="NSE" time="1676818485"/>
+<taskend task="NSE" time="1676818485"/>
+<runstats><finished time="1676818485" timestr="Sun Feb 19 22:54:45 2023" summary="Nmap done at Sun Feb 19 22:54:45 2023; 1 IP address (1 host up) scanned in 1090.65 seconds" elapsed="1090.65" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

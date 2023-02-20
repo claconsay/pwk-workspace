@@ -1,0 +1,12 @@
+[*] ssh found on tcp/22.
+
+
+
+[*] netbios-ssn found on tcp/139.
+
+
+
+[*] netbios-ssn found on tcp/445.
+
+
+

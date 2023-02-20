@@ -1,0 +1,5 @@
+[*] Service scan showmount (tcp/111/rpcbind/showmount) ran a command which returned a non-zero exit code (1).
+[-] Command: showmount -e 10.11.1.217 2>&1
+[-] Error Output:
+
+

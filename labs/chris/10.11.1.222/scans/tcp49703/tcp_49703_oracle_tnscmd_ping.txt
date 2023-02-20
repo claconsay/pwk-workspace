@@ -1,0 +1,5 @@
+sending (CONNECT_DATA=(COMMAND=ping)) to 10.11.1.222:49703
+connect writing 87 bytes
+reading
+. .......6........... a..................@
+

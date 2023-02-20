@@ -1,0 +1,11 @@
+# Nmap 7.93 scan initiated Sun Feb 19 22:48:53 2023 as: nmap -vv --reason -Pn -T4 -sV -p 25 "--script=banner,(smtp* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/chris/trainings/pwk/workspace/labs/hotline/10.11.1.217/scans/tcp25/tcp_25_smtp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/hotline/10.11.1.217/scans/tcp25/xml/tcp_25_smtp_nmap.xml 10.11.1.217
+Nmap scan report for 10.11.1.217
+Host is up, received user-set.
+Scanned at 2023-02-19 22:48:54 PST for 1s
+
+PORT   STATE    SERVICE REASON      VERSION
+25/tcp filtered smtp    no-response
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 19 22:48:55 2023 -- 1 IP address (1 host up) scanned in 2.05 seconds

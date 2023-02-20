@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Feb 19 22:36:43 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/_full_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/xml/_full_tcp_nmap.xml 10.11.1.146 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/_full_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/xml/_full_tcp_nmap.xml 10.11.1.146" start="1676817403" startstr="Sun Feb 19 22:36:43 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676817403"/>
+<taskend task="NSE" time="1676817403"/>
+<taskbegin task="NSE" time="1676817403"/>
+<taskend task="NSE" time="1676817403"/>
+<taskbegin task="NSE" time="1676817403"/>
+<taskend task="NSE" time="1676817403"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676817403"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676817403"/>
+<taskbegin task="Connect Scan" time="1676817403"/>
+<taskprogress task="Connect Scan" time="1676817434" percent="4.34" remaining="683" etc="1676818117"/>
+<taskprogress task="Connect Scan" time="1676817464" percent="19.82" remaining="247" etc="1676817711"/>
+<taskprogress task="Connect Scan" time="1676817494" percent="20.65" remaining="350" etc="1676817844"/>
+<taskprogress task="Connect Scan" time="1676817524" percent="30.90" remaining="271" etc="1676817795"/>
+<taskprogress task="Connect Scan" time="1676817554" percent="47.16" remaining="170" etc="1676817723"/>
+<taskprogress task="Connect Scan" time="1676817584" percent="63.10" remaining="106" etc="1676817690"/>
+<taskprogress task="Connect Scan" time="1676817614" percent="71.23" remaining="86" etc="1676817699"/>
+<taskprogress task="Connect Scan" time="1676817644" percent="77.65" remaining="70" etc="1676817713"/>
+<taskend task="Connect Scan" time="1676817696" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1676817696"/>
+<taskend task="Service scan" time="1676817707" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1676817707"/>
+<taskprogress task="NSE" time="1676817738" percent="99.76" remaining="1" etc="1676817738"/>
+<taskend task="NSE" time="1676817747"/>
+<taskbegin task="NSE" time="1676817747"/>
+<taskend task="NSE" time="1676817747"/>
+<taskbegin task="NSE" time="1676817747"/>
+<taskend task="NSE" time="1676817747"/>
+<host starttime="1676817403" endtime="1676817747"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.146" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-response" count="65532" proto="tcp" ports="1-21,23-138,140-444,446-65535"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.4p1 Ubuntu 10" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 e373a948819d90bc7075818a3de8956f (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDlrmnbyVOMFMbqRmKO9h0Omv6odlv6tAqlZbKeiOhsYz6AqzfpGQmARw4ws8+qGGdSj0B5ICTNUoYGrpYuS0YNXZBwi1pt6K0WqYv8wyrqoQeWK+jlz9FOdzES2d8WbxVtesp96PGlHnM5nJs4COJt7WsdA1QBF2+xkmZjImSawdoAlsmtpMBxP6vPjnGBsBnNFnIKoHdWfz5TriY958//Zco/TYK3pwM4xKy4ip0zZ3T8xqKmwqhbD0vwRbV5qZMugOlgPtxUP4/UzudiuvO1COqDBNemA5S9jBy8yqqLyA0qfdg0N6Gm8X2iBNHw2D0RZ1C8PjoyGPeDvV34Frkt&#xa;  256 0e7622d020ca1e96e97ba59a86e7f6d4 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBk5w06Kdjm6NPbI4k1oJG79cOii6bdCfSXlp7QjZMqyiVgtooCGdF2KmS0gtEfXaC4nt0MFhf4QQzORdxdtZjw=&#xa;  256 57e1e406a3796d03536cd67b67ed86dc (ED25519)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFCXoJ6KMRCRIT3IzvO/fDY3Z99e4CicyEerj+lO6CBM"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDlrmnbyVOMFMbqRmKO9h0Omv6odlv6tAqlZbKeiOhsYz6AqzfpGQmARw4ws8+qGGdSj0B5ICTNUoYGrpYuS0YNXZBwi1pt6K0WqYv8wyrqoQeWK+jlz9FOdzES2d8WbxVtesp96PGlHnM5nJs4COJt7WsdA1QBF2+xkmZjImSawdoAlsmtpMBxP6vPjnGBsBnNFnIKoHdWfz5TriY958//Zco/TYK3pwM4xKy4ip0zZ3T8xqKmwqhbD0vwRbV5qZMugOlgPtxUP4/UzudiuvO1COqDBNemA5S9jBy8yqqLyA0qfdg0N6Gm8X2iBNHw2D0RZ1C8PjoyGPeDvV34Frkt</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">e373a948819d90bc7075818a3de8956f</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBk5w06Kdjm6NPbI4k1oJG79cOii6bdCfSXlp7QjZMqyiVgtooCGdF2KmS0gtEfXaC4nt0MFhf4QQzORdxdtZjw=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">0e7622d020ca1e96e97ba59a86e7f6d4</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIFCXoJ6KMRCRIT3IzvO/fDY3Z99e4CicyEerj+lO6CBM</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">57e1e406a3796d03536cd67b67ed86dc</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="SUSIE" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.5.4-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="SUSIE" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+</ports>
+<hostscript><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.5.4-Ubuntu)&#xa;  Computer name: \x00&#xa;  NetBIOS computer name: SUSIE\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2023-02-19T09:41:50-05:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.5.4-Ubuntu</elem>
+<elem key="server">SUSIE\x00</elem>
+<elem key="date">2023-02-19T09:41:50-05:00</elem>
+<elem key="fqdn">\x00</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  311: &#xa;    Message signing enabled but not required"><table key="311">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 35748/tcp): CLEAN (Timeout)&#xa;  Check 2 (port 54885/tcp): CLEAN (Timeout)&#xa;  Check 3 (port 61782/udp): CLEAN (Timeout)&#xa;  Check 4 (port 34368/udp): CLEAN (Timeout)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb2-time" output="&#xa;  date: 2023-02-19T14:41:48&#xa;  start_date: N/A"><elem key="date">2023-02-19T14:41:48</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="clock-skew" output="mean: 1h40m00s, deviation: 2h53m14s, median: -1s"><elem key="median">-1</elem>
+<elem key="mean">6000</elem>
+<elem key="count">3</elem>
+<elem key="stddev">10394</elem>
+</script></hostscript><times srtt="224562" rttvar="544" to="226738"/>
+</host>
+<taskbegin task="NSE" time="1676817747"/>
+<taskend task="NSE" time="1676817747"/>
+<taskbegin task="NSE" time="1676817747"/>
+<taskend task="NSE" time="1676817747"/>
+<taskbegin task="NSE" time="1676817747"/>
+<taskend task="NSE" time="1676817747"/>
+<runstats><finished time="1676817747" timestr="Sun Feb 19 22:42:27 2023" summary="Nmap done at Sun Feb 19 22:42:27 2023; 1 IP address (1 host up) scanned in 345.02 seconds" elapsed="345.02" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

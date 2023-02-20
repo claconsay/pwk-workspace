@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Feb 19 22:38:00 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 139 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/tcp139/tcp_139_smb_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/tcp139/xml/tcp_139_smb_nmap.xml 10.11.1.146 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 139 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/tcp139/tcp_139_smb_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/tcp139/xml/tcp_139_smb_nmap.xml 10.11.1.146" start="1676817480" startstr="Sun Feb 19 22:38:00 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="139"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676817480"/>
+<taskend task="NSE" time="1676817480"/>
+<taskbegin task="NSE" time="1676817480"/>
+<taskend task="NSE" time="1676817480"/>
+<taskbegin task="NSE" time="1676817480"/>
+<taskend task="NSE" time="1676817480"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676817480"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676817480"/>
+<taskbegin task="Connect Scan" time="1676817480"/>
+<taskend task="Connect Scan" time="1676817480" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1676817480"/>
+<taskend task="Service scan" time="1676817493" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1676817493"/>
+<taskprogress task="NSE" time="1676817524" percent="87.14" remaining="5" etc="1676817529"/>
+<taskprogress task="NSE" time="1676817554" percent="95.71" remaining="3" etc="1676817557"/>
+<taskprogress task="NSE" time="1676817584" percent="95.71" remaining="5" etc="1676817588"/>
+<taskprogress task="NSE" time="1676817614" percent="95.71" remaining="6" etc="1676817619"/>
+<taskprogress task="NSE" time="1676817644" percent="95.71" remaining="7" etc="1676817651"/>
+<taskprogress task="NSE" time="1676817674" percent="98.57" remaining="3" etc="1676817677"/>
+<taskprogress task="NSE" time="1676817704" percent="98.57" remaining="4" etc="1676817707"/>
+<taskprogress task="NSE" time="1676817734" percent="98.57" remaining="4" etc="1676817737"/>
+<taskprogress task="NSE" time="1676817764" percent="98.57" remaining="4" etc="1676817768"/>
+<taskprogress task="NSE" time="1676817794" percent="98.57" remaining="5" etc="1676817798"/>
+<taskend task="NSE" time="1676817806"/>
+<taskbegin task="NSE" time="1676817806"/>
+<taskprogress task="NSE" time="1676817837" percent="92.31" remaining="3" etc="1676817840"/>
+<taskprogress task="NSE" time="1676817867" percent="92.31" remaining="6" etc="1676817872"/>
+<taskprogress task="NSE" time="1676817897" percent="92.31" remaining="8" etc="1676817905"/>
+<taskprogress task="NSE" time="1676817927" percent="92.31" remaining="11" etc="1676817937"/>
+<taskprogress task="NSE" time="1676817957" percent="92.31" remaining="13" etc="1676817970"/>
+<taskprogress task="NSE" time="1676817987" percent="92.31" remaining="16" etc="1676818002"/>
+<taskend task="NSE" time="1676818001"/>
+<taskbegin task="NSE" time="1676818001"/>
+<taskend task="NSE" time="1676818001"/>
+<host starttime="1676817480" endtime="1676818001"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.146" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="4.5.4-Ubuntu" extrainfo="workgroup: WORKGROUP" hostname="SUSIE" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+</ports>
+<hostscript><script id="smb-ls" output="Volume \\10.11.1.146\SusieShare&#xa;SIZE   TIME                 FILENAME&#xa;&lt;DIR&gt;  2023-02-19T14:41:41  .&#xa;&lt;DIR&gt;  2019-12-21T07:51:25  ..&#xa;&lt;DIR&gt;  2023-02-19T14:38:15  BYIWFXRSUC&#xa;0      2019-12-21T06:40:59  FsSRC.txt&#xa;&#xa;"><table key="volumes">
+<table>
+<elem key="volume">\\10.11.1.146\SusieShare</elem>
+<table key="files">
+<table>
+<elem key="time">2023-02-19T14:41:41</elem>
+<elem key="size">&lt;DIR&gt;</elem>
+<elem key="filename">.</elem>
+</table>
+<table>
+<elem key="time">2019-12-21T07:51:25</elem>
+<elem key="size">&lt;DIR&gt;</elem>
+<elem key="filename">..</elem>
+</table>
+<table>
+<elem key="time">2023-02-19T14:38:15</elem>
+<elem key="size">&lt;DIR&gt;</elem>
+<elem key="filename">BYIWFXRSUC</elem>
+</table>
+<table>
+<elem key="time">2019-12-21T06:40:59</elem>
+<elem key="size">0</elem>
+<elem key="filename">FsSRC.txt</elem>
+</table>
+</table>
+</table>
+</table>
+<table key="total">
+<elem key="files">4</elem>
+<elem key="bytes">0</elem>
+</table>
+</script><script id="smb-enum-shares" output="&#xa;  account_used: guest&#xa;  \\10.11.1.146\IPC$: &#xa;    Type: STYPE_IPC_HIDDEN&#xa;    Comment: IPC Service (susie server (Samba, Ubuntu))&#xa;    Users: 4&#xa;    Max Users: &lt;unlimited&gt;&#xa;    Path: C:\tmp&#xa;    Anonymous access: READ/WRITE&#xa;    Current user access: READ/WRITE&#xa;  \\10.11.1.146\SusieShare: &#xa;    Type: STYPE_DISKTREE&#xa;    Comment: YOUR COMMENTS&#xa;    Users: 1&#xa;    Max Users: &lt;unlimited&gt;&#xa;    Path: C:\home\susie\susieshare&#xa;    Anonymous access: READ/WRITE&#xa;    Current user access: READ/WRITE&#xa;  \\10.11.1.146\print$: &#xa;    Type: STYPE_DISKTREE&#xa;    Comment: Printer Drivers&#xa;    Users: 0&#xa;    Max Users: &lt;unlimited&gt;&#xa;    Path: C:\var\lib\samba\printers&#xa;    Anonymous access: &lt;none&gt;&#xa;    Current user access: &lt;none&gt;"><elem key="account_used">guest</elem>
+<table key="\\10.11.1.146\IPC$">
+<elem key="Type">STYPE_IPC_HIDDEN</elem>
+<elem key="Comment">IPC Service (susie server (Samba, Ubuntu))</elem>
+<elem key="Users">4</elem>
+<elem key="Max Users">&lt;unlimited&gt;</elem>
+<elem key="Path">C:\tmp</elem>
+<elem key="Anonymous access">READ/WRITE</elem>
+<elem key="Current user access">READ/WRITE</elem>
+</table>
+<table key="\\10.11.1.146\SusieShare">
+<elem key="Type">STYPE_DISKTREE</elem>
+<elem key="Comment">YOUR COMMENTS</elem>
+<elem key="Users">1</elem>
+<elem key="Max Users">&lt;unlimited&gt;</elem>
+<elem key="Path">C:\home\susie\susieshare</elem>
+<elem key="Anonymous access">READ/WRITE</elem>
+<elem key="Current user access">READ/WRITE</elem>
+</table>
+<table key="\\10.11.1.146\print$">
+<elem key="Type">STYPE_DISKTREE</elem>
+<elem key="Comment">Printer Drivers</elem>
+<elem key="Users">0</elem>
+<elem key="Max Users">&lt;unlimited&gt;</elem>
+<elem key="Path">C:\var\lib\samba\printers</elem>
+<elem key="Anonymous access">&lt;none&gt;</elem>
+<elem key="Current user access">&lt;none&gt;</elem>
+</table>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.5.4-Ubuntu)&#xa;  Computer name: \x00&#xa;  NetBIOS computer name: SUSIE\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2023-02-19T09:38:34-05:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.5.4-Ubuntu</elem>
+<elem key="server">SUSIE\x00</elem>
+<elem key="date">2023-02-19T09:38:34-05:00</elem>
+<elem key="fqdn">\x00</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+</script><script id="smb-protocols" output="&#xa;  dialects: &#xa;    NT LM 0.12 (SMBv1) [dangerous, but default]&#xa;    202&#xa;    210&#xa;    300&#xa;    302&#xa;    311"><table key="dialects">
+<elem>NT LM 0.12 (SMBv1) [dangerous, but default]</elem>
+<elem>202</elem>
+<elem>210</elem>
+<elem>300</elem>
+<elem>302</elem>
+<elem>311</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2023-02-19T14:38:36&#xa;  start_date: N/A"><elem key="date">2023-02-19T14:38:36</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb-system-info" output="ERROR: Script execution failed (use -d to debug)"/><script id="smb2-capabilities" output="&#xa;  202: &#xa;    Distributed File System&#xa;  210: &#xa;    Distributed File System&#xa;    Leasing&#xa;  300: &#xa;    Distributed File System&#xa;    Leasing&#xa;  302: &#xa;    Distributed File System&#xa;    Leasing&#xa;  311: &#xa;    Distributed File System&#xa;    Leasing"><table key="202">
+<elem>Distributed File System</elem>
+</table>
+<table key="210">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+</table>
+<table key="300">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+</table>
+<table key="302">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+</table>
+<table key="311">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+</table>
+</script><script id="smb-enum-sessions" output="&#xa;  &lt;nobody&gt;&#xa;"/><script id="smb-print-text" output="false">false</script><script id="smb-vuln-ms10-061" output="false">false</script><script id="smb-mbenum" output="&#xa;  DFS Root&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Master Browser&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Print server&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Server&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Server service&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Unix server&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Windows NT/2000/XP/2003 server&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;  Workstation&#xa;    SUSIE  0.0  susie server (Samba, Ubuntu)&#xa;"/><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb-enum-domains" output="&#xa;  Builtin&#xa;    Groups: n/a&#xa;    Users: n/a&#xa;    Creation time: unknown&#xa;    Passwords: min length: 5; min age: n/a days; max age: n/a days; history: n/a passwords&#xa;    Account lockout disabled&#xa;  SUSIE&#xa;    Groups: n/a&#xa;    Users: n/a&#xa;    Creation time: unknown&#xa;    Passwords: min length: 5; min age: n/a days; max age: n/a days; history: n/a passwords&#xa;    Account lockout disabled&#xa;"/><script id="smb2-security-mode" output="&#xa;  311: &#xa;    Message signing enabled but not required"><table key="311">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script></hostscript><times srtt="226440" rttvar="226440" to="1132200"/>
+</host>
+<taskbegin task="NSE" time="1676818001"/>
+<taskend task="NSE" time="1676818001"/>
+<taskbegin task="NSE" time="1676818001"/>
+<taskend task="NSE" time="1676818001"/>
+<taskbegin task="NSE" time="1676818001"/>
+<taskend task="NSE" time="1676818001"/>
+<runstats><finished time="1676818001" timestr="Sun Feb 19 22:46:41 2023" summary="Nmap done at Sun Feb 19 22:46:41 2023; 1 IP address (1 host up) scanned in 520.98 seconds" elapsed="520.98" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

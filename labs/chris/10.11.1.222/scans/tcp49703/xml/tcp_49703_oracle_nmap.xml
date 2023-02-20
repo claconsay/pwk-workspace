@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Feb 19 22:56:50 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 49703 &quot;-&#45;script=banner,(oracle* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/tcp49703/tcp_49703_oracle_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/tcp49703/xml/tcp_49703_oracle_nmap.xml 10.11.1.222 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 49703 &quot;-&#45;script=banner,(oracle* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/tcp49703/tcp_49703_oracle_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/tcp49703/xml/tcp_49703_oracle_nmap.xml 10.11.1.222" start="1676818610" startstr="Sun Feb 19 22:56:50 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="49703"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676818611"/>
+<taskend task="NSE" time="1676818611"/>
+<taskbegin task="NSE" time="1676818611"/>
+<taskend task="NSE" time="1676818611"/>
+<taskbegin task="NSE" time="1676818611"/>
+<taskend task="NSE" time="1676818611"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676818611"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676818611"/>
+<taskbegin task="Connect Scan" time="1676818611"/>
+<taskend task="Connect Scan" time="1676818611" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1676818611"/>
+<taskend task="Service scan" time="1676818734" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1676818734"/>
+<taskend task="NSE" time="1676818750"/>
+<taskbegin task="NSE" time="1676818750"/>
+<taskend task="NSE" time="1676818750"/>
+<taskbegin task="NSE" time="1676818750"/>
+<taskend task="NSE" time="1676818750"/>
+<host starttime="1676818611" endtime="1676818750"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.222" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="49703"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="oracle" product="Oracle Database" method="probed" conf="10"><cpe>cpe:/a:oracle:database_server</cpe></service></port>
+</ports>
+<times srtt="224418" rttvar="224418" to="1122090"/>
+</host>
+<taskbegin task="NSE" time="1676818750"/>
+<taskend task="NSE" time="1676818750"/>
+<taskbegin task="NSE" time="1676818750"/>
+<taskend task="NSE" time="1676818750"/>
+<taskbegin task="NSE" time="1676818750"/>
+<taskend task="NSE" time="1676818750"/>
+<runstats><finished time="1676818750" timestr="Sun Feb 19 22:59:10 2023" summary="Nmap done at Sun Feb 19 22:59:10 2023; 1 IP address (1 host up) scanned in 139.21 seconds" elapsed="139.21" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

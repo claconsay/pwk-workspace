@@ -1,0 +1,15 @@
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	print$          Disk      Printer Drivers
+	SusieShare      Disk      YOUR COMMENTS
+	IPC$            IPC       IPC Service (susie server (Samba, Ubuntu))
+Reconnecting with SMB1 for workgroup listing.
+
+	Server               Comment
+	---------            -------
+
+	Workgroup            Master
+	---------            -------
+	WORKGROUP            SUSIE
+

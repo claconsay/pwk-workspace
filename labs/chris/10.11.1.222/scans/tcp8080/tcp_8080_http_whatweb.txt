@@ -1,0 +1,21 @@
+WhatWeb report for http://10.11.1.222:8080
+Status    : 200 OK
+Title     : Apache Tomcat/9.0.19
+IP        : 10.11.1.222
+Country   : RESERVED, ZZ
+
+Summary   : HTML5
+
+Detected Plugins:
+[ HTML5 ]
+	HTML version 5, detected by the doctype declaration
+
+
+HTTP Headers:
+	HTTP/1.1 200
+	Content-Type: text/html;charset=UTF-8
+	Transfer-Encoding: chunked
+	Date: Sun, 19 Feb 2023 14:43:35 GMT
+	Connection: close
+
+

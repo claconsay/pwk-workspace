@@ -1,0 +1,12 @@
+# Nmap 7.93 scan initiated Sun Feb 19 23:08:50 2023 as: nmap -vv --reason -Pn -T4 -sV -p 5038 --script=banner,sip-enum-users,sip-methods -oN /home/chris/trainings/pwk/workspace/labs/hotline/10.11.1.217/scans/tcp5038/tcp_5038_sip_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/hotline/10.11.1.217/scans/tcp5038/xml/tcp_5038_sip_nmap.xml 10.11.1.217
+Nmap scan report for 10.11.1.217
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-19 23:08:50 PST for 1s
+
+PORT     STATE SERVICE  REASON  VERSION
+5038/tcp open  asterisk syn-ack Asterisk Call Manager 1.1
+|_banner: Asterisk Call Manager/1.1
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 19 23:08:51 2023 -- 1 IP address (1 host up) scanned in 1.49 seconds

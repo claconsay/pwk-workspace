@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Feb 19 15:58:21 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 111 &quot;-&#45;script=banner,(rpcinfo or nfs*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/chris/trainings/pwk/workspace/labs/beta/10.11.1.72/scans/tcp111/tcp_111_nfs_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/beta/10.11.1.72/scans/tcp111/xml/tcp_111_nfs_nmap.xml 10.11.1.72 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 111 &quot;-&#45;script=banner,(rpcinfo or nfs*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/chris/trainings/pwk/workspace/labs/beta/10.11.1.72/scans/tcp111/tcp_111_nfs_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/beta/10.11.1.72/scans/tcp111/xml/tcp_111_nfs_nmap.xml 10.11.1.72" start="1676793501" startstr="Sun Feb 19 15:58:21 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="1" services="111"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676793502"/>
+<taskend task="NSE" time="1676793502"/>
+<taskbegin task="NSE" time="1676793502"/>
+<taskend task="NSE" time="1676793502"/>
+<taskbegin task="NSE" time="1676793502"/>
+<taskend task="NSE" time="1676793502"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676793502"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676793502"/>
+<taskbegin task="SYN Stealth Scan" time="1676793502"/>
+<taskend task="SYN Stealth Scan" time="1676793502" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1676793502"/>
+<taskend task="Service scan" time="1676793509" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1676793509"/>
+<taskend task="NSE" time="1676793519"/>
+<taskbegin task="NSE" time="1676793519"/>
+<taskend task="NSE" time="1676793520"/>
+<taskbegin task="NSE" time="1676793520"/>
+<taskend task="NSE" time="1676793522"/>
+<host starttime="1676793502" endtime="1676793522"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.72" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="rpcbind" version="2-4" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2,3,4        111/tcp   rpcbind&#xa;  100000  2,3,4        111/udp   rpcbind&#xa;  100000  3,4          111/tcp6  rpcbind&#xa;  100000  3,4          111/udp6  rpcbind&#xa;  100003  2,3,4       2049/tcp   nfs&#xa;  100003  2,3,4       2049/tcp6  nfs&#xa;  100003  2,3,4       2049/udp   nfs&#xa;  100003  2,3,4       2049/udp6  nfs&#xa;  100005  1,2,3      41251/udp6  mountd&#xa;  100005  1,2,3      42081/tcp6  mountd&#xa;  100005  1,2,3      53887/udp   mountd&#xa;  100005  1,2,3      59807/tcp   mountd&#xa;  100021  1,3,4      37274/tcp6  nlockmgr&#xa;  100021  1,3,4      38686/tcp   nlockmgr&#xa;  100021  1,3,4      43832/udp6  nlockmgr&#xa;  100021  1,3,4      56742/udp   nlockmgr&#xa;  100024  1          34281/tcp   status&#xa;  100024  1          36248/udp   status&#xa;  100024  1          50684/tcp6  status&#xa;  100024  1          57848/udp6  status&#xa;  100227  2,3         2049/tcp   nfs_acl&#xa;  100227  2,3         2049/tcp6  nfs_acl&#xa;  100227  2,3         2049/udp   nfs_acl&#xa;  100227  2,3         2049/udp6  nfs_acl&#xa;"><table key="100024">
+<table key="tcp">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">34281</elem>
+<elem key="owner">115</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">36248</elem>
+<elem key="owner">115</elem>
+</table>
+<table key="udp6">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">57848</elem>
+<elem key="owner">115</elem>
+</table>
+<table key="tcp6">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">50684</elem>
+<elem key="owner">115</elem>
+</table>
+</table>
+<table key="100021">
+<table key="tcp">
+<table key="version">
+<elem>1</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">38686</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>1</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">56742</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp6">
+<table key="version">
+<elem>1</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">43832</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="tcp6">
+<table key="version">
+<elem>1</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">37274</elem>
+<elem key="owner">superuser</elem>
+</table>
+</table>
+<table key="100005">
+<table key="tcp">
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">59807</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">53887</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp6">
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">41251</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="tcp6">
+<table key="version">
+<elem>1</elem>
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">42081</elem>
+<elem key="owner">superuser</elem>
+</table>
+</table>
+<table key="100227">
+<table key="tcp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">2049</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">2049</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp6">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">2049</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="tcp6">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">2049</elem>
+<elem key="owner">superuser</elem>
+</table>
+</table>
+<table key="100003">
+<table key="tcp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">2049</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">2049</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp6">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">2049</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="tcp6">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">2049</elem>
+<elem key="owner">superuser</elem>
+</table>
+</table>
+<table key="100000">
+<table key="tcp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">111</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>2</elem>
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">0.0.0.0</elem>
+<elem key="port">111</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="udp6">
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">111</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="local">
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">/var/run/rpcbind.sock</elem>
+<elem key="owner">superuser</elem>
+</table>
+<table key="tcp6">
+<table key="version">
+<elem>3</elem>
+<elem>4</elem>
+</table>
+<elem key="addr">::</elem>
+<elem key="port">111</elem>
+<elem key="owner">superuser</elem>
+</table>
+</table>
+</script><script id="nfs-showmount" output="&#xa;  /home 10.11.0.0/255.255.0.0&#xa;"/><script id="nfs-ls" output="Volume /home&#xa;  access: Read Lookup NoModify NoExtend NoDelete NoExecute&#xa;PERMISSION  UID   GID   SIZE  TIME                 FILENAME&#xa;drwxr-xr-x  0     0     4096  2015-09-17T13:21:59  .&#xa;drwxr-xr-x  0     0     4096  2015-01-07T10:56:34  ..&#xa;drwxr-xr-x  1013  1013  4096  2015-09-17T13:21:47  jenny&#xa;drwxr-xr-x  1012  1012  4096  2015-09-17T13:21:40  joe45&#xa;drwxr-xr-x  1011  1011  4096  2015-09-17T13:21:52  john&#xa;drwxr-xr-x  1014  1014  4096  2019-10-27T23:48:51  marcus&#xa;drwxr-x-&#45;&#45;  0     1010  4096  2015-01-08T16:01:31  ryuu&#xa;&#xa;"><table key="volumes">
+<table>
+<table key="info">
+<elem>access: Read Lookup NoModify NoExtend NoDelete NoExecute</elem>
+</table>
+<elem key="volume">/home</elem>
+<table key="files">
+<table>
+<elem key="gid">0</elem>
+<elem key="permission">drwxr-xr-x</elem>
+<elem key="size">4096</elem>
+<elem key="time">2015-09-17T13:21:59</elem>
+<elem key="filename">.</elem>
+<elem key="uid">0</elem>
+</table>
+<table>
+<elem key="gid">0</elem>
+<elem key="permission">drwxr-xr-x</elem>
+<elem key="size">4096</elem>
+<elem key="time">2015-01-07T10:56:34</elem>
+<elem key="filename">..</elem>
+<elem key="uid">0</elem>
+</table>
+<table>
+<elem key="gid">1013</elem>
+<elem key="permission">drwxr-xr-x</elem>
+<elem key="size">4096</elem>
+<elem key="time">2015-09-17T13:21:47</elem>
+<elem key="filename">jenny</elem>
+<elem key="uid">1013</elem>
+</table>
+<table>
+<elem key="gid">1012</elem>
+<elem key="permission">drwxr-xr-x</elem>
+<elem key="size">4096</elem>
+<elem key="time">2015-09-17T13:21:40</elem>
+<elem key="filename">joe45</elem>
+<elem key="uid">1012</elem>
+</table>
+<table>
+<elem key="gid">1011</elem>
+<elem key="permission">drwxr-xr-x</elem>
+<elem key="size">4096</elem>
+<elem key="time">2015-09-17T13:21:52</elem>
+<elem key="filename">john</elem>
+<elem key="uid">1011</elem>
+</table>
+<table>
+<elem key="gid">1014</elem>
+<elem key="permission">drwxr-xr-x</elem>
+<elem key="size">4096</elem>
+<elem key="time">2019-10-27T23:48:51</elem>
+<elem key="filename">marcus</elem>
+<elem key="uid">1014</elem>
+</table>
+<table>
+<elem key="gid">1010</elem>
+<elem key="permission">drwxr-x-&#45;&#45;</elem>
+<elem key="size">4096</elem>
+<elem key="time">2015-01-08T16:01:31</elem>
+<elem key="filename">ryuu</elem>
+<elem key="uid">0</elem>
+</table>
+</table>
+</table>
+</table>
+<table key="total">
+<elem key="bytes">28672</elem>
+<elem key="files">7</elem>
+</table>
+</script><script id="nfs-statfs" output="&#xa;  Filesystem  1K-blocks  Used       Available  Use%  Maxfilesize  Maxlink&#xa;  /home       7223800.0  2061464.0  4795388.0  31%   8.0T         32000&#xa;"/></port>
+</ports>
+<times srtt="226561" rttvar="226561" to="1132805"/>
+</host>
+<taskbegin task="NSE" time="1676793522"/>
+<taskend task="NSE" time="1676793522"/>
+<taskbegin task="NSE" time="1676793522"/>
+<taskend task="NSE" time="1676793522"/>
+<taskbegin task="NSE" time="1676793522"/>
+<taskend task="NSE" time="1676793522"/>
+<runstats><finished time="1676793522" timestr="Sun Feb 19 15:58:42 2023" summary="Nmap done at Sun Feb 19 15:58:42 2023; 1 IP address (1 host up) scanned in 20.70 seconds" elapsed="20.70" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

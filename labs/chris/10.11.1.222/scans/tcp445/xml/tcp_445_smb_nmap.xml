@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Feb 19 22:43:34 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 445 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/tcp445/tcp_445_smb_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/tcp445/xml/tcp_445_smb_nmap.xml 10.11.1.222 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 445 &quot;-&#45;script=banner,(nbstat or smb* or ssl*) and not (brute or broadcast or dos or external or fuzzer)&quot; -oN /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/tcp445/tcp_445_smb_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/tcp445/xml/tcp_445_smb_nmap.xml 10.11.1.222" start="1676817814" startstr="Sun Feb 19 22:43:34 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="445"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676817815"/>
+<taskend task="NSE" time="1676817815"/>
+<taskbegin task="NSE" time="1676817815"/>
+<taskend task="NSE" time="1676817815"/>
+<taskbegin task="NSE" time="1676817815"/>
+<taskend task="NSE" time="1676817815"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676817815"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676817815"/>
+<taskbegin task="Connect Scan" time="1676817815"/>
+<taskend task="Connect Scan" time="1676817815" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1676817815"/>
+<taskend task="Service scan" time="1676817834" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1676817834"/>
+<taskprogress task="NSE" time="1676817865" percent="92.86" remaining="3" etc="1676817867"/>
+<taskend task="NSE" time="1676817878"/>
+<taskbegin task="NSE" time="1676817878"/>
+<taskend task="NSE" time="1676817880"/>
+<taskbegin task="NSE" time="1676817880"/>
+<taskend task="NSE" time="1676817880"/>
+<host starttime="1676817815" endtime="1676817880"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.222" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/><script id="smb-enum-services" output="ERROR: Script execution failed (use -d to debug)"/></port>
+</ports>
+<hostscript><script id="smb-print-text" output="false">false</script><script id="smb-protocols" output="&#xa;  dialects: &#xa;    202&#xa;    210&#xa;    300&#xa;    302&#xa;    311"><table key="dialects">
+<elem>202</elem>
+<elem>210</elem>
+<elem>300</elem>
+<elem>302</elem>
+<elem>311</elem>
+</table>
+</script><script id="smb-vuln-ms10-061" output="Could not negotiate a connection:SMB: Failed to receive bytes: ERROR">false</script><script id="smb2-security-mode" output="&#xa;  311: &#xa;    Message signing enabled but not required"><table key="311">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb-mbenum" output="&#xa;  ERROR: Failed to connect to browser service: Could not negotiate a connection:SMB: Failed to receive bytes: ERROR"/><script id="smb2-time" output="&#xa;  date: 2023-02-19T14:44:08&#xa;  start_date: N/A"><elem key="date">2023-02-19T14:44:08</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="smb2-capabilities" output="&#xa;  202: &#xa;    Distributed File System&#xa;  210: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  300: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  302: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations&#xa;  311: &#xa;    Distributed File System&#xa;    Leasing&#xa;    Multi-credit operations"><table key="202">
+<elem>Distributed File System</elem>
+</table>
+<table key="210">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="300">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="302">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+<table key="311">
+<elem>Distributed File System</elem>
+<elem>Leasing</elem>
+<elem>Multi-credit operations</elem>
+</table>
+</script></hostscript><times srtt="224049" rttvar="224049" to="1120245"/>
+</host>
+<taskbegin task="NSE" time="1676817880"/>
+<taskend task="NSE" time="1676817880"/>
+<taskbegin task="NSE" time="1676817880"/>
+<taskend task="NSE" time="1676817880"/>
+<taskbegin task="NSE" time="1676817880"/>
+<taskend task="NSE" time="1676817880"/>
+<runstats><finished time="1676817880" timestr="Sun Feb 19 22:44:40 2023" summary="Nmap done at Sun Feb 19 22:44:40 2023; 1 IP address (1 host up) scanned in 65.78 seconds" elapsed="65.78" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

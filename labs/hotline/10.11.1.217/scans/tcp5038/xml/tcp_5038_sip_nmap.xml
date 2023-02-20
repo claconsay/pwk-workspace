@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Feb 19 23:08:50 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 5038 -&#45;script=banner,sip-enum-users,sip-methods -oN /home/chris/trainings/pwk/workspace/labs/hotline/10.11.1.217/scans/tcp5038/tcp_5038_sip_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/hotline/10.11.1.217/scans/tcp5038/xml/tcp_5038_sip_nmap.xml 10.11.1.217 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 5038 -&#45;script=banner,sip-enum-users,sip-methods -oN /home/chris/trainings/pwk/workspace/labs/hotline/10.11.1.217/scans/tcp5038/tcp_5038_sip_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/hotline/10.11.1.217/scans/tcp5038/xml/tcp_5038_sip_nmap.xml 10.11.1.217" start="1676819330" startstr="Sun Feb 19 23:08:50 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="5038"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676819330"/>
+<taskend task="NSE" time="1676819330"/>
+<taskbegin task="NSE" time="1676819330"/>
+<taskend task="NSE" time="1676819330"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676819330"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676819330"/>
+<taskbegin task="Connect Scan" time="1676819330"/>
+<taskend task="Connect Scan" time="1676819330" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1676819330"/>
+<taskend task="Service scan" time="1676819331" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1676819331"/>
+<taskend task="NSE" time="1676819331"/>
+<taskbegin task="NSE" time="1676819331"/>
+<taskend task="NSE" time="1676819331"/>
+<host starttime="1676819330" endtime="1676819331"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.217" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="5038"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="asterisk" product="Asterisk Call Manager" version="1.1" method="probed" conf="10"><cpe>cpe:/a:digium:asterisk:1.1</cpe></service><script id="banner" output="Asterisk Call Manager/1.1"/></port>
+</ports>
+<times srtt="227174" rttvar="227174" to="1135870"/>
+</host>
+<taskbegin task="NSE" time="1676819331"/>
+<taskend task="NSE" time="1676819331"/>
+<taskbegin task="NSE" time="1676819331"/>
+<taskend task="NSE" time="1676819331"/>
+<runstats><finished time="1676819331" timestr="Sun Feb 19 23:08:51 2023" summary="Nmap done at Sun Feb 19 23:08:51 2023; 1 IP address (1 host up) scanned in 1.49 seconds" elapsed="1.49" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Feb 19 22:36:56 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/_full_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/xml/_full_tcp_nmap.xml 10.11.1.222 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/_full_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/xml/_full_tcp_nmap.xml 10.11.1.222" start="1676817416" startstr="Sun Feb 19 22:36:56 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676817416"/>
+<taskend task="NSE" time="1676817416"/>
+<taskbegin task="NSE" time="1676817416"/>
+<taskend task="NSE" time="1676817416"/>
+<taskbegin task="NSE" time="1676817416"/>
+<taskend task="NSE" time="1676817416"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676817416"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676817416"/>
+<taskbegin task="Connect Scan" time="1676817416"/>
+<taskprogress task="Connect Scan" time="1676817447" percent="2.68" remaining="1128" etc="1676818574"/>
+<taskprogress task="Connect Scan" time="1676817483" percent="5.31" remaining="1195" etc="1676818678"/>
+<taskprogress task="Connect Scan" time="1676817525" percent="8.92" remaining="1114" etc="1676818639"/>
+<taskprogress task="Connect Scan" time="1676817561" percent="12.20" remaining="1044" etc="1676818605"/>
+<taskprogress task="Connect Scan" time="1676817657" percent="19.76" remaining="979" etc="1676818636"/>
+<taskprogress task="Connect Scan" time="1676817690" percent="23.04" remaining="916" etc="1676818605"/>
+<taskprogress task="Connect Scan" time="1676817720" percent="26.62" remaining="838" etc="1676818558"/>
+<taskprogress task="Connect Scan" time="1676817750" percent="29.99" remaining="780" etc="1676818530"/>
+<taskprogress task="Connect Scan" time="1676817786" percent="33.99" remaining="719" etc="1676818505"/>
+<taskprogress task="Connect Scan" time="1676817843" percent="39.35" remaining="659" etc="1676818501"/>
+<taskprogress task="Connect Scan" time="1676817924" percent="45.86" remaining="600" etc="1676818524"/>
+<taskprogress task="Connect Scan" time="1676817972" percent="50.78" remaining="540" etc="1676818511"/>
+<taskprogress task="Connect Scan" time="1676818011" percent="55.33" remaining="481" etc="1676818491"/>
+<taskprogress task="Connect Scan" time="1676818059" percent="60.37" remaining="423" etc="1676818481"/>
+<taskprogress task="Connect Scan" time="1676818101" percent="65.17" remaining="367" etc="1676818467"/>
+<taskprogress task="Connect Scan" time="1676818152" percent="70.41" remaining="310" etc="1676818461"/>
+<taskprogress task="Connect Scan" time="1676818209" percent="75.79" remaining="254" etc="1676818462"/>
+<taskprogress task="Connect Scan" time="1676818248" percent="80.67" remaining="200" etc="1676818447"/>
+<taskprogress task="Connect Scan" time="1676818287" percent="85.57" remaining="147" etc="1676818434"/>
+<taskprogress task="Connect Scan" time="1676818341" percent="90.93" remaining="93" etc="1676818433"/>
+<taskprogress task="Connect Scan" time="1676818389" percent="96.08" remaining="40" etc="1676818429"/>
+<taskend task="Connect Scan" time="1676818430" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1676818431"/>
+<taskprogress task="Service scan" time="1676818467" percent="50.00" remaining="36" etc="1676818503"/>
+<taskend task="Service scan" time="1676818598" extrainfo="20 services on 1 host"/>
+<taskbegin task="NSE" time="1676818598"/>
+<taskend task="NSE" time="1676818608"/>
+<taskbegin task="NSE" time="1676818608"/>
+<taskend task="NSE" time="1676818609"/>
+<taskbegin task="NSE" time="1676818609"/>
+<taskend task="NSE" time="1676818609"/>
+<host starttime="1676817416" endtime="1676818609"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.222" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65325">
+<extrareasons reason="conn-refused" count="65325" proto="tcp" ports="1-121,123-134,136-138,140-444,446-1002,1004-1100,1102-1520,1522-2029,2031-2074,2076-2104,2106-2194,2196-2232,2234-3156,3158-3388,3390-4040,4042-4321,4323-4817,4819-5642,5644-5984,5986-6243,6245-6531,6533-7030,7032-7193,7195-7452,7454-7519,7521-7596,7598-7633,7635-7817,7819-7838,7840-8008,8010-8079,8081-8527,8529-8762,8764-8778,8780-9009,9011-9095,9097-9406,9408-9409,9411-9763,9765-9910,9912-10490,10492-10586,10588-10903,10905-11628,11630-12192,12194-12455,12457-13321,13323-13702,13704-13733,13735-13826,13828-14139,14141-14560,14562-14977,14979-15083,15085-15907,15909-15957,15959-15969,15971-16048,16050-16166,16168,16170-16339,16341-16521,16523-17139,17141-17667,17669-17732,17734-17979,17981-18026,18028-18164,18166-18604,18606-18709,18711-18717,18719-18983,18985-19847,19849-20011,20013-20694,20696-21488,21490-21752,21754-22006,22008-22411,22413-22548,22550-22649,22651-22720,22722-23087,23089-23113,23115-23451,23453-24489,24491-25054,25056-25109,25111-25432,25434-25482,25484-25564,25566-25600,25602-28786,28788-28998,29000-29014,29016-29435,29437-30028,30030-30294,30296-30402,30404-30544,30546-30895,30897-31022,31024-32219,32221-32350,32352-32940,32942-33210,33212-33718,33720-33810,33812-34229,34231-34269,34271-34522,34524-34936,34938-35536,35538-36008,36010-36097,36099-36296,36298-36388,36390-36455,36457-37065,37067-37117,37119-37812,37814-37858,37860-38190,38192-38861,38863-39044,39046-39084,39086-39191,39193-39381,39383-40147,40149-40423,40425-40803,40805-41628,41630-41920,41922-41949,41951-41972,41974-42573,42575-43380,43382-44319,44321-44356,44358-44475,44477-45495,45497-45873,45875-46425,46427-46521,46523-46619,46621-47000,47002-47030,47032-47470,47472-47864,47866-48018,48020-48459,48461-48754,48756-49037,49039-49291,49293-49302,49304-49558,49560-49663,49671-49683,49685-49702,49704-49825,49827-49898,49900-50472,50474-50961,50963-51309,51311-51543,51545-52033,52035-52155,52157-52196,52198-52335,52337-52573,52575-52640,52642-53013,53015-53016,53018-53275,53277-53665,53667-55218,55220-55276,55278-55648,55650-55724,55726-55872,55874-56130,56132-57378,57380-57820,57822-58454,58456-58522,58524-58665,58667-58995,58997-59185,59187-59388,59390-59589,59591-59717,59719-59756,59758-60969,60971-61288,61290-61621,61623-63030,63032-63683,63685-64049,64051-64148,64150-64215,64217-64811,64813-64847,64849-65028,65030-65261,65263-65535"/>
+</extraports>
+<extraports state="filtered" count="190">
+<extrareasons reason="no-response" count="190" proto="tcp" ports="122,1003,1101,2075,2105,2195,3157,4041,4322,4818,5643,6244,6532,7031,7194,7453,7520,7597,7634,7818,7839,8528,8763,8779,9010,9096,9407,9410,9764,9911,10491,10587,10904,11629,12193,12456,13322,13703,13734,13827,14140,14561,14978,15084,15908,15958,15970,16049,16167,16169,16340,16522,17140,17668,17733,17980,18027,18165,18605,18710,18718,18984,19848,20012,20695,21489,21753,22007,22412,22549,22650,22721,23088,23114,23452,24490,25055,25110,25433,25483,25565,25601,28787,28999,29015,29436,30029,30295,30403,30545,30896,31023,32220,32351,32941,33211,33719,33811,34230,34270,34523,34937,35537,36009,36098,36297,36389,36456,37066,37118,37813,37859,38191,38862,39045,39085,39192,39382,40148,40424,40804,41629,41921,41950,41973,42574,43381,44320,44357,44476,45496,45874,46426,46522,46620,47031,47471,47865,48019,48460,48755,49038,49292,49303,49559,49826,49899,50473,50962,51310,51544,52034,52156,52197,52336,52574,52641,53014,53017,53276,53666,55219,55277,55649,55725,55873,56131,57379,57821,58455,58523,58666,58996,59186,59389,59590,59718,59757,60970,61289,61622,63031,63684,64050,64149,64216,64812,64848,65029,65262"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="1521"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="oracle-tns" product="Oracle TNS listener" version="18.0.0.0.0" extrainfo="unauthorized" method="probed" conf="10"><cpe>cpe:/a:oracle:database_server:18.0.0.0.0</cpe></service></port>
+<port protocol="tcp" portid="2030"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="oracle-mts" product="Oracle MTS Recovery Service" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="2233"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="infocrypt" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3389"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ms-wbt-server" product="Microsoft Terminal Services" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="ssl-cert" output="Subject: commonName=chris&#xa;Issuer: commonName=chris&#xa;Public Key type: rsa&#xa;Public Key bits: 2048&#xa;Signature Algorithm: sha256WithRSAEncryption&#xa;Not valid before: 2022-11-08T21:13:53&#xa;Not valid after:  2023-05-10T21:13:53&#xa;MD5:   46ca026dea970e13f610e7aa3520e4a7&#xa;SHA-1: a74bfc4eccc083603cdb465bea515216a71ebbd4&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICzjCCAbagAwIBAgIQVY741aquSLlAXAOLH9hQJDANBgkqhkiG9w0BAQsFADAQ&#xa;MQ4wDAYDVQQDEwVjaHJpczAeFw0yMjExMDgyMTEzNTNaFw0yMzA1MTAyMTEzNTNa&#xa;MBAxDjAMBgNVBAMTBWNocmlzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC&#xa;AQEAljBl8t7nejaDhSFPweFKVxLilqhswhZ8SGZmH+NOsf+QsyivWxdRT7CJKK03&#xa;SgMT0MnHYaBR6eKaj4hgRbcP8Wfg+P4h4Z1BHWIg6RuUqgjemC4IOToeEJwIcEm7&#xa;u/7SLr5g8+OX1jTBV5yTwdyyOWEt2Gq5RMlPAGlX7t1YfinysSzFWmUGyEAta6vk&#xa;Zr2f7T5d+dzBlIhhmLc9z/wewQDuYp0RNvjmImaTpfOm8AHimn79l/kEa/Oa0YPq&#xa;gpfeHEGH+9bTb06KcG0Etg5jrDuG65RslmZx0B6IQguUK+xHLL5M+DHByYilnvAD&#xa;ZzmPzTuBGYkNlMpLb8WH2FSe8QIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcD&#xa;ATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAGe4B2FJDKFX16UERogO&#xa;ZHDM7s43fXJ7t81MeUnpwbL15wu4N1Gib5Z1asMrDqe7I1PToRyPzKU9hO25nMtQ&#xa;2ZKBlopeem6xOyBnGGQi7BDzUqj1D1oIUHX1o+85mdn80f7XrdaLWUdcXwq6yCad&#xa;vIqsSKLnliCOyjbTLX43t6zgDYiAv9dH4IEs0qUIAWzRjc+txwy0NmbeHBDIlszB&#xa;YbiRXs3Tbr6SgkW0/iy23lj8fTju5iHK/n8lWjSYuuUgEgLwrL1UQB1e+JR0EHSU&#xa;p6vv47pte8HHHQ60KOVEnuI7nML2JyfcGuwvPce1uAUh9iuki6ScZkTa5mKtjxZB&#xa;HoM=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">chris</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">chris</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">963065F2DEE77A368385214FC1E14A5712E296A86CC2167C4866661FE34EB1FF90B328AF5B17514FB08928AD374A0313D0C9C761A051E9E29A8F886045B70FF167E0F8FE21E19D411D6220E91B94AA08DE982E08393A1E109C087049BBBBFED22EBE60F3E397D634C1579C93C1DCB239612DD86AB944C94F006957EEDD587E29F2B12CC55A6506C8402D6BABE466BD9FED3E5DF9DCC194886198B73DCFFC1EC100EE629D1136F8E6226693A5F3A6F001E29A7EFD97F9046BF39AD183EA8297DE1C4187FBD6D36F4E8A706D04B60E63AC3B86EB946C966671D01E88420B942BEC472CBE4CF831C1C988A59EF00367398FCD3B8119890D94CA4B6FC587D8549EF1</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Key Encipherment, Data Encipherment</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2022-11-08T21:13:53</elem>
+<elem key="notAfter">2023-05-10T21:13:53</elem>
+</table>
+<elem key="md5">46ca026dea970e13f610e7aa3520e4a7</elem>
+<elem key="sha1">a74bfc4eccc083603cdb465bea515216a71ebbd4</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIICzjCCAbagAwIBAgIQVY741aquSLlAXAOLH9hQJDANBgkqhkiG9w0BAQsFADAQ&#xa;MQ4wDAYDVQQDEwVjaHJpczAeFw0yMjExMDgyMTEzNTNaFw0yMzA1MTAyMTEzNTNa&#xa;MBAxDjAMBgNVBAMTBWNocmlzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC&#xa;AQEAljBl8t7nejaDhSFPweFKVxLilqhswhZ8SGZmH+NOsf+QsyivWxdRT7CJKK03&#xa;SgMT0MnHYaBR6eKaj4hgRbcP8Wfg+P4h4Z1BHWIg6RuUqgjemC4IOToeEJwIcEm7&#xa;u/7SLr5g8+OX1jTBV5yTwdyyOWEt2Gq5RMlPAGlX7t1YfinysSzFWmUGyEAta6vk&#xa;Zr2f7T5d+dzBlIhhmLc9z/wewQDuYp0RNvjmImaTpfOm8AHimn79l/kEa/Oa0YPq&#xa;gpfeHEGH+9bTb06KcG0Etg5jrDuG65RslmZx0B6IQguUK+xHLL5M+DHByYilnvAD&#xa;ZzmPzTuBGYkNlMpLb8WH2FSe8QIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcD&#xa;ATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAGe4B2FJDKFX16UERogO&#xa;ZHDM7s43fXJ7t81MeUnpwbL15wu4N1Gib5Z1asMrDqe7I1PToRyPzKU9hO25nMtQ&#xa;2ZKBlopeem6xOyBnGGQi7BDzUqj1D1oIUHX1o+85mdn80f7XrdaLWUdcXwq6yCad&#xa;vIqsSKLnliCOyjbTLX43t6zgDYiAv9dH4IEs0qUIAWzRjc+txwy0NmbeHBDIlszB&#xa;YbiRXs3Tbr6SgkW0/iy23lj8fTju5iHK/n8lWjSYuuUgEgLwrL1UQB1e+JR0EHSU&#xa;p6vv47pte8HHHQ60KOVEnuI7nML2JyfcGuwvPce1uAUh9iuki6ScZkTa5mKtjxZB&#xa;HoM=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="rdp-ntlm-info" output="&#xa;  Target_Name: CHRIS&#xa;  NetBIOS_Domain_Name: CHRIS&#xa;  NetBIOS_Computer_Name: CHRIS&#xa;  DNS_Domain_Name: chris&#xa;  DNS_Computer_Name: chris&#xa;  Product_Version: 10.0.17763&#xa;  System_Time: 2023-02-19T14:56:40+00:00"><elem key="Target_Name">CHRIS</elem>
+<elem key="NetBIOS_Domain_Name">CHRIS</elem>
+<elem key="NetBIOS_Computer_Name">CHRIS</elem>
+<elem key="DNS_Domain_Name">chris</elem>
+<elem key="DNS_Computer_Name">chris</elem>
+<elem key="Product_Version">10.0.17763</elem>
+<elem key="System_Time">2023-02-19T14:56:40+00:00</elem>
+</script><script id="ssl-date" output="2023-02-19T14:56:48+00:00; 0s from scanner time."><elem key="date">2023-02-19T14:56:48+00:00</elem>
+<elem key="delta">0.0</elem>
+</script></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="8009"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ajp13" product="Apache Jserv" extrainfo="Protocol v1.3" method="probed" conf="10"/><script id="ajp-methods" output="&#xa;  Supported methods: GET HEAD POST OPTIONS&#xa;"/></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache Tomcat" version="9.0.19" method="probed" conf="10"><cpe>cpe:/a:apache:tomcat:9.0.19</cpe></service><script id="http-favicon" output="Apache Tomcat"/><script id="http-title" output="Apache Tomcat/9.0.19"><elem key="title">Apache Tomcat/9.0.19</elem>
+</script><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="47001"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script></port>
+<port protocol="tcp" portid="49664"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49665"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49666"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49667"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49668"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49669"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49670"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49684"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="49703"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="oracle" product="Oracle Database" method="probed" conf="10"><cpe>cpe:/a:oracle:database_server</cpe></service></port>
+</ports>
+<hostscript><script id="smb2-time" output="&#xa;  date: 2023-02-19T14:56:40&#xa;  start_date: N/A"><elem key="date">2023-02-19T14:56:40</elem>
+<elem key="start_date">N/A</elem>
+</script><script id="clock-skew" output="mean: 0s, deviation: 0s, median: -1s"><elem key="median">-1</elem>
+<elem key="count">3</elem>
+<elem key="mean">0</elem>
+<elem key="stddev">0</elem>
+</script><script id="p2p-conficker" output="&#xa;  Checking for Conficker.C or higher...&#xa;  Check 1 (port 14184/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 2 (port 51305/tcp): CLEAN (Couldn&apos;t connect)&#xa;  Check 3 (port 52410/udp): CLEAN (Timeout)&#xa;  Check 4 (port 58649/udp): CLEAN (Failed to receive data)&#xa;  0/4 checks are positive: Host is CLEAN or ports are blocked&#xa;"/><script id="smb2-security-mode" output="&#xa;  311: &#xa;    Message signing enabled but not required"><table key="311">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script></hostscript><times srtt="224106" rttvar="219" to="224982"/>
+</host>
+<taskbegin task="NSE" time="1676818609"/>
+<taskend task="NSE" time="1676818609"/>
+<taskbegin task="NSE" time="1676818609"/>
+<taskend task="NSE" time="1676818609"/>
+<taskbegin task="NSE" time="1676818609"/>
+<taskend task="NSE" time="1676818609"/>
+<runstats><finished time="1676818609" timestr="Sun Feb 19 22:56:49 2023" summary="Nmap done at Sun Feb 19 22:56:49 2023; 1 IP address (1 host up) scanned in 1192.88 seconds" elapsed="1192.88" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

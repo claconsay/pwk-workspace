@@ -1,0 +1,44 @@
+200      GET       90l      166w     1860c https://10.11.1.217/themes/elastixneo/login_styles.css
+200      GET       14l      151w     5109c https://10.11.1.217/themes/elastixneo/images/elastix_logo_mini.png
+200      GET       35l      111w     1785c https://10.11.1.217/
+403      GET       10l       30w      284c https://10.11.1.217/.html
+403      GET       10l       30w      283c https://10.11.1.217/.hta
+403      GET       10l       30w      288c https://10.11.1.217/.htaccess
+403      GET       10l       30w      288c https://10.11.1.217/.htpasswd
+403      GET       10l       30w      287c https://10.11.1.217/.hta.txt
+403      GET       10l       30w      292c https://10.11.1.217/.htaccess.txt
+403      GET       10l       30w      292c https://10.11.1.217/.htpasswd.txt
+403      GET       10l       30w      288c https://10.11.1.217/.hta.html
+403      GET       10l       30w      293c https://10.11.1.217/.htaccess.html
+403      GET       10l       30w      293c https://10.11.1.217/.htpasswd.html
+403      GET       10l       30w      287c https://10.11.1.217/.hta.php
+403      GET       10l       30w      292c https://10.11.1.217/.htaccess.php
+403      GET       10l       30w      292c https://10.11.1.217/.htpasswd.php
+403      GET       10l       30w      287c https://10.11.1.217/.hta.asp
+403      GET       10l       30w      292c https://10.11.1.217/.htaccess.asp
+403      GET       10l       30w      292c https://10.11.1.217/.htpasswd.asp
+403      GET       10l       30w      288c https://10.11.1.217/.hta.aspx
+403      GET       10l       30w      293c https://10.11.1.217/.htaccess.aspx
+403      GET       10l       30w      293c https://10.11.1.217/.htpasswd.aspx
+403      GET       10l       30w      287c https://10.11.1.217/.hta.jsp
+403      GET       10l       30w      292c https://10.11.1.217/.htaccess.jsp
+403      GET       10l       30w      292c https://10.11.1.217/.htpasswd.jsp
+301      GET        9l       28w      311c https://10.11.1.217/admin => https://10.11.1.217/admin/
+403      GET       10l       30w      287c https://10.11.1.217/cgi-bin/
+403      GET       10l       30w      292c https://10.11.1.217/cgi-bin/.html
+301      GET        9l       28w      313c https://10.11.1.217/configs => https://10.11.1.217/configs/
+200      GET       35l      111w     1785c https://10.11.1.217/config.php
+200      GET        1l        6w      894c https://10.11.1.217/favicon.ico
+301      GET        9l       28w      310c https://10.11.1.217/help => https://10.11.1.217/help/
+301      GET        9l       28w      312c https://10.11.1.217/images => https://10.11.1.217/images/
+200      GET       35l      111w     1785c https://10.11.1.217/index.php
+301      GET        9l       28w      310c https://10.11.1.217/lang => https://10.11.1.217/lang/
+301      GET        9l       28w      310c https://10.11.1.217/libs => https://10.11.1.217/libs/
+301      GET        9l       28w      310c https://10.11.1.217/mail => https://10.11.1.217/mail/
+301      GET        9l       28w      313c https://10.11.1.217/modules => https://10.11.1.217/modules/
+301      GET        9l       28w      311c https://10.11.1.217/panel => https://10.11.1.217/panel/
+200      GET       35l      111w     1785c https://10.11.1.217/register.php
+200      GET        2l        4w       28c https://10.11.1.217/robots.txt
+301      GET        9l       28w      312c https://10.11.1.217/static => https://10.11.1.217/static/
+301      GET        9l       28w      312c https://10.11.1.217/themes => https://10.11.1.217/themes/
+301      GET        9l       28w      309c https://10.11.1.217/var => https://10.11.1.217/var/

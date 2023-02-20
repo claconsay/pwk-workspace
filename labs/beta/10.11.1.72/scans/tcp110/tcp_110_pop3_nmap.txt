@@ -1,0 +1,13 @@
+# Nmap 7.93 scan initiated Sun Feb 19 15:58:21 2023 as: nmap -vv --reason -Pn -T4 -sV -p 110 "--script=banner,(pop3* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/chris/trainings/pwk/workspace/labs/beta/10.11.1.72/scans/tcp110/tcp_110_pop3_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/beta/10.11.1.72/scans/tcp110/xml/tcp_110_pop3_nmap.xml 10.11.1.72
+Nmap scan report for 10.11.1.72
+Host is up, received user-set (0.23s latency).
+Scanned at 2023-02-19 15:58:22 PST for 40s
+
+PORT    STATE SERVICE REASON         VERSION
+110/tcp open  pop3    syn-ack ttl 63 JAMES pop3d 2.3.2
+|_banner: +OK beta POP3 server (JAMES POP3 Server 2.3.2) ready
+Service Info: Host: beta
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 19 15:59:02 2023 -- 1 IP address (1 host up) scanned in 41.10 seconds

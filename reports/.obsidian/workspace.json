@@ -8,67 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b974458eb05a22ee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.11.1.14 - bob (walkthrough)/commands/shell.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "9581e4876cfc5fc8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.11.1.14 - bob (walkthrough)/2. Exploitation/FTP.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
             "id": "af580bc2ab37ad14",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.11.1.123 - xor-app59 (done)/4. Report/walkthrough.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "e76562b49079e5a3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.11.1.71 - alpha/Enumeration/info.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "1fb4759097b29024",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.11.1.71 - alpha/Exploitation/shellshock.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "6c172fa6da812aae",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -80,7 +20,43 @@
             }
           },
           {
-            "id": "8228b49c5284f12d",
+            "id": "ce280a2ef4204fcd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.11.1.5 - alice/2. Exploitation/ms17-010.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "95b73ca65ecc5644",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "xxLearning Path/offsec-spoiler.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "1e276dd91dcb6fae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.11.1.5 - alice/1. Enumeration/post-exploit/ports.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "9129e520dd2b56a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -92,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -236,17 +212,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "8228b49c5284f12d",
+  "active": "95b73ca65ecc5644",
   "lastOpenFiles": [
     "xxLearning Path/0xpath.md",
+    "sanbox (done)/10.5.5.20 - poultry/3. Report/walkthrough.md",
+    "10.11.1.5 - alice/1. Enumeration/post-exploit/systeminfo.md",
     "xxLearning Path/offsec-spoiler.md",
-    "10.11.1.71 - alpha/Exploitation/shellshock.md",
-    "10.11.1.71 - alpha/Enumeration/info.md",
-    "10.11.1.123 - xor-app59 (done)/4. Report/walkthrough.md",
-    "10.11.1.13 - disco (done)/4. Report/walkthrough.md",
-    "10.11.1.31 - ralph (done)/4. Report/walkthrough.md",
-    "10.11.1.31 - ralph (done)/screenshots/ralph-whoami.png",
-    "10.11.1.31 - ralph (done)/screenshots/ralph-proof-network.png",
-    "10.11.1.31 - ralph (done)/screenshots/ralph-dbeaver.png"
+    "10.11.1.5 - alice/2. Exploitation/ms17-010.md",
+    "10.11.1.5 - alice/loots/flag.md",
+    "10.11.1.5 - alice/1. Enumeration/post-exploit/ports.md",
+    "10.11.1.72 - beta (walkthrough)/2. Exploitation/James-server.md",
+    "10.11.1.72 - beta (walkthrough)/loots/credentials.md",
+    "10.11.1.123 - xor-app59 (done)/4. Report/walkthrough.md"
   ]
 }

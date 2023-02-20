@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun Feb 19 22:36:49 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/chris/trainings/pwk/workspace/labs/hotline/10.11.1.217/scans/_full_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/hotline/10.11.1.217/scans/xml/_full_tcp_nmap.xml 10.11.1.217 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -sC -&#45;version-all -A -&#45;osscan-guess -p- -oN /home/chris/trainings/pwk/workspace/labs/hotline/10.11.1.217/scans/_full_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/hotline/10.11.1.217/scans/xml/_full_tcp_nmap.xml 10.11.1.217" start="1676817409" startstr="Sun Feb 19 22:36:49 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676817409"/>
+<taskend task="NSE" time="1676817409"/>
+<taskbegin task="NSE" time="1676817409"/>
+<taskend task="NSE" time="1676817409"/>
+<taskbegin task="NSE" time="1676817409"/>
+<taskend task="NSE" time="1676817409"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676817409"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676817409"/>
+<taskbegin task="Connect Scan" time="1676817409"/>
+<taskprogress task="Connect Scan" time="1676817440" percent="3.62" remaining="827" etc="1676818266"/>
+<taskprogress task="Connect Scan" time="1676817476" percent="6.93" remaining="900" etc="1676818375"/>
+<taskprogress task="Connect Scan" time="1676817506" percent="8.83" remaining="1002" etc="1676818507"/>
+<taskprogress task="Connect Scan" time="1676817542" percent="12.39" remaining="941" etc="1676818483"/>
+<taskprogress task="Connect Scan" time="1676817686" percent="23.90" remaining="883" etc="1676818568"/>
+<taskprogress task="Connect Scan" time="1676817716" percent="27.42" remaining="813" etc="1676818529"/>
+<taskprogress task="Connect Scan" time="1676817749" percent="31.14" remaining="752" etc="1676818501"/>
+<taskprogress task="Connect Scan" time="1676817782" percent="34.93" remaining="695" etc="1676818477"/>
+<taskprogress task="Connect Scan" time="1676817830" percent="39.66" remaining="641" etc="1676818471"/>
+<taskprogress task="Connect Scan" time="1676817896" percent="45.35" remaining="587" etc="1676818483"/>
+<taskprogress task="Connect Scan" time="1676817965" percent="51.14" remaining="532" etc="1676818496"/>
+<taskprogress task="Connect Scan" time="1676818004" percent="55.66" remaining="474" etc="1676818478"/>
+<taskprogress task="Connect Scan" time="1676818070" percent="61.35" remaining="417" etc="1676818486"/>
+<taskprogress task="Connect Scan" time="1676818106" percent="65.81" remaining="363" etc="1676818468"/>
+<taskprogress task="Connect Scan" time="1676818154" percent="70.91" remaining="306" etc="1676818460"/>
+<taskprogress task="Connect Scan" time="1676818217" percent="76.22" remaining="253" etc="1676818469"/>
+<taskprogress task="Connect Scan" time="1676818262" percent="81.34" remaining="196" etc="1676818458"/>
+<taskprogress task="Connect Scan" time="1676818298" percent="86.21" remaining="143" etc="1676818440"/>
+<taskprogress task="Connect Scan" time="1676818352" percent="91.35" remaining="90" etc="1676818441"/>
+<taskprogress task="Connect Scan" time="1676818394" percent="96.47" remaining="36" etc="1676818430"/>
+<taskend task="Connect Scan" time="1676818431" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1676818431"/>
+<taskprogress task="Service scan" time="1676818847" percent="46.67" remaining="476" etc="1676819322"/>
+<taskprogress task="Service scan" time="1676818977" percent="86.67" remaining="84" etc="1676819061"/>
+<taskend task="Service scan" time="1676818977" extrainfo="15 services on 1 host"/>
+<taskbegin task="NSE" time="1676818977"/>
+<taskprogress task="NSE" time="1676819008" percent="99.42" remaining="1" etc="1676819008"/>
+<taskprogress task="NSE" time="1676819038" percent="99.76" remaining="1" etc="1676819038"/>
+<taskend task="NSE" time="1676819063"/>
+<taskbegin task="NSE" time="1676819063"/>
+<taskprogress task="NSE" time="1676819094" percent="86.29" remaining="5" etc="1676819099"/>
+<taskprogress task="NSE" time="1676819124" percent="90.32" remaining="7" etc="1676819131"/>
+<taskprogress task="NSE" time="1676819154" percent="93.55" remaining="7" etc="1676819160"/>
+<taskprogress task="NSE" time="1676819184" percent="94.35" remaining="8" etc="1676819191"/>
+<taskprogress task="NSE" time="1676819214" percent="95.16" remaining="8" etc="1676819222"/>
+<taskprogress task="NSE" time="1676819244" percent="95.16" remaining="10" etc="1676819253"/>
+<taskprogress task="NSE" time="1676819274" percent="97.58" remaining="6" etc="1676819279"/>
+<taskprogress task="NSE" time="1676819304" percent="99.19" remaining="2" etc="1676819306"/>
+<taskend task="NSE" time="1676819330"/>
+<taskbegin task="NSE" time="1676819330"/>
+<taskend task="NSE" time="1676819330"/>
+<host starttime="1676817409" endtime="1676819330"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.217" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65334">
+<extrareasons reason="conn-refused" count="65334" proto="tcp" ports="1-21,23-24,26-79,81-109,112-142,144-442,444-835,837-898,900-963,965-992,994,996-1200,1202-1527,1529-1983,1986-2095,2097-2156,2158-2682,2684-3115,3117-3305,3307-4189,4191-4355,4357-4444,4446-4558,4560-4622,4624-5000,5002-5037,5039-5555,5557-5702,5704-5894,5896-6016,6018-6258,6260-7625,7627-7664,7666-7958,7960-9306,9308-9406,9408-9582,9584-10200,10202-10374,10376-10856,10858-10864,10866-11041,11043-11410,11412-11499,11501-12302,12304-12711,12713-12954,12956-13259,13261-13346,13348-13423,13425-14026,14028-14170,14172-14444,14446-14790,14792-14826,14828-14944,14946-15327,15330-15459,15461-16306,16308-16711,16713-16763,16765-16909,16911-17435,17437-18029,18031-18338,18340-18361,18363-18849,18851-19049,19051-19735,19737-19894,19896-19956,19958-20277,20279-20466,20468-21173,21175-21252,21254-21321,21323-21781,21783-22015,22017-22171,22173-22752,22754-23733,23735-23789,23791-24083,24085-24607,24609-25440,25442-25768,25770-26240,26242-26712,26714-27364,27366-27499,27501-27906,27908-28585,28587-28879,28881-29242,29244-29336,29338-29611,29613-29647,29649-30000,30002-30763,30765-30786,30788-31495,31497-32245,32247-32477,32479-32678,32680-32771,32773-33003,33005-33902,33904-34177,34179-34470,34472-35502,35504,35506-35958,35960-36214,36216-36497,36499-36970,36972-37060,37062-37614,37616-37672,37674-37768,37770-37996,37998-38025,38027-38235,38237-38267,38269-38385,38387-38544,38546-38550,38552-38895,38897-39162,39164-39453,39455-40168,40170-40986,40988-41261,41263-41538,41540-42295,42297-42556,42558-42741,42743-42841,42843-43027,43029-43448,43450-43678,43680-43897,43899-44068,44070-44331,44333-44420,44422-45161,45163-45484,45486-46033,46035-46147,46149-46212,46214-46379,46381-47406,47408-47949,47951-48080,48082-48586,48588-49034,49036-49369,49371-49441,49443-49612,49614-49923,49925-51259,51261-51359,51361-51689,51691-51823,51825-52123,52125-52315,52317-52453,52455-52532,52534-52778,52780-52922,52924-53449,53451-53544,53546-53617,53619-54287,54289-54324,54326-54837,54839-55213,55215-55225,55227-55439,55441-55823,55825-55857,55859-56118,56120-56354,56356-56727,56729-57334,57336-58479,58481-58484,58486-58700,58702-59000,59002-59901,59903-60180,60182-60254,60256-60576,60578-60632,60634-60645,60647-63970,63972-64191,64193-64688,64690-65110,65112-65535"/>
+</extraports>
+<extraports state="filtered" count="186">
+<extrareasons reason="no-response" count="186" proto="tcp" ports="899,964,1201,1528,1984-1985,2096,2157,2683,3116,4356,4623,5001,5556,5703,5895,6017,6259,7626,7665,7959,9307,9407,9583,10201,10375,10857,10865,11042,11411,11500,12303,12712,12955,13260,13347,13424,14027,14171,14445,14791,14827,14945,15328-15329,15460,16307,16712,16764,16910,17436,18030,18339,18362,18850,19050,19736,19895,19957,20278,20467,21174,21253,21322,21782,22016,22172,22753,23734,23790,24084,24608,25441,25769,26241,26713,27365,27500,27907,28586,28880,29243,29337,29612,29648,30001,30764,30787,31496,32246,32478,32679,32772,33004,33903,34178,34471,35503,35505,35959,36215,36498,36971,37061,37615,37673,37769,37997,38026,38236,38268,38386,38545,38551,38896,39163,39454,40169,40987,41262,41539,42296,42557,42742,42842,43028,43449,43679,43898,44069,44332,44421,45162,45485,46034,46148,46213,46380,47407,47950,48081,48587,49035,49370,49442,49613,49924,51260,51360,51690,51824,52124,52316,52454,52533,52779,52923,53450,53545,53618,54288,54325,54838,55214,55226,55440,55824,55858,56119,56355,56728,57335,58480,58485,58701,59001,59902,60181,60255,60577,60633,60646,63971,64192,64689,65111"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="4.3" extrainfo="protocol 2.0" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:4.3</cpe></service><script id="ssh-hostkey" output="&#xa;  1024 1af6e54cf5655ca379cee130f95a9caf (DSA)&#xa;ssh-dss AAAAB3NzaC1kc3MAAACBAJPDStk/Ji1OiU57TGEuGEmDDTWZa2F2dPqSQILXUWGeomuSViEyAuXUIel3cRr/w3c9bRnBzMzaIaBR7ntV7xt6I66fjdxvj989TD05CRg79ZphnZ/0w8W355PQSNSfmQx19gE+FehSGI8FsXdNwgR4vJLywQ6zRADuKZICfxJnAAAAFQDuK0NM01ySwaR9nYYrflw+JI3QRQAAAIAJPz3CiABUjChoFy5RVGyKslPnSIETeIKxXMh4Kmx7dQKzKr8cD2u/fPbUrI8Yp16FomKqnduLwiJtKuOlHV3/vICUxR0ELd1MEyVvUaAPtUcPmucYwVPw01EE90dUqO+2xFJp26r2FZlfghWlTWr2RMj1GYVH+UrTUACd5JaYNQAAAIA9WPHqgPPz8LUyjlSuSBzpIoRHRnCj3OUaIKl/ru/KfmG+vQfxLv4Wf52lvl6HndscmJcbNRItsRBpRLyVU06L4bPxZbFidyB5oGKBG3ZLDr0uewRReiooTXu/nw0MNIUGKfViy7u7vC3J4xVxKADmKjWVogEUdSbqy8DloOizCw==&#xa;  2048 b19ec8eaeb4cfc55cb1e4d4c406e80f2 (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEAuB69lD2GJBSjKuNFsk02SaStfbvEgshBpAzFUCIqpXhofihCiQGMXYK5kDfrJ7Figych40Z0nmsT2nGr/vqgNxA1bpziy9dBVRs6NpSqyALFEB+L15AzpNtxBL4dPPZzleJhH7FnmjFQeF57u6vqKepBfANmCeRA+lCg4Wp+mbMSVULysWWDkzKnGCPWRE/cVwhe+brG53lQjVq40aI58tNLFfCEM5h6Z+93D+HDeGGzF5IJTBXFpebwhP1wwYTCGbbQJ8GCkuQkWg0D+SrxOZodjK0c/p9lPSCXR2qj3dzsNPVBum39k6ey+Ukj4iiW2YexUkxknZOvxUhXmJfRgw=="><table>
+<elem key="bits">1024</elem>
+<elem key="fingerprint">1af6e54cf5655ca379cee130f95a9caf</elem>
+<elem key="key">AAAAB3NzaC1kc3MAAACBAJPDStk/Ji1OiU57TGEuGEmDDTWZa2F2dPqSQILXUWGeomuSViEyAuXUIel3cRr/w3c9bRnBzMzaIaBR7ntV7xt6I66fjdxvj989TD05CRg79ZphnZ/0w8W355PQSNSfmQx19gE+FehSGI8FsXdNwgR4vJLywQ6zRADuKZICfxJnAAAAFQDuK0NM01ySwaR9nYYrflw+JI3QRQAAAIAJPz3CiABUjChoFy5RVGyKslPnSIETeIKxXMh4Kmx7dQKzKr8cD2u/fPbUrI8Yp16FomKqnduLwiJtKuOlHV3/vICUxR0ELd1MEyVvUaAPtUcPmucYwVPw01EE90dUqO+2xFJp26r2FZlfghWlTWr2RMj1GYVH+UrTUACd5JaYNQAAAIA9WPHqgPPz8LUyjlSuSBzpIoRHRnCj3OUaIKl/ru/KfmG+vQfxLv4Wf52lvl6HndscmJcbNRItsRBpRLyVU06L4bPxZbFidyB5oGKBG3ZLDr0uewRReiooTXu/nw0MNIUGKfViy7u7vC3J4xVxKADmKjWVogEUdSbqy8DloOizCw==</elem>
+<elem key="type">ssh-dss</elem>
+</table>
+<table>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">b19ec8eaeb4cfc55cb1e4d4c406e80f2</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAABIwAAAQEAuB69lD2GJBSjKuNFsk02SaStfbvEgshBpAzFUCIqpXhofihCiQGMXYK5kDfrJ7Figych40Z0nmsT2nGr/vqgNxA1bpziy9dBVRs6NpSqyALFEB+L15AzpNtxBL4dPPZzleJhH7FnmjFQeF57u6vqKepBfANmCeRA+lCg4Wp+mbMSVULysWWDkzKnGCPWRE/cVwhe+brG53lQjVq40aI58tNLFfCEM5h6Z+93D+HDeGGzF5IJTBXFpebwhP1wwYTCGbbQJ8GCkuQkWg0D+SrxOZodjK0c/p9lPSCXR2qj3dzsNPVBum39k6ey+Ukj4iiW2YexUkxknZOvxUhXmJfRgw==</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="25"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="smtp" method="table" conf="3"/><script id="smtp-commands" output="hotline.localdomain, PIPELINING, SIZE 10240000, VRFY, ETRN, ENHANCEDSTATUSCODES, 8BITMIME, DSN"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.3" hostname="127.0.0.1" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.3</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="Apache/2.2.3 (CentOS)"><elem>Apache/2.2.3 (CentOS)</elem>
+</script><script id="http-title" output="Did not follow redirect to https://10.11.1.217/"><elem key="redirect_url">https://10.11.1.217/</elem>
+</script></port>
+<port protocol="tcp" portid="110"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="rpcbind" version="2" extrainfo="RPC #100000" method="probed" conf="10"/><script id="rpcinfo" output="&#xa;  program version    port/proto  service&#xa;  100000  2            111/tcp   rpcbind&#xa;  100000  2            111/udp   rpcbind&#xa;  100024  1            833/udp   status&#xa;  100024  1            836/tcp   status&#xa;"><table key="100024">
+<table key="tcp">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">836</elem>
+</table>
+<table key="udp">
+<table key="version">
+<elem>1</elem>
+</table>
+<elem key="port">833</elem>
+</table>
+</table>
+<table key="100000">
+<table key="udp">
+<table key="version">
+<elem>2</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+<table key="tcp">
+<table key="version">
+<elem>2</elem>
+</table>
+<elem key="port">111</elem>
+</table>
+</table>
+</script></port>
+<port protocol="tcp" portid="143"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.2.3" extrainfo="(CentOS)" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.2.3</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD POST OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>POST</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="ssl-cert" output="Subject: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=-&#45;/emailAddress=root@localhost.localdomain/organizationalUnitName=SomeOrganizationalUnit/localityName=SomeCity&#xa;Issuer: commonName=localhost.localdomain/organizationName=SomeOrganization/stateOrProvinceName=SomeState/countryName=-&#45;/emailAddress=root@localhost.localdomain/organizationalUnitName=SomeOrganizationalUnit/localityName=SomeCity&#xa;Public Key type: rsa&#xa;Public Key bits: 1024&#xa;Signature Algorithm: sha1WithRSAEncryption&#xa;Not valid before: 2012-03-23T19:29:13&#xa;Not valid after:  2013-03-23T19:29:13&#xa;MD5:   f41ce874ef3cf28ddd809345c0053209&#xa;SHA-1: c443192435ead59803bfcc1540e986115e845491&#xa;-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEDjCCA3egAwIBAgICLrcwDQYJKoZIhvcNAQEFBQAwgbsxCzAJBgNVBAYTAi0t&#xa;MRIwEAYDVQQIEwlTb21lU3RhdGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQK&#xa;ExBTb21lT3JnYW5pemF0aW9uMR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxV&#xa;bml0MR4wHAYDVQQDExVsb2NhbGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0B&#xa;CQEWGnJvb3RAbG9jYWxob3N0LmxvY2FsZG9tYWluMB4XDTEyMDMyMzE5MjkxM1oX&#xa;DTEzMDMyMzE5MjkxM1owgbsxCzAJBgNVBAYTAi0tMRIwEAYDVQQIEwlTb21lU3Rh&#xa;dGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQKExBTb21lT3JnYW5pemF0aW9u&#xa;MR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxVbml0MR4wHAYDVQQDExVsb2Nh&#xa;bGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0BCQEWGnJvb3RAbG9jYWxob3N0&#xa;LmxvY2FsZG9tYWluMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqOEXHiaUp&#xa;ZG0Z3tegdr5/OpBaOLe8fiDJ11+Aqe1p4TvCcMDL3Zm9UQ/ATDq/Q0Df1714fnHb&#xa;znh1Oz9oPX1p5O3xaQyo07Gr+/Pte5M7ygomx2/cz8t4rjCGksGC9qySfo8gFSyq&#xa;xp/RrqRgk8h54AOTzXrYbcVUJcx9yqv/BwIDAQABo4IBHTCCARkwHQYDVR0OBBYE&#xa;FBslHZx1Bx4yHgUajp0GDd717hw4MIHpBgNVHSMEgeEwgd6AFBslHZx1Bx4yHgUa&#xa;jp0GDd717hw4oYHBpIG+MIG7MQswCQYDVQQGEwItLTESMBAGA1UECBMJU29tZVN0&#xa;YXRlMREwDwYDVQQHEwhTb21lQ2l0eTEZMBcGA1UEChMQU29tZU9yZ2FuaXphdGlv&#xa;bjEfMB0GA1UECxMWU29tZU9yZ2FuaXphdGlvbmFsVW5pdDEeMBwGA1UEAxMVbG9j&#xa;YWxob3N0LmxvY2FsZG9tYWluMSkwJwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9z&#xa;dC5sb2NhbGRvbWFpboICLrcwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOB&#xa;gQAlkrkd9W0lpDOIWnYumHG5l1A8eYv7leOnXwldMdQHoHkJYTT8nC5nCf09gT3O&#xa;Roy/RtTQjbdd61Q9FQzdHH+hk6KIBZPzrXCZH7RED3mJu9scyTn8l4NmPQMUMMcW&#xa;aDdVkc4XkPLs3JKy1laBu6qeTPhawrOu+fiQH8w/S+wahw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;"><table key="subject">
+<elem key="commonName">localhost.localdomain</elem>
+<elem key="countryName">-&#45;</elem>
+<elem key="emailAddress">root@localhost.localdomain</elem>
+<elem key="localityName">SomeCity</elem>
+<elem key="organizationName">SomeOrganization</elem>
+<elem key="organizationalUnitName">SomeOrganizationalUnit</elem>
+<elem key="stateOrProvinceName">SomeState</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">localhost.localdomain</elem>
+<elem key="countryName">-&#45;</elem>
+<elem key="emailAddress">root@localhost.localdomain</elem>
+<elem key="localityName">SomeCity</elem>
+<elem key="organizationName">SomeOrganization</elem>
+<elem key="organizationalUnitName">SomeOrganizationalUnit</elem>
+<elem key="stateOrProvinceName">SomeState</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">1024</elem>
+<elem key="modulus">AA3845C789A529646D19DED7A076BE7F3A905A38B7BC7E20C9D75F80A9ED69E13BC270C0CBDD99BD510FC04C3ABF4340DFD7BD787E71DBCE78753B3F683D7D69E4EDF1690CA8D3B1ABFBF3ED7B933BCA0A26C76FDCCFCB78AE308692C182F6AC927E8F20152CAAC69FD1AEA46093C879E00393CD7AD86DC55425CC7DCAABFF07</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">1B:25:1D:9C:75:07:1E:32:1E:05:1A:8E:9D:06:0D:DE:F5:EE:1C:38</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:1B:25:1D:9C:75:07:1E:32:1E:05:1A:8E:9D:06:0D:DE:F5:EE:1C:38&#xa;DirName:/C=-&#45;/ST=SomeState/L=SomeCity/O=SomeOrganization/OU=SomeOrganizationalUnit/CN=localhost.localdomain/emailAddress=root@localhost.localdomain&#xa;serial:2E:B7</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:TRUE</elem>
+</table>
+</table>
+<elem key="sig_algo">sha1WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2012-03-23T19:29:13</elem>
+<elem key="notAfter">2013-03-23T19:29:13</elem>
+</table>
+<elem key="md5">f41ce874ef3cf28ddd809345c0053209</elem>
+<elem key="sha1">c443192435ead59803bfcc1540e986115e845491</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIEDjCCA3egAwIBAgICLrcwDQYJKoZIhvcNAQEFBQAwgbsxCzAJBgNVBAYTAi0t&#xa;MRIwEAYDVQQIEwlTb21lU3RhdGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQK&#xa;ExBTb21lT3JnYW5pemF0aW9uMR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxV&#xa;bml0MR4wHAYDVQQDExVsb2NhbGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0B&#xa;CQEWGnJvb3RAbG9jYWxob3N0LmxvY2FsZG9tYWluMB4XDTEyMDMyMzE5MjkxM1oX&#xa;DTEzMDMyMzE5MjkxM1owgbsxCzAJBgNVBAYTAi0tMRIwEAYDVQQIEwlTb21lU3Rh&#xa;dGUxETAPBgNVBAcTCFNvbWVDaXR5MRkwFwYDVQQKExBTb21lT3JnYW5pemF0aW9u&#xa;MR8wHQYDVQQLExZTb21lT3JnYW5pemF0aW9uYWxVbml0MR4wHAYDVQQDExVsb2Nh&#xa;bGhvc3QubG9jYWxkb21haW4xKTAnBgkqhkiG9w0BCQEWGnJvb3RAbG9jYWxob3N0&#xa;LmxvY2FsZG9tYWluMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqOEXHiaUp&#xa;ZG0Z3tegdr5/OpBaOLe8fiDJ11+Aqe1p4TvCcMDL3Zm9UQ/ATDq/Q0Df1714fnHb&#xa;znh1Oz9oPX1p5O3xaQyo07Gr+/Pte5M7ygomx2/cz8t4rjCGksGC9qySfo8gFSyq&#xa;xp/RrqRgk8h54AOTzXrYbcVUJcx9yqv/BwIDAQABo4IBHTCCARkwHQYDVR0OBBYE&#xa;FBslHZx1Bx4yHgUajp0GDd717hw4MIHpBgNVHSMEgeEwgd6AFBslHZx1Bx4yHgUa&#xa;jp0GDd717hw4oYHBpIG+MIG7MQswCQYDVQQGEwItLTESMBAGA1UECBMJU29tZVN0&#xa;YXRlMREwDwYDVQQHEwhTb21lQ2l0eTEZMBcGA1UEChMQU29tZU9yZ2FuaXphdGlv&#xa;bjEfMB0GA1UECxMWU29tZU9yZ2FuaXphdGlvbmFsVW5pdDEeMBwGA1UEAxMVbG9j&#xa;YWxob3N0LmxvY2FsZG9tYWluMSkwJwYJKoZIhvcNAQkBFhpyb290QGxvY2FsaG9z&#xa;dC5sb2NhbGRvbWFpboICLrcwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQUFAAOB&#xa;gQAlkrkd9W0lpDOIWnYumHG5l1A8eYv7leOnXwldMdQHoHkJYTT8nC5nCf09gT3O&#xa;Roy/RtTQjbdd61Q9FQzdHH+hk6KIBZPzrXCZH7RED3mJu9scyTn8l4NmPQMUMMcW&#xa;aDdVkc4XkPLs3JKy1laBu6qeTPhawrOu+fiQH8w/S+wahw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="http-favicon" output="Unknown favicon MD5: 80DCC71362B27C7D0E608B0890C05E9F"/><script id="ssl-date" output="2023-02-19T20:04:24+00:00; +4h59m59s from scanner time."><elem key="date">2023-02-19T20:04:24+00:00</elem>
+<elem key="delta">17999.0</elem>
+</script><script id="http-robots.txt" output="1 disallowed entry &#xa;/"/><script id="http-title" output="Elastix - Login page"><elem key="title">Elastix - Login page</elem>
+</script><script id="http-server-header" output="Apache/2.2.3 (CentOS)"><elem>Apache/2.2.3 (CentOS)</elem>
+</script></port>
+<port protocol="tcp" portid="836"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="status" version="1" extrainfo="RPC #100024" method="probed" conf="10"/></port>
+<port protocol="tcp" portid="993"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="imaps" method="table" conf="3"/></port>
+<port protocol="tcp" portid="995"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="pop3s" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="mysql" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4190"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="sieve" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="upnotifyp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="4559"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="hylafax" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5038"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="asterisk" product="Asterisk Call Manager" version="1.1" method="probed" conf="10"><cpe>cpe:/a:digium:asterisk:1.1</cpe></service></port>
+</ports>
+<hostscript><script id="clock-skew" output="4h59m58s"><elem key="stddev">0</elem>
+<elem key="count">1</elem>
+<elem key="mean">17998</elem>
+<elem key="median">17998</elem>
+</script></hostscript><times srtt="224224" rttvar="316" to="225488"/>
+</host>
+<taskbegin task="NSE" time="1676819330"/>
+<taskend task="NSE" time="1676819330"/>
+<taskbegin task="NSE" time="1676819330"/>
+<taskend task="NSE" time="1676819330"/>
+<taskbegin task="NSE" time="1676819330"/>
+<taskend task="NSE" time="1676819330"/>
+<runstats><finished time="1676819330" timestr="Sun Feb 19 23:08:50 2023" summary="Nmap done at Sun Feb 19 23:08:50 2023; 1 IP address (1 host up) scanned in 1921.02 seconds" elapsed="1921.02" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

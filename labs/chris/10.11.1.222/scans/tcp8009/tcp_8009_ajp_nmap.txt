@@ -1,0 +1,76 @@
+# Nmap 7.93 scan initiated Sun Feb 19 22:43:35 2023 as: nmap -vv --reason -Pn -T4 -sV -p 8009 "--script=banner,(ajp-* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/tcp8009/tcp_8009_ajp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/tcp8009/xml/tcp_8009_ajp_nmap.xml 10.11.1.222
+Nmap scan report for 10.11.1.222
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-02-19 22:43:35 PST for 19s
+
+PORT     STATE SERVICE REASON  VERSION
+8009/tcp open  ajp13   syn-ack Apache Jserv (Protocol v1.3)
+| ajp-headers: 
+|_  Content-Type: text/html;charset=UTF-8
+| ajp-methods: 
+|_  Supported methods: GET HEAD POST OPTIONS
+| ajp-request: 
+| AJP/1.3 200 200
+| Content-Type: text/html;charset=UTF-8
+| 
+|           <li><a href="https://tomcat.apache.org/download-native.cgi">Tomcat Native</a></li>\x0D
+|                             <li><a href="https://tomcat.apache.org/taglibs/">Taglibs</a></li>\x0D
+|                             <li><a href="/docs/deployer-howto.html">Deployer</a></li>\x0D
+|                         </ul>\x0D
+|                     </div>\x0D
+|                 </div>\x0D
+|                 <div class="col20">\x0D
+|                     <div class="container">\x0D
+|                         <h4>Other Documentation</h4>\x0D
+|                         <ul>\x0D
+|                             <li><a href="https://tomcat.apache.org/connectors-doc/">Tomcat Connectors</a></li>\x0D
+|                             <li><a href="https://tomcat.apache.org/connectors-doc/">mod_jk Documentation</a></li>\x0D
+|                             <li><a href="https://tomcat.apache.org/native-doc/">Tomcat Native</a></li>\x0D
+|                             <li><a href="/docs/deployer-howto.html">Deployer</a></li>\x0D
+|                         </ul>\x0D
+|                     </div>\x0D
+|                 </div>\x0D
+|                 <div class="col20">\x0D
+|                     <div class="container">\x0D
+|                         <h4>Get Involved</h4>\x0D
+|                         <ul>\x0D
+|                             <li><a href="https://tomcat.apache.org/getinvolved.html">Overview</a></li>\x0D
+|                             <li><a href="https://tomcat.apache.org/svn.html">SVN Repositories</a></li>\x0D
+|                             <li><a href="https://tomcat.apache.org/lists.html">Mailing Lists</a></li>\x0D
+|                             <li><a href="https://wiki.apache.org/tomcat/FrontPage">Wiki</a></li>\x0D
+|                         </ul>\x0D
+|                     </div>\x0D
+|                 </div>\x0D
+|                 <div class="col20">\x0D
+|                     <div class="container">\x0D
+|                         <h4>Miscellaneous</h4>\x0D
+|                         <ul>\x0D
+|                             <li><a href="https://tomcat.apache.org/contact.html">Contact</a></li>\x0D
+|                             <li><a href="https://tomcat.apache.org/legal.html">Legal</a></li>\x0D
+|                             <li><a href="https://www.apache.org/foundation/sponsorship.html">Sponsorship</a></li>\x0D
+|                             <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>\x0D
+|                         </ul>\x0D
+|                     </div>\x0D
+|                 </div>\x0D
+|                 <div class="col20">\x0D
+|                     <div class="container">\x0D
+|                         <h4>Apache Software Foundation</h4>\x0D
+|                         <ul>\x0D
+|                             <li><a href="https://tomcat.apache.org/whoweare.html">Who We Are</a></li>\x0D
+|                             <li><a href="https://tomcat.apache.org/heritage.html">Heritage</a></li>\x0D
+|                             <li><a href="https://www.apache.org">Apache Home</a></li>\x0D
+|                             <li><a href="https://tomcat.apache.org/resources.html">Resources</a></li>\x0D
+|                         </ul>\x0D
+|                     </div>\x0D
+|                 </div>\x0D
+|                 <br class="separator" />\x0D
+|             </div>\x0D
+|             <p class="copyright">Copyright &copy;1999-2023 Apache Software Foundation.  All Rights Reserved</p>\x0D
+|         </div>\x0D
+|     </body>\x0D
+| \x0D
+|_</html>\x0D
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 19 22:43:54 2023 -- 1 IP address (1 host up) scanned in 20.05 seconds

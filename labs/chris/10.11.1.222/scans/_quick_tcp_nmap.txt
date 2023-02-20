@@ -1,0 +1,84 @@
+# Nmap 7.93 scan initiated Sun Feb 19 22:36:56 2023 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/_quick_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/xml/_quick_tcp_nmap.xml 10.11.1.222
+Increasing send delay for 10.11.1.222 from 0 to 5 due to 47 out of 116 dropped probes since last increase.
+Increasing send delay for 10.11.1.222 from 5 to 10 due to 11 out of 16 dropped probes since last increase.
+Nmap scan report for 10.11.1.222
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-02-19 22:36:56 PST for 398s
+Not shown: 992 closed tcp ports (conn-refused)
+PORT     STATE SERVICE            REASON  VERSION
+135/tcp  open  msrpc?             syn-ack
+139/tcp  open  netbios-ssn        syn-ack Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?      syn-ack
+1521/tcp open  oracle-tns         syn-ack Oracle TNS listener 18.0.0.0.0 (unauthorized)
+2030/tcp open  oracle-mts         syn-ack Oracle MTS Recovery Service
+3389/tcp open  ssl/ms-wbt-server? syn-ack
+| rdp-ntlm-info: 
+|   Target_Name: CHRIS
+|   NetBIOS_Domain_Name: CHRIS
+|   NetBIOS_Computer_Name: CHRIS
+|   DNS_Domain_Name: chris
+|   DNS_Computer_Name: chris
+|   Product_Version: 10.0.17763
+|_  System_Time: 2023-02-19T14:43:18+00:00
+|_ssl-date: 2023-02-19T14:43:33+00:00; -1s from scanner time.
+| ssl-cert: Subject: commonName=chris
+| Issuer: commonName=chris
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha256WithRSAEncryption
+| Not valid before: 2022-11-08T21:13:53
+| Not valid after:  2023-05-10T21:13:53
+| MD5:   46ca026dea970e13f610e7aa3520e4a7
+| SHA-1: a74bfc4eccc083603cdb465bea515216a71ebbd4
+| -----BEGIN CERTIFICATE-----
+| MIICzjCCAbagAwIBAgIQVY741aquSLlAXAOLH9hQJDANBgkqhkiG9w0BAQsFADAQ
+| MQ4wDAYDVQQDEwVjaHJpczAeFw0yMjExMDgyMTEzNTNaFw0yMzA1MTAyMTEzNTNa
+| MBAxDjAMBgNVBAMTBWNocmlzMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+| AQEAljBl8t7nejaDhSFPweFKVxLilqhswhZ8SGZmH+NOsf+QsyivWxdRT7CJKK03
+| SgMT0MnHYaBR6eKaj4hgRbcP8Wfg+P4h4Z1BHWIg6RuUqgjemC4IOToeEJwIcEm7
+| u/7SLr5g8+OX1jTBV5yTwdyyOWEt2Gq5RMlPAGlX7t1YfinysSzFWmUGyEAta6vk
+| Zr2f7T5d+dzBlIhhmLc9z/wewQDuYp0RNvjmImaTpfOm8AHimn79l/kEa/Oa0YPq
+| gpfeHEGH+9bTb06KcG0Etg5jrDuG65RslmZx0B6IQguUK+xHLL5M+DHByYilnvAD
+| ZzmPzTuBGYkNlMpLb8WH2FSe8QIDAQABoyQwIjATBgNVHSUEDDAKBggrBgEFBQcD
+| ATALBgNVHQ8EBAMCBDAwDQYJKoZIhvcNAQELBQADggEBAGe4B2FJDKFX16UERogO
+| ZHDM7s43fXJ7t81MeUnpwbL15wu4N1Gib5Z1asMrDqe7I1PToRyPzKU9hO25nMtQ
+| 2ZKBlopeem6xOyBnGGQi7BDzUqj1D1oIUHX1o+85mdn80f7XrdaLWUdcXwq6yCad
+| vIqsSKLnliCOyjbTLX43t6zgDYiAv9dH4IEs0qUIAWzRjc+txwy0NmbeHBDIlszB
+| YbiRXs3Tbr6SgkW0/iy23lj8fTju5iHK/n8lWjSYuuUgEgLwrL1UQB1e+JR0EHSU
+| p6vv47pte8HHHQ60KOVEnuI7nML2JyfcGuwvPce1uAUh9iuki6ScZkTa5mKtjxZB
+| HoM=
+|_-----END CERTIFICATE-----
+8009/tcp open  ajp13              syn-ack Apache Jserv (Protocol v1.3)
+| ajp-methods: 
+|_  Supported methods: GET HEAD POST OPTIONS
+8080/tcp open  http               syn-ack Apache Tomcat 9.0.19
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-title: Apache Tomcat/9.0.19
+|_http-favicon: Apache Tomcat
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port135-TCP:V=7.93%I=9%D=2/19%Time=63F23536%P=x86_64-pc-linux-gnu%r(inf
+SF:ormix,18,"\x05\0\r\x03\x10\0\0\0\x18\0\0\0\0=\0\x06\x04\0\x01\x05\0\0\0
+SF:\0");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 14184/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 51305/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 52410/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 58649/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-time: 
+|   date: 2023-02-19T14:43:20
+|_  start_date: N/A
+|_clock-skew: mean: -1s, deviation: 0s, median: -1s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 19 22:43:34 2023 -- 1 IP address (1 host up) scanned in 397.96 seconds

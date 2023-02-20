@@ -1,0 +1,17 @@
+HTTP/1.1 302 Found
+Date: Sun, 19 Feb 2023 19:48:55 GMT
+Server: Apache/2.2.3 (CentOS)
+Location: https://10.11.1.217/robots.txt
+Content-Length: 290
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>302 Found</title>
+</head><body>
+<h1>Found</h1>
+<p>The document has moved <a href="https://10.11.1.217/robots.txt">here</a>.</p>
+<hr>
+<address>Apache/2.2.3 (CentOS) Server at 10.11.1.217 Port 80</address>
+</body></html>

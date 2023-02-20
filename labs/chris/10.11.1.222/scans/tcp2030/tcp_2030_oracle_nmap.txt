@@ -1,0 +1,11 @@
+# Nmap 7.93 scan initiated Sun Feb 19 22:43:34 2023 as: nmap -vv --reason -Pn -T4 -sV -p 2030 "--script=banner,(oracle* or ssl*) and not (brute or broadcast or dos or external or fuzzer)" -oN /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/tcp2030/tcp_2030_oracle_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/chris/10.11.1.222/scans/tcp2030/xml/tcp_2030_oracle_nmap.xml 10.11.1.222
+Nmap scan report for 10.11.1.222
+Host is up, received user-set (0.22s latency).
+Scanned at 2023-02-19 22:43:35 PST for 18s
+
+PORT     STATE SERVICE    REASON  VERSION
+2030/tcp open  oracle-mts syn-ack Oracle MTS Recovery Service
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Feb 19 22:43:53 2023 -- 1 IP address (1 host up) scanned in 18.22 seconds
