@@ -1,0 +1,12 @@
+# Nmap 7.93 scan initiated Mon Feb 20 19:55:45 2023 as: nmap -vv --reason -Pn -T4 -sV -p 445 --script=smb-vuln-cve-2017-7494 -oN /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/tcp445/tcp_445_smb_vulnerabilities.txt -oX /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/tcp445/xml/tcp_445_smb_vulnerabilities.xml 10.11.1.146
+Nmap scan report for 10.11.1.146
+Host is up, received user-set (0.24s latency).
+Scanned at 2023-02-20 19:55:45 PST for 117s
+
+PORT    STATE SERVICE     REASON  VERSION
+445/tcp open  netbios-ssn syn-ack Samba smbd 3.X - 4.X (workgroup: WORKGROUP)
+Service Info: Host: SUSIE
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Feb 20 19:57:42 2023 -- 1 IP address (1 host up) scanned in 117.30 seconds

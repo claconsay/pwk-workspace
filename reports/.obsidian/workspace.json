@@ -13,56 +13,56 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "xxLearning Path/offsec-spoiler.md",
-                "mode": "preview",
-                "source": true
-              }
-            }
-          },
-          {
-            "id": "ce280a2ef4204fcd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "10.11.1.5 - alice/2. Exploitation/ms17-010.md",
+                "file": "10.11.1.146 - susie/2. Exploit/sambacry.md",
                 "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "95b73ca65ecc5644",
+            "id": "09fa6cf644e46fef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "xxLearning Path/offsec-spoiler.md",
-                "mode": "preview",
+                "file": "10.11.1.146 - susie/1. Enumeration/nmap.md",
+                "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "1e276dd91dcb6fae",
+            "id": "cbea40a60dd27688",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "10.11.1.5 - alice/1. Enumeration/post-exploit/ports.md",
-                "mode": "preview",
+                "file": "10.11.1.146 - susie/1. Enumeration/post-exploit/ports.md",
+                "mode": "source",
                 "source": true
               }
             }
           },
           {
-            "id": "9129e520dd2b56a0",
+            "id": "b62741f93887daba",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "xxLearning Path/offsec-spoiler.md",
-                "mode": "preview",
+                "file": "10.11.1.14 - bob (walkthrough)/references/privilege-escalation.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "1406dbd3cac4a6b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "10.11.1.14 - bob (walkthrough)/1. Enumeration/nmap.md",
+                "mode": "source",
                 "source": true
               }
             }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "xxLearning Path/offsec-spoiler.md",
+                "file": "10.11.1.146 - susie/1. Enumeration/post-exploit/ports.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "xxLearning Path/offsec-spoiler.md",
+                "file": "10.11.1.146 - susie/1. Enumeration/post-exploit/ports.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "xxLearning Path/offsec-spoiler.md"
+                "file": "10.11.1.146 - susie/1. Enumeration/post-exploit/ports.md"
               }
             }
           },
@@ -199,8 +199,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 327.5,
-    "collapsed": true
+    "width": 327.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -212,17 +211,17 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "95b73ca65ecc5644",
+  "active": "cbea40a60dd27688",
   "lastOpenFiles": [
-    "xxLearning Path/0xpath.md",
-    "sanbox (done)/10.5.5.20 - poultry/3. Report/walkthrough.md",
-    "10.11.1.5 - alice/1. Enumeration/post-exploit/systeminfo.md",
-    "xxLearning Path/offsec-spoiler.md",
-    "10.11.1.5 - alice/2. Exploitation/ms17-010.md",
-    "10.11.1.5 - alice/loots/flag.md",
-    "10.11.1.5 - alice/1. Enumeration/post-exploit/ports.md",
-    "10.11.1.72 - beta (walkthrough)/2. Exploitation/James-server.md",
-    "10.11.1.72 - beta (walkthrough)/loots/credentials.md",
-    "10.11.1.123 - xor-app59 (done)/4. Report/walkthrough.md"
+    "10.11.1.146 - susie/1. Enumeration/nmap.md",
+    "10.11.1.14 - bob (walkthrough)/commands/accesschk.exe.md",
+    "10.11.1.14 - bob (walkthrough)/1. Enumeration/nmap.md",
+    "10.11.1.14 - bob (walkthrough)/1. Enumeration/info.md",
+    "10.11.1.14 - bob (walkthrough)/4. Report/walkthrough.md",
+    "10.11.1.14 - bob (walkthrough)/references/privilege-escalation.md",
+    "10.11.1.14 - bob (walkthrough)/commands/post-exploit-steps.md",
+    "10.11.1.146 - susie/1. Enumeration/post-exploit/ports.md",
+    "10.11.1.146 - susie/2. Exploit/sambacry.md",
+    "10.11.1.146 - susie/loots/flag.md"
   ]
 }

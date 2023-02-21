@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Mon Feb 20 19:55:45 2023 as: nmap -vv -&#45;reason -Pn -T4 -sV -p 445 -&#45;script=smb-vuln-cve-2017-7494 -oN /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/tcp445/tcp_445_smb_vulnerabilities.txt -oX /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/tcp445/xml/tcp_445_smb_vulnerabilities.xml 10.11.1.146 -->
+<nmaprun scanner="nmap" args="nmap -vv -&#45;reason -Pn -T4 -sV -p 445 -&#45;script=smb-vuln-cve-2017-7494 -oN /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/tcp445/tcp_445_smb_vulnerabilities.txt -oX /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/tcp445/xml/tcp_445_smb_vulnerabilities.xml 10.11.1.146" start="1676894145" startstr="Mon Feb 20 19:55:45 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="445"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1676894145"/>
+<taskend task="NSE" time="1676894145"/>
+<taskbegin task="NSE" time="1676894145"/>
+<taskend task="NSE" time="1676894145"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1676894145"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1676894145"/>
+<taskbegin task="Connect Scan" time="1676894145"/>
+<taskend task="Connect Scan" time="1676894146" extrainfo="1 total ports"/>
+<taskbegin task="Service scan" time="1676894146"/>
+<taskend task="Service scan" time="1676894152" extrainfo="1 service on 1 host"/>
+<taskbegin task="NSE" time="1676894152"/>
+<taskprogress task="NSE" time="1676894183" percent="97.73" remaining="1" etc="1676894184"/>
+<taskprogress task="NSE" time="1676894213" percent="97.73" remaining="2" etc="1676894214"/>
+<taskprogress task="NSE" time="1676894243" percent="97.73" remaining="3" etc="1676894245"/>
+<taskend task="NSE" time="1676894262"/>
+<taskbegin task="NSE" time="1676894262"/>
+<taskend task="NSE" time="1676894262"/>
+<host starttime="1676894145" endtime="1676894262"><status state="up" reason="user-set" reason_ttl="0"/>
+<address addr="10.11.1.146" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="netbios-ssn" product="Samba smbd" version="3.X - 4.X" extrainfo="workgroup: WORKGROUP" hostname="SUSIE" method="probed" conf="10"><cpe>cpe:/a:samba:samba</cpe></service></port>
+</ports>
+<times srtt="244911" rttvar="244911" to="1224555"/>
+</host>
+<taskbegin task="NSE" time="1676894262"/>
+<taskend task="NSE" time="1676894262"/>
+<taskbegin task="NSE" time="1676894262"/>
+<taskend task="NSE" time="1676894262"/>
+<runstats><finished time="1676894262" timestr="Mon Feb 20 19:57:42 2023" summary="Nmap done at Mon Feb 20 19:57:42 2023; 1 IP address (1 host up) scanned in 117.30 seconds" elapsed="117.30" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

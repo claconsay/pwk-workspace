@@ -1,15 +1,4 @@
-```bash
-nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN "/home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/_quick_tcp_nmap.txt" -oX "/home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/xml/_quick_tcp_nmap.xml" 10.11.1.146
 ```
-
-[/home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/_quick_tcp_nmap.txt](file:///home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/_quick_tcp_nmap.txt):
-
-```
-# Nmap 7.93 scan initiated Sun Feb 19 22:36:42 2023 as: nmap -vv --reason -Pn -T4 -sV -sC --version-all -A --osscan-guess -oN /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/_quick_tcp_nmap.txt -oX /home/chris/trainings/pwk/workspace/labs/susie/10.11.1.146/scans/xml/_quick_tcp_nmap.xml 10.11.1.146
-Nmap scan report for 10.11.1.146
-Host is up, received user-set (0.23s latency).
-Scanned at 2023-02-19 22:36:43 PST for 76s
-Not shown: 997 filtered tcp ports (no-response)
 PORT    STATE SERVICE     REASON  VERSION
 22/tcp  open  ssh         syn-ack OpenSSH 7.4p1 Ubuntu 10 (Ubuntu Linux; protocol 2.0)
 | ssh-hostkey: 
@@ -24,18 +13,20 @@ PORT    STATE SERVICE     REASON  VERSION
 Service Info: Host: SUSIE; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Host script results:
-| smb2-security-mode: 
-|   311: 
-|_    Message signing enabled but not required
 | smb-os-discovery: 
 |   OS: Windows 6.1 (Samba 4.5.4-Ubuntu)
 |   Computer name: \x00
 |   NetBIOS computer name: SUSIE\x00
 |   Workgroup: WORKGROUP\x00
-|_  System time: 2023-02-19T09:37:20-05:00
-| smb2-time: 
-|   date: 2023-02-19T14:37:21
-|_  start_date: N/A
+|_  System time: 2023-02-19T09:41:50-05:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   311: 
+|_    Message signing enabled but not required
 | p2p-conficker: 
 |   Checking for Conficker.C or higher...
 |   Check 1 (port 35748/tcp): CLEAN (Timeout)
@@ -43,15 +34,9 @@ Host script results:
 |   Check 3 (port 61782/udp): CLEAN (Timeout)
 |   Check 4 (port 34368/udp): CLEAN (Timeout)
 |_  0/4 checks are positive: Host is CLEAN or ports are blocked
-| smb-security-mode: 
-|   account_used: guest
-|   authentication_level: user
-|   challenge_response: supported
-|_  message_signing: disabled (dangerous, but default)
-|_clock-skew: mean: 1h39m59s, deviation: 2h53m13s, median: -1s
-
-Read data files from: /usr/bin/../share/nmap
-Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sun Feb 19 22:37:59 2023 -- 1 IP address (1 host up) scanned in 77.06 seconds
-
+| smb2-time: 
+|   date: 2023-02-19T14:41:48
+|_  start_date: N/A
+|_clock-skew: mean: 1h40m00s, deviation: 2h53m14s, median: -1s
 ```
+
