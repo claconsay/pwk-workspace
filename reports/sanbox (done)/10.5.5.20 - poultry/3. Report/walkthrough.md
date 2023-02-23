@@ -20,7 +20,7 @@ proxychains xfreerdp /d:sandbox /u:alex /v:10.5.5.20 +clipboard /tls-seclevel:0 
 ***
 ## Post-exploitation
 
-1. We started checking for non-standard services. One of the first things that stands out to us is the `Puppet Agent` has a service path that is not quoted. After further checking, we confirmed that the service is configured to run via `Local System` which could potentially give us an elevated permissions.
+1. We started checking for non-standard services. One of the first things that stands out to us is the `Puppet Agent` has a service path that is unquoted. After further checking, we confirmed that the service is configured to run via `Local System` which could potentially give us an elevated permissions.
    
 ```
 wmic service get name,displayname,pathname,startmode |findstr /i "auto" |findstr /i /v "c:\windows"
