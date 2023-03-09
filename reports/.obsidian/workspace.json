@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sanbox (done)/10.5.5.20 - poultry/3. Report/walkthrough.md",
+                "file": "10.11.1.5 - alice/2. Exploitation/ms17-010.md",
                 "mode": "source",
                 "source": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sanbox (done)/10.5.5.20 - poultry/3. Report/walkthrough.md",
+                "file": "10.11.1.5 - alice/2. Exploitation/ms17-010.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sanbox (done)/10.5.5.20 - poultry/3. Report/walkthrough.md",
+                "file": "10.11.1.5 - alice/2. Exploitation/ms17-010.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sanbox (done)/10.5.5.20 - poultry/3. Report/walkthrough.md"
+                "file": "10.11.1.5 - alice/2. Exploitation/ms17-010.md"
               }
             }
           },
@@ -213,6 +213,11 @@
   },
   "active": "cbea40a60dd27688",
   "lastOpenFiles": [
+    "10.11.1.5 - alice/1. Enumeration/post-exploit/ports.md",
+    "10.11.1.5 - alice/loots/flag.md",
+    "10.11.1.5 - alice/2. Exploitation/ms17-010.md",
+    "xxLearning Path/0xpath.md",
+    "sanbox (done)/10.5.5.20 - poultry/3. Report/walkthrough.md",
     "10.11.1.14 - bob (walkthrough)/3. Post-exploitation/priv-esc.md",
     "10.11.1.14 - bob (walkthrough)/4. Report/walkthrough.md",
     "10.11.1.71 - alpha (walkthrough)/2. Exploitation/shellshock.md",
